@@ -4,16 +4,14 @@
 
 * [**LA 2101 & 7102 Representation 2018:** Modeling Frank Lloyd Wright's Unbuilt Houses](3d-modeling-syllabus-2018.pdf)
 * [**LA 2101 & 7102 Representation 2019:** 3D Modeling](3d-modeling-syllabus-2019.pdf)
-* [**LA 7031 Water Systems Studio 2018:** Sand and Gravel Mining on the Amite River](water-systems-syllabus-2018.pdf) |
-[:octocat:](https://github.com/baharmon/water-systems-studio)
+* [**LA 7031 Water Systems Studio 2018:** Sand and Gravel Mining on the Amite River](water-systems-syllabus-2018.pdf)
 * [**LA 7032 Media III 2017:** Geospatial Modeling](geospatial-modeling-syllabus-2017.pdf) |
 [:octocat:](https://github.com/baharmon/geospatial-modeling-course)
 * [**LA 7032 Media III 2018:** Geospatial Modeling](geospatial-modeling-syllabus-2018.pdf) |
 [:octocat:](https://github.com/baharmon/geospatial-modeling-course)
 * [**DART 7003 Digital Culture Seminar 2018**: Open Culture](digital-culture-syllabus-2018.pdf) |
 [:octocat:](https://github.com/baharmon/digital-culture-seminar)
-* [**LA 7051 Option Studio 2019:** Giant Panda National Park](landscape-ecology-syllabus-2019.pdf) |
-[:octocat:](https://github.com/baharmon/geospatial-modeling-course)
+* [**LA 7051 Option Studio 2019:** Giant Panda National Park](giant-panda-syllabus-2019.pdf)
 
 ---
 

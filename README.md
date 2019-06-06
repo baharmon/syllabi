@@ -2,8 +2,12 @@
 
 # Syllabi
 
-[**LA 7032 Media III 2017:** Geospatial Modeling](geospatial-modeling-syllabus-2017.pdf) |
-[**LA 7032 Media III 2018:** Geospatial Modeling](geospatial-modeling-syllabus-2018.pdf)
+* [**LA 7032 Media III 2017:** Geospatial Modeling](geospatial-modeling-syllabus-2017.pdf) |
+[:octocat:](https://github.com/baharmon/geospatial-modeling-course)
+* [**LA 7032 Media III 2018:** Geospatial Modeling](geospatial-modeling-syllabus-2018.pdf) |
+[:octocat:](https://github.com/baharmon/geospatial-modeling-course)
+* [**DART 7003 Digital Culture Seminar 2018**](digital-culture-syllabus-2018.pdf) |
+[:octocat:](https://github.com/baharmon/digital-culture-seminar)
 
 ---
 

@@ -2,18 +2,22 @@
 
 # Syllabi
 
+* [**LA 2101 & 7102 Representation 2018:** Frank Lloyd Wright's Unbuilt Houses](3d-modeling-syllabus-2018.pdf)
+* [**LA 2101 & 7102 Representation 2019:** Digital Landscapes](3d-modeling-syllabus-2019.pdf)
+* [**LA 7031 Water Systems Studio 2018:** Sand and Gravel Mining on the Amite River](water-systems-syllabus-2018.pdf) |
+[:octocat:](https://github.com/baharmon/water-systems-studio)
 * [**LA 7032 Media III 2017:** Geospatial Modeling](geospatial-modeling-syllabus-2017.pdf) |
 [:octocat:](https://github.com/baharmon/geospatial-modeling-course)
 * [**LA 7032 Media III 2018:** Geospatial Modeling](geospatial-modeling-syllabus-2018.pdf) |
 [:octocat:](https://github.com/baharmon/geospatial-modeling-course)
-* [**DART 7003 Digital Culture Seminar 2018**](digital-culture-syllabus-2018.pdf) |
+* [**DART 7003 Digital Culture Seminar 2018**: Open Culture](digital-culture-syllabus-2018.pdf) |
 [:octocat:](https://github.com/baharmon/digital-culture-seminar)
 
 ---
 
 ## License
 Open educational materials licensed CC BY-SA 4.0
-by Brendan Harmon :monkey_face:.
+by Brendan Harmon.
 The license does not apply to logos, fonts, linked material, data, quotations,
 or reprinted images by other authors which may have different licenses.
 The fonts used in this repository are licensed under the SIL Open Font License

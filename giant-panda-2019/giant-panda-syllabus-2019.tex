@@ -68,12 +68,12 @@
 
 % -------------------------------- COVER PAGE -------------------------------- 
 
-\pagenumbering{gobble}
-\globalcolor{black}
-\vspace*{-10em}
-\maketitle
+%\pagenumbering{gobble}
+%\globalcolor{black}
+%\vspace*{-10em}
+%\maketitle
 %\ThisCenterWallPaper{1}{images/}
-\clearpage
+%\clearpage
 
 
 % -------------------------------- DESCRIPTION -------------------------------- 
@@ -240,27 +240,6 @@ observation points, wildlife over/underpasses, or signage.\\
 As a class you will prepare and publish a report 
 for our partners in Sichuan. 
 
-% -------------------------------- Software -------------------------------- 
-\section{Software}
-\begin{multicols}{2}
-\raggedright
-QGIS | \url{https://qgis.org/} \\
-GRASS GIS | \url{https://grass.osgeo.org/} \\
-ArcGIS | \url{https://www.esri.com/} \\
-Rhinoceros | \url{https://www.rhino3d.com/}\\
-%RhinoTerrain | \url{http://www.rhinoterrain.com/}\\
-%RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}\\
-%Grasshopper | \url{http://grasshopper3d.com/}\\
-\end{multicols}
-
-% -------------------------------- Resources -------------------------------- 
-\section{Resources}
-Dataverse | \url{https://dataverse.harvard.edu/}\\
-Intro to QGIS | \url{https://docs.qgis.org/2.18/en/docs/gentle_gis_introduction/}\\
-Intro to GRASS GIS | \url{https://ncsu-geoforall-lab.github.io/grass-intro-workshop/}\\
-Hydrology in GRASS GIS | \url{https://grasswiki.osgeo.org/wiki/Hydrological_Sciences}\\
-Grasshopper Primer | \url{http://grasshopperprimer.com}\\
-
 % -------------------------------- Grading -------------------------------- 
 \section{Grading}
 %
@@ -273,14 +252,49 @@ Planning & 33\% & Design & 33\% & Report & 33\% \\
 \end{tabular}
 \end{table}
 
-\clearpage
+% -------------------------------- Software -------------------------------- 
+\section{Software}
+\begin{multicols}{2}
+\raggedright
+QGIS | \url{https://qgis.org/} \\
+ArcGIS | \url{https://www.esri.com/} \\
+GRASS GIS | \url{https://grass.osgeo.org/} \\
+Rhinoceros | \url{https://www.rhino3d.com/}
+%RhinoTerrain | \url{http://www.rhinoterrain.com/}\\
+%RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}\\
+%Grasshopper | \url{http://grasshopper3d.com/}\\
+\end{multicols}\vspace*{-0.4cm}
+\noindent
+LandScape Corridors | \url{https://github.com/LEEClab/LS_CORRIDORS/wiki}\\
+MaxEnt | \url{https://biodiversityinformatics.amnh.org/open_source/maxent/}
+
+% -------------------------------- Resources -------------------------------- 
+\section{Resources}
+Dataverse | \url{https://dataverse.harvard.edu/}\\
+Intro to QGIS | \url{https://docs.qgis.org/2.18/en/docs/gentle_gis_introduction/}\\
+Intro to GRASS GIS | \url{https://ncsu-geoforall-lab.github.io/grass-intro-workshop/}\\
+%Hydrology in GRASS GIS | \url{https://grasswiki.osgeo.org/wiki/Hydrological_Sciences}\\
+Grasshopper Primer | \url{http://grasshopperprimer.com}
+
+%\clearpage
 
 % -------------------------------- Readings -------------------------------- 
 \section{Readings}
-\vspace*{0.5cm}
+\vspace*{0.25cm}
 \nocite{*}
 \setlength\bibitemsep{0.65\baselineskip}
-\printbibliography[heading=none]
+%\printbibliography[heading=none]
+
+\printbibliography[title={\normalsize{Architecture}},keyword=architecture, heading=subbibliography]
+
+\printbibliography[title={\normalsize{Landscape}},keyword=landscape, heading=subbibliography]
+
+\printbibliography[title={\normalsize{Culture}},keyword=culture, heading=subbibliography]
+
+\printbibliography[title={\normalsize{Computing}},keyword=software, heading=subbibliography]
+
+\printbibliography[title={\normalsize{Conservation}},keyword=conservation, heading=subbibliography]
+
 \clearpage
 % -------------------------------- Policies -------------------------------- 
 \section{Policies}

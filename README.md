@@ -9,9 +9,9 @@
 [:octocat:](https://github.com/baharmon/geospatial-modeling-course)
 * [**LA 7032 Media III 2018:** Geospatial Modeling](geospatial-modeling-syllabus-2018.pdf) |
 [:octocat:](https://github.com/baharmon/geospatial-modeling-course)
-* [**DART 7003 Digital Culture Seminar 2018**: Open Culture](digital-culture-syllabus-2018.pdf) |
+* [**DART 7003 Digital Culture Seminar 2018:** Open Culture](digital-culture-syllabus-2018.pdf) |
 [:octocat:](https://github.com/baharmon/digital-culture-seminar)
-* [**LA 4201 & 7055 GIS for Designers 2019**](giant-panda-syllabus-2019.pdf)
+* [**LA 4201 & 7055 GIS for Designers 2019**](gis-for-designers-syllabus-2019.pdf)
 * [**LA 4008 & 7051 Option Studio 2019:** Giant Panda National Park](giant-panda-syllabus-2019.pdf)
 * [**LA 7504 Special Topics 2020:** Ecological Robotics](ecological-robotics-syllabus-2020.pdf)
 

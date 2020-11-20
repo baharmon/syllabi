@@ -15,6 +15,7 @@
 * [**DART 7003 Digital Culture Seminar 2018:** Open Culture](digital-culture-syllabus-2018.pdf) |
 [:octocat:](https://github.com/baharmon/digital-culture-seminar)
 * [**LA 4008 & 7051 Option Studio 2019:** Giant Panda National Park](giant-panda-syllabus-2019.pdf)
+* [**LA 4008 & 7051 Option Studio 2020:** Generative Fabrication](generative-fabrication-syllabus-2020.pdf)
 * [**LA 7504 Special Topics 2020:** Ecological Robotics](ecological-robotics-syllabus-2020.pdf)
 * [**LA 4201 & 7055 GIS for Designers 2019**](gis-for-designers-syllabus-2019.pdf)
 * [**LA 4201 & 7055 GIS for Designers 2020**](gis-for-designers-syllabus-2020.pdf)

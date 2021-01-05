@@ -1,0 +1,114 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%%%  Syllabus template for use with style files at http://kjhealy.github.com/latex-custom-kjh
+%%%  Kieran Healy
+
+\documentclass[11pt,article,oneside]{memoir}
+
+% packages
+\usepackage{org-preamble-xelatex}
+\usepackage{wallpaper}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+
+\AtBeginBibliography{\small}
+
+% Definitions
+\def\myauthor{Author}
+\def\mytitle{Title}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+\def\myaffiliation{Louisiana State University}
+\def\myaddress{309 Design}
+\def\myemail{baharmon@lsu.edu} 
+\def\myweb{https://baharmon.github.io/}
+\def\myphone{919.622.8414}
+\def\myversion{}
+\def\myrevision{}
+\def\myaffiliation{\ \\Louisiana State University}
+\def\myauthor{Brendan Harmon}
+\def\mykeywords{Landscape Architecture, Syllabus, Graduate, Undergraduate}
+\def\mysubtitle{Syllabus}
+\def\mytitle{ \includegraphics[width=6cm]{../../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 4008 + 7051 |} \Large Living Structure Studio}
+
+% color
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+% begin
+\begin{document}
+
+\setlength\bibitemsep{0.5em}
+
+% fonts
+\defaultfontfeatures{}
+\defaultfontfeatures{Scale=MatchLowercase}         
+\setmainfont[Scale=1, Path = ../../fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setsansfont[Scale=1, Path = ../../fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setmonofont[Mapping=tex-text,Scale=0.8,Path = ../../fonts/inconsolata/]{i}
+\newfontfamily\icon[Scale=1, Path = ../../fonts/fontawesome/]{fontawesome-regular-400}
+
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+\def\labelitemi{$\cdot$}
+\chapterstyle{article-4-sans}  
+
+\title{\LARGE \mytitle}
+\author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
+\date{Fall 2020 Design 324.\newline Monday, Wednesday, \& Friday\newline 1:30pm--5:20pm.}
+\published{\,}
+
+% -------------------------------- DESCRIPTION -------------------------------- 
+
+\pagenumbering{arabic}
+\globalcolor{black}
+\vspace*{-10em}
+\maketitle
+
+\section{Course Description}
+
+Digitally design and fabricate a prototype of a living green wall. 
+This interdisciplinary studio will explore 
+non standard construction 
+in architecture and landscape architecture
+using generative processes 
+for the design and fabrication 
+of complex living structures. 
+In the first section of this studio you will 
+learn how to program 3D printers and industrial robots 
+and then design, render, and fabricate 
+a small ceramic form.  
+In the second section you will design 
+a ceramic structure for a free standing living green wall.
+Use a generative design process to model 
+and analyze a family of variations on your design.
+Fabricate scale models of your designs.  
+In the third section of the course 
+you will make a detailed design, renderings,  
+and construction documentation
+for your living wall. 
+Fabricate and plant a module of your living wall.
+This studio will be conducted online 
+with either remote or in person access 
+to digital fabrication tools such as 
+fused deposition modeling (FDM) ,
+stereolithography (SLA), and
+ceramic 3D printers
+and industrial robots. \\
+
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.332\textwidth]{../images/robotic-inform-1.jpg}
+\includegraphics[width=0.59\textwidth]{../images/robotic-inform-2.jpg}
+\end{figure}
+
+
+\end{document}

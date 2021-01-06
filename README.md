@@ -5,17 +5,17 @@
 ## Courses
 
 * **LA 4201 & 7055** GIS for Designers:
-[2019](gis-for-designers-syllabus-2019.pdf)
+[2019](gis-for-designers-syllabus-2019.pdf) &
 [2020](gis-for-designers-syllabus-2020.pdf)
 * **LA 2101 & 7102** Digital Landscapes:
-[2018](digital-landscapes-syllabus-2018.pdf)
-[2019](digital-landscapes-syllabus-2019.pdf)
-[2020](digital-landscapes-syllabus-2020.pdf)
+[2018](digital-landscapes-syllabus-2018.pdf),
+[2019](digital-landscapes-syllabus-2019.pdf),
+[2020](digital-landscapes-syllabus-2020.pdf), &
 [2021](digital-landscapes-syllabus-2021.pdf)
 * **LA 7032** Generative Landscapes:
-[2017](generative-landscapes-syllabus-2017.pdf)
-[2018](generative-landscapes-syllabus-2018.pdf)
-[2020](generative-landscapes-syllabus-2020.pdf)
+[2017](generative-landscapes-syllabus-2017.pdf),
+[2018](generative-landscapes-syllabus-2018.pdf),
+[2020](generative-landscapes-syllabus-2020.pdf), &
 [2021](generative-landscapes-syllabus-2021.pdf)
 [:octocat:](http://baharmon.github.io/generative-landscapes)
 

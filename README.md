@@ -2,23 +2,40 @@
 
 # Syllabi
 
-* [**LA 2101 & 7102 Representation 2018:** Modeling Frank Lloyd Wright's Unbuilt Houses](3d-modeling-syllabus-2018.pdf)
-* [**LA 2101 & 7102 Representation 2019:** 3D Modeling](3d-modeling-syllabus-2019.pdf)
-* [**LA 2101 & 7102 Representation 2020:** Digital Landscapes](digital-landscapes-syllabus-2020.pdf)
-* [**LA 7031 Water Systems Studio 2018:** Sand and Gravel Mining on the Amite River](water-systems-syllabus-2018.pdf)
-* [**LA 7032 Media III 2017:** Geospatial Modeling](geospatial-modeling-syllabus-2017.pdf) |
-[:octocat:](https://github.com/baharmon/geospatial-modeling-course)
-* [**LA 7032 Media III 2018:** Geospatial Modeling](geospatial-modeling-syllabus-2018.pdf) |
-[:octocat:](https://github.com/baharmon/geospatial-modeling-course)
-* [**LA 7032 Media III 2020:** Generative Landscapes](generative-landscapes-syllabus-2020.pdf) |
+## Courses
+
+* **LA 4201 & 7055 | GIS for Designers:**
+[2019](gis-for-designers-syllabus-2019.pdf)
+[2020](gis-for-designers-syllabus-2020.pdf)
+* **LA 2101 & 7102 | Digital Landscapes:**
+[2018](digital-landscapes-syllabus-2018.pdf)
+[2019](digital-landscapes-syllabus-2019.pdf)
+[2020](digital-landscapes-syllabus-2020.pdf)
+[2021](digital-landscapes-syllabus-2021.pdf)
+
+* **LA 7032 | Generative Landscapes:**
+[2017](generative-landscapes-syllabus-2017.pdf)
+[2018](generative-landscapes-syllabus-2018.pdf)
+[2020](generative-landscapes-syllabus-2020.pdf)
+[2021](generative-landscapes-syllabus-2021.pdf)
 [:octocat:](http://baharmon.github.io/generative-landscapes)
-* [**DART 7003 Digital Culture Seminar 2018:** Open Culture](digital-culture-syllabus-2018.pdf) |
+
+## Studios
+
+* **LA 7031 | Water Systems Studio:**
+[2018](water-systems-syllabus-2018.pdf)
+* **LA 4008 & 7051 | Giant Panda National Park**
+[2019](giant-panda-syllabus-2019.pdf)
+* **LA 4008 & 7051 | Generative Fabrication:**
+[2020](generative-fabrication-syllabus-2020.pdf)
+
+## Electives
+
+* **DART 7003 | Digital Culture Seminar:**
+[2018](digital-culture-syllabus-2018.pdf)
 [:octocat:](https://github.com/baharmon/digital-culture-seminar)
-* [**LA 4008 & 7051 Option Studio 2019:** Giant Panda National Park](giant-panda-syllabus-2019.pdf)
-* [**LA 4008 & 7051 Option Studio 2020:** Generative Fabrication](generative-fabrication-syllabus-2020.pdf)
-* [**LA 7504 Special Topics 2020:** Ecological Robotics](ecological-robotics-syllabus-2020.pdf)
-* [**LA 4201 & 7055 GIS for Designers 2019**](gis-for-designers-syllabus-2019.pdf)
-* [**LA 4201 & 7055 GIS for Designers 2020**](gis-for-designers-syllabus-2020.pdf)
+* **LA 7504 | Ecological Robotics:**]
+[2020](ecological-robotics-syllabus-2020.pdf)
 
 ---
 

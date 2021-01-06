@@ -25,7 +25,7 @@
 * **LA 7031 | Water Systems Studio:**
 [2018](water-systems-syllabus-2018.pdf)
 * **LA 4008 & 7051 | Giant Panda National Park**
-[2019](giant-panda-syllabus-2019.pdf)
+[2019](giant-panda-national-park-syllabus-2019.pdf)
 * **LA 4008 & 7051 | Generative Fabrication:**
 [2020](generative-fabrication-syllabus-2020.pdf)
 

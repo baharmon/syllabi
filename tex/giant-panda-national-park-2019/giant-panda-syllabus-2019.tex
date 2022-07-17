@@ -1,0 +1,315 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%%%  Syllabus template for use with style files at http://kjhealy.github.com/latex-custom-kjh
+%%%  Kieran Healy
+
+\documentclass[11pt,article,oneside]{memoir}
+
+% packages
+\usepackage{org-preamble-xelatex}
+\usepackage{wallpaper}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+
+\AtBeginBibliography{\small}
+
+% Definitions
+\def\myauthor{Author}
+\def\mytitle{Title}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+\def\myaffiliation{Louisiana State University}
+\def\myaddress{309 Design}
+\def\myemail{baharmon@lsu.edu} 
+\def\myweb{https://baharmon.github.io/}
+\def\myphone{919.622.8414}
+\def\myversion{}
+\def\myrevision{}
+\def\myaffiliation{\ \\Louisiana State University}
+\def\myauthor{Brendan Harmon}
+\def\mykeywords{Landscape Architecture, Syllabus, Graduate}
+\def\mysubtitle{Syllabus}
+\def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 7051 |} \Large Giant Panda Studio} 
+
+% color
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+% begin
+\begin{document}
+
+\setlength\bibitemsep{0.5em}
+
+% fonts
+\defaultfontfeatures{}
+\defaultfontfeatures{Scale=MatchLowercase}         
+\setmainfont[Scale=1, Path = ../fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setsansfont[Scale=1, Path = ../fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setmonofont[Mapping=tex-text,Scale=0.8,Path = ../fonts/inconsolata/]{i}
+
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+\def\labelitemi{$\cdot$}
+\chapterstyle{article-4-sans}  
+
+\title{\LARGE \mytitle}
+\author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
+\date{Fall 2019 \newline Monday, Wednesday, \& Friday \\
+1:30pm--5:30pm}
+\published{\,}
+
+% -------------------------------- DESCRIPTION -------------------------------- 
+
+\pagenumbering{arabic}
+\globalcolor{black}
+
+\vspace*{-10em}
+\maketitle
+
+\section{Course Description}
+
+In this studio you will work in partnership 
+with Sichuan Agricultural University (SAU)’s 
+College of Landscape Architecture 
+to design a new national park for giant panda 
+conservation and tourism in the wilds of Sichuan Province, China. 
+Our study area, the Fengtongzhai National Nature Reserve, 
+is a biodiversity hotspot for 
+giant pandas, golden snub-nosed monkeys, and red pandas. 
+After fieldwork in Fengtongzhai and geospatial data analysis, 
+you will model and design 
+the spatial configuration of the new national park 
+and its connections to a greater ecological network. 
+You will learn how to analyze remote sensing data a
+nd model habitat corridors, urban growth, and land change. 
+After applying computational methods 
+for ecology to landscape planning 
+you will use generative design 
+to develop a system of landscape 
+and architectural elements and structures 
+for the national park that respond to 
+the unique geomorphology, ecology, and cultural heritage of the reserve. 
+You will design a regional plan with 
+habitat corridors, a masterplan for the park, 
+structures, trails, signage, furniture, 
+and an adaptive management plan. 
+You will use generative systems to design structures including 
+a visitor center, breeding center, lodges, and ranger stations 
+and a family of landscape elements 
+including bridges, signage, and furniture. 
+You will publish your work in a report for the Chinese government. 
+This course includes 2 weeks of optional fieldwork in Sichuan Province, China. 
+You will take short courses and 
+participate in a collaborative studio at SAU in Chengdu 
+and travel to the Chengdu Panda Breeding Research Center, 
+Fengtongzhai, Jiuzhaigou, Huanglong Valley, Mount Emei, 
+Mount Qingcheng, and Dujiangyan. 
+Theoretical topics will include critical regionalism,  
+landscape ecology,  island biogeography, conservation corridors, 
+systematic conservation planning, biodiversity hotspots, 
+adaptive management, and climate change. 
+
+% -------------------------------- SCHEDULE -------------------------------- 
+
+\section{Topics}
+%
+\begin{table}[H]
+\begin{tabular}{l @{\hskip 2.5cm} l}
+\textbf{Conservation planning} & \textbf{National park design}\\
+\end{tabular}
+\end{table}
+%
+\vspace*{-1em}
+%
+\begin{table}[H]
+\begin{tabular}{l l @{\hskip 2cm} l l}
+\small
+\textbf{0} & Fieldwork \\
+\textbf{1} & Fieldwork & \textbf{9} & Site design  I\\
+\textbf{2} & Research & \textbf{10} & Site design II\\
+\textbf{3} & Research & \textbf{11} & Site Design III\\
+\textbf{4} & Conservation planning & \textbf{12} & Site Design IV\\
+\textbf{5} & Conservation planning & \textbf{13} & Site Design V\\
+\textbf{6} & Conservation planning & \textbf{14} & Report\\
+\textbf{7} & Conservation planning & \textbf{15} & Report\\
+\textbf{8} & Masterplanning & \textbf{16} & Final review\\
+\end{tabular}
+\end{table}
+%
+
+% -------------------------------- FIELDWORK -------------------------------- 
+\section{Fieldwork}
+
+The fieldwork excursion to Sichuan Province in China 
+is optional, but highly recommended. 
+Our partner and host, Sichuan Agricultural University, 
+has generously agreed to fund most expenses in China 
+except for tourist site tickets. 
+Students will be responsible for airfare, visas, 
+tourist tickets, and course fees. 
+The course fee of \$230 includes 
+travel insurance and tourist site tickets.  
+Each student is recommended to bring around 
+¥1000 RMB (approx. \$145 USD) in cash for personal expenses. 
+
+\begin{table}[H]
+\begin{tabular}{l l @{\hskip 1cm} l l}
+\\
+\textbf{08.17.2019} & BTR --- CTU & \textbf{08.25.2019} & Mt. Emei \\
+\textbf{08.18.2019} & Chinese language & \textbf{08.26.2019} & Ink painting \\
+\textbf{08.19.2019} & Dujiangyan \& Mt.~Q. & \textbf{08.27.2019} & Ink painting \\
+\textbf{08.20.2019} & Chinese gardens & \textbf{08.28.2019} & Tea culture \\
+\textbf{08.21.2019} & Panda Breeding Center & \textbf{08.29.2019} & Tea culture \\
+\textbf{08.22.2019} & Fengtongzhai & \textbf{08.30.2019} & Bamboo culture \\
+\textbf{08.23.2019} & Fengtongzhai & \textbf{08.31.2019} & CTU --- BTR \\
+\textbf{08.24.2019} & Mt. Emei \\
+%
+\end{tabular}
+\end{table}
+
+%\begin{table}[H]
+%\begin{tabular}{l r @{\hskip 0.1cm} l @{\hskip 0.5cm} l}
+%\\
+%08.17.2019 & \textbf{Flight |} & Baton Rouge --- Chengdu \\
+%08.18.2019 & \textbf{Course |} & Chinese language \\
+%08.19.2019 & \textbf{Travel |} & Dujiangyan \& Mt. Qingcheng\\
+%08.20.2019 & \textbf{Course |} & Chinese gardens \\
+%08.21.2019 & \textbf{Course |} & Panda Breeding Center \\
+%08.22.2019 & \textbf{Site visit |} & Fengtongzhai \\
+%08.23.2019 & \textbf{Site visit |} & Fengtongzhai \\
+%08.24.2019 & \textbf{Travel |} & Mt. Emei \\
+%08.25.2019 & \textbf{Travel |} & Mt. Emei \\
+%08.26.2019 & \textbf{Course |} & Ink painting \\
+%08.27.2019 & \textbf{Course |} & Ink painting \\
+%08.28.2019 & \textbf{Travel |} & Tea culture \\
+%08.29.2019 & \textbf{Travel |} & Tea culture \\
+%08.30.2019 & \textbf{Travel |} & Bamboo culture \\
+%08.31.2019 & \textbf{Flight |} & Chengdu --- Baton Rouge \\
+%%
+%\end{tabular}
+%\end{table}
+
+\clearpage
+
+% -------------------------------- Projects -------------------------------- 
+\section{Projects}
+This studio will be an introduction to 
+computational methods for landscape ecology and planning. 
+It will cover theory and computational methods for topics 
+such as habitat fragmentation and conservation corridors. 
+You will learn how to model ecological patterns 
+and simulate ecological processes 
+using Geographic Information Systems (GIS). 
+Then you will use landscape planning methods in GIS 
+and visual programming in Grasshopper 
+to develop designs for a national park 
+that respond to these ecological processes. \\
+
+\noindent \textbf{Conservation planning}
+As teams you will address one of the following topics:
+precedent studies, conservation corridors, terrain modeling,
+mapping, or regional planning.
+Then as a class you will design 
+a draft masterplan for the national park.\\
+
+\noindent \textbf{Site design}
+As individuals or teams you will develop 
+a schematic design one of the following:
+park masterplan, visitor center, breeding center, trail system, 
+observation points, wildlife over/underpasses, or signage.\\
+
+\noindent \textbf{Report}
+As a class you will prepare and publish a report 
+for our partners in Sichuan. 
+
+% -------------------------------- Grading -------------------------------- 
+\section{Grading}
+%
+\begin{table}[H]
+%\small
+\begin{tabular}{l r @{\hskip 2.5cm} l r @{\hskip 2,5cm} l r}
+%
+Planning & 33\% & Design & 33\% & Report & 33\% \\
+%
+\end{tabular}
+\end{table}
+
+% -------------------------------- Software -------------------------------- 
+\section{Software}
+\begin{multicols}{2}
+\raggedright
+QGIS | \url{https://qgis.org/} \\
+ArcGIS | \url{https://www.esri.com/} \\
+GRASS GIS | \url{https://grass.osgeo.org/} \\
+Rhinoceros | \url{https://www.rhino3d.com/}
+%RhinoTerrain | \url{http://www.rhinoterrain.com/}\\
+%RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}\\
+%Grasshopper | \url{http://grasshopper3d.com/}\\
+\end{multicols}\vspace*{-0.4cm}
+\noindent
+LandScape Corridors | \url{https://github.com/LEEClab/LS_CORRIDORS/wiki}\\
+MaxEnt | \url{https://biodiversityinformatics.amnh.org/open_source/maxent/}
+
+% -------------------------------- Resources -------------------------------- 
+\section{Resources}
+Sichuan Dataset | \url{https://doi.org/10.5281/zenodo.3359645}\\
+Intro to QGIS | \url{https://docs.qgis.org/2.18/en/docs/gentle_gis_introduction/}\\
+Intro to GRASS GIS | \url{https://ncsu-geoforall-lab.github.io/grass-intro-workshop/}\\
+%Hydrology in GRASS GIS | \url{https://grasswiki.osgeo.org/wiki/Hydrological_Sciences}\\
+Grasshopper Primer | \url{http://grasshopperprimer.com}\\
+Learn ArcGIS | \url{https://learn.arcgis.com/en/projects/build-a-model-to-connect-mountain-lion-habitat/}
+
+%\clearpage
+
+% -------------------------------- Readings -------------------------------- 
+\section{Readings}
+\vspace*{0.25cm}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+%\printbibliography[heading=none]
+
+\printbibliography[title={\normalsize{Architecture}},keyword=architecture, heading=subbibliography]
+
+\printbibliography[title={\normalsize{Landscape}},keyword=landscape, heading=subbibliography]
+
+\printbibliography[title={\normalsize{Culture}},keyword=culture, heading=subbibliography]
+
+\printbibliography[title={\normalsize{Computing}},keyword=software, heading=subbibliography]
+
+\printbibliography[title={\normalsize{Conservation}},keyword=conservation, heading=subbibliography]
+
+\clearpage
+% -------------------------------- Policies -------------------------------- 
+\section{Policies}
+
+\noindent \textbf{Time Commitment Expectations}
+LSU's general policy states that for each credit hour, you (the student) should plan to
+spend at least two hours working on course related activities outside of class. Since this course is for three credit hours, you should expect to spend a minimum of six hours outside of class each week working on assignments for this course. For more information see: 
+\url{http://catalog.lsu.edu/content.php?catoid=12&navoid=822}.\\
+
+\noindent \textbf{LSU student code of conduct}
+The LSU student code of conduct explains student rights, excused absences, and what is expected of student behavior. Students are expected to understand this code:  \url{http://students.lsu.edu/saa/students/code}.\\ %Any violations of the LSU student code will be duly reported to the Dean of Students.\\
+
+\noindent \textbf{Disability Code}
+The University is committed to making reasonable efforts to assist individuals with disabilities in
+their efforts to avail themselves of services and programs offered by the University. To this end,
+Louisiana State University will provide reasonable accommodations for persons with
+documented qualifying disabilities. If you have a disability and feel you need accommodations in
+this course, you must present a letter to me from Disability Services in 115 Johnston Hall,
+indicating the existence of a disability and the suggested accommodations.\\
+
+\noindent \textbf{Academic Integrity}
+According to section 10.1 of the LSU Code of Student Conduct, ``A student may be charged with Academic Misconduct'' for a variety of offenses, including the following: unauthorized copying, collusion, or collaboration; ``falsifying'' data or citations; ``assisting someone in the commission or attempted commission of an offense''; and plagiarism, which is defined in section 10.1.H as a ``lack of appropriate citation, or the unacknowledged inclusion of someone else's words, structure, ideas, or data; failure to identify a source, or the submission of essentially the same work for two assignments without permission of the instructor(s).''\\
+
+\noindent \textbf{Plagiarism and Citation Method}
+Plagiarism is the ``lack of appropriate citation, or the unacknowledged inclusion of someone else's words, structure, ideas, or data; failure to identify a source, or the submission of essentially the same work for two assignments without permission of the instructor(s)'' (Sec. 10.1.H of the LSU Code of Student Conduct). As a student at LSU, it is your responsibility to refrain from plagiarizing the academic property of another and to utilize appropriate citation method for all coursework. In this class, it is recommended that you use Chicago Style author-date citations. Ignorance of the citation method is not an excuse for academic misconduct.
+
+\end{document}

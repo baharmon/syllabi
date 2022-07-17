@@ -1,0 +1,304 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,article,oneside]{memoir}
+
+% packages
+\usepackage{org-preamble-xelatex}
+\usepackage{wallpaper}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+\usepackage{tikz}
+\usepackage{tikzpagenodes} 
+
+\AtBeginBibliography{\small}
+
+% Definitions
+\def\myauthor{Author}
+\def\mytitle{Title}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+\def\myaffiliation{Louisiana State University}
+\def\myaddress{309 Design}
+\def\myemail{baharmon@lsu.edu} 
+\def\myweb{https://baharmon.github.io/}
+\def\myphone{919.622.8414}
+\def\myversion{}
+\def\myrevision{}
+\def\myaffiliation{\ \\Louisiana State University}
+\def\myauthor{Brendan Harmon}
+\def\mykeywords{Landscape Architecture, Syllabus, Graduate, Undergraduate}
+\def\mysubtitle{Syllabus}
+\def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 7051 |} \Large Generative Fabrication} 
+
+% color
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+% begin
+\begin{document}
+
+\setlength\bibitemsep{0.5em}
+
+% fonts
+\defaultfontfeatures{}
+\defaultfontfeatures{Scale=MatchLowercase}         
+\setmainfont[Scale=1, Path = ../fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setsansfont[Scale=1, Path = ../fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setmonofont[Mapping=tex-text,Scale=0.8,Path = ../fonts/inconsolata/]{i}
+\newfontfamily\icon[Scale=1, Path = ../fonts/fontawesome/]{fontawesome-regular-400}
+
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+\def\labelitemi{$\cdot$}
+\chapterstyle{article-4-sans}  
+
+\title{\LARGE \mytitle}
+\author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
+\date{Fall 2020 Design 324.\newline Monday, Wednesday, \& Friday\newline 1:30pm--5:20pm.}
+\published{\,}
+
+% -------------------------------- COVER PAGE -------------------------------- 
+
+\pagenumbering{gobble}
+\globalcolor{black}
+\begin{tikzpicture}[remember picture,overlay]
+\fill[white] ([xshift=-4.5cm,yshift=4.75cm]current page text area.west) rectangle (7,2);
+\end{tikzpicture}
+\vspace*{-10em}
+\maketitle
+\ThisCenterWallPaper{1.1}{../images/robotic-inform-1.jpg}
+\clearpage
+
+% -------------------------------- DESCRIPTION -------------------------------- 
+
+\pagenumbering{arabic}
+\globalcolor{black}
+\vspace*{-10em}
+\maketitle
+
+\section{Course Description}
+
+This studio will explore non standard construction 
+in architecture and landscape architecture.
+You will use generative processes 
+for the design and fabrication 
+of complex architectural forms. 
+In the first section of this studio you will 
+learn how to program 3D printers and industrial robots 
+and then design, render, and fabricate 
+a small ceramic vessel.  
+In the second section you will design 
+a ceramic structure for a free standing green wall.
+Use a generative design process to model 
+and analyze a family of variations on your design.
+Fabricate scale models of your designs.  
+In the third section of the course 
+you will make a detailed design, renderings,  
+and construction documentation
+for your green wall. 
+This studio will be conducted online. 
+You will have either remote or in person access 
+to digital fabrication tools
+such as industrial robots and 
+fused deposition modeling (FDM) ,
+stereolithography (SLA), and ceramic 3D printers.\\
+
+\noindent\textbf{Required Textbook} |
+\fullcite{Cuevas2020}\\
+
+\noindent\textbf{Keywords}
+\begin{multicols}{3}
+\raggedright
+\small
+\begin{itemize}
+\item 3D printing
+\item 3D rendering
+\item Robotics
+\item Ceramics
+\item Parametric modeling
+\item Generative fabrication
+\end{itemize}
+\end{multicols}
+
+% -------------------------------- SCHEDULE -------------------------------- 
+\section{Topics}
+
+\vspace*{-1em}
+%
+\begin{table}[H]
+\begin{tabular}{l l @{\hskip 0.5cm} l l @{\hskip 0.5cm} l l}
+ & \textbf{Fabrication} & & \textbf{Families of Form} && \textbf{Detailed Design}\\
+\small
+\textbf{1} & Introduction & \textbf{6} & Ideation & \textbf{11} & Design\\
+\textbf{2} & 3D printing & \textbf{7} & Paneling & \textbf{12} & Fabrication\\
+\textbf{3} & Generative sys. & \textbf{8} & Analysis & \textbf{13} & Assembly\\
+\textbf{4} & Prototyping & \textbf{9} & Variations & \textbf{14} & Documentation\\
+\textbf{5} & Review & \textbf{10} & Review & \textbf{15} & Review\\
+\end{tabular}
+\end{table}
+
+\clearpage
+
+% -------------------------------- Online -------------------------------- 
+\section{Online}
+
+This studio will be taught online.
+All course content including tutorials, lectures, and datasets
+will be published on the course website at:
+\url{http://baharmon.github.io/generative-fabrication}.
+During our regularly scheduled class period on MWF from 1:30-5:20 pm,
+we will meet on our Discord server at \url{https://discord.gg/B3Y5SDK}
+for live streamed lectures, critiques, discussions, 
+student presentations, and troubleshooting. 
+Post your design work on your channel on the Discord server.
+Tutorials will be posted on the course website
+with videos on both Youtube and Vimeo. 
+There will be either remote or in person access 
+to digital fabrication equipment 
+such as fused deposition modeling (FDM) ,
+stereolithography (SLA), and ceramic 3D printers
+and collaborative robots.\\
+
+\noindent
+Course Website | \url{http://baharmon.github.io/generative-fabrication}\\
+Discord | \url{https://discord.gg/B3Y5SDK}\\
+%Youtube | \url{https://www.youtube.com/channel/UCmGEF6Bf1SO92oLQoGCPDTw}\\
+%Vimeo | \url{https://vimeo.com/showcase/7356098}\\
+
+% -------------------------------- Projects -------------------------------- 
+
+\section{Projects}
+
+\noindent \textbf{Ceramic Vessel}
+3D model, 3D rendering, and 3D print 
+a small ceramic vessel 
+with a complex geometric form.\\
+
+\noindent \textbf{Greenwall Design}
+Design a non standard ceramic structure for a greenwall.
+Model and analyze variations on the greenwall. 
+3D print scale models of the greenwall.\\
+
+\noindent \textbf{Greenwall Prototype}
+Develop a detailed design for a greenwall.
+Develop documentation including 
+construction drawings, 3D renderings,
+plant lists, materials, and cost estimates.\\
+
+\noindent \textbf{Course Portfolio}
+Collect your work in a course portfolio 
+for the school's accreditation archive.
+\emph{Due: 12/11/2020}\\
+
+% -------------------------------- Grading -------------------------------- 
+\section{Grading}
+%
+\begin{table}[H]
+%\small
+\begin{tabular}{l r @{\hskip 2cm} l @{\hskip 0.5cm} l}
+%
+Ceramic Vessel & 30\% & Greenwall Prototype & 35\% \\
+Greenwall Design & 30\% & Course Portfolio & 5\% \\
+%
+\end{tabular}
+\end{table}
+
+% -------------------------------- Software -------------------------------- 
+\section{Software}
+Rhinoceros | \url{https://www.rhino3d.com/}\\
+Thea Render for Rhino | \url{https://www.thearender.com/}\\
+
+% -------------------------------- Resources -------------------------------- 
+
+\section{Resources}
+\textbf{Design 324} | UR10e, Ender FDM 3D Printer, \& 3D PotterBot Micro 9\\
+\textbf{FabLab} | 3D PotterBot, Delta WASP 3D Printer, CNC Routers, etc.\\
+\textbf{Additive FabLab} | Form 2 SLA 3D Printers\\
+\textbf{Art + Design CxC Lab} | Prusa 3D Printers\\
+
+%\clearpage
+
+% -------------------------------- Readings -------------------------------- 
+\section{Readings}
+\vspace*{0.5cm}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+\printbibliography[heading=none]
+
+\clearpage
+
+% -------------------------------- Policies -------------------------------- 
+\section{Policies}
+
+\noindent \textbf{Accreditation Expectations}
+As an accredited Landscape Architecture program
+LSU's Robert Reich School of Landscape Architecture (RRSLA) 
+must meet the accreditation requirements 
+as stated by the Landscape Architectural Accreditation
+Board (LAAB) to ensure RRSLA is meeting the expectations of the field. 
+The LAAB requires programs to provide digital copies 
+of student work as part of this process.
+Students in this course will be expected 
+to comply with the following requirements
+as 5\% of their course grade: 
+(1) Students must provide a course portfolio
+with work samples specified by the instructor 
+before the end of the grading period. 
+(2) Each student's course portfolio must be saved as 
+a single, high resolution PDF file with multiple pages. 
+(3) Files must follow the naming convention
+established by the school: department-coursenumber-semesteryear-username.pdf.
+Example: LA7051-F2020-baharmon.pdf.\\
+
+\noindent \textbf{Time Commitment Expectations}
+LSU's general policy states that for each credit hour, you (the student) should plan to
+spend at least two hours working on course related activities outside of class. Since this course is for three credit hours, you should expect to spend a minimum of six hours outside of class each week working on assignments for this course. For more information see: 
+\url{http://catalog.lsu.edu/content.php?catoid=12&navoid=822}.\\
+
+\noindent \textbf{LSU student code of conduct}
+The LSU student code of conduct explains student rights, excused absences, and what is expected of student behavior. Students are expected to understand this code:  \url{http://students.lsu.edu/saa/students/code}.\\ %Any violations of the LSU student code will be duly reported to the Dean of Students.\\
+
+\noindent \textbf{Disability Code}
+The University is committed to making reasonable efforts to assist individuals with disabilities in
+their efforts to avail themselves of services and programs offered by the University. To this end,
+Louisiana State University will provide reasonable accommodations for persons with
+documented qualifying disabilities. If you have a disability and feel you need accommodations in
+this course, you must present a letter to me from Disability Services in 115 Johnston Hall,
+indicating the existence of a disability and the suggested accommodations.\\
+
+\noindent \textbf{Academic Integrity}
+According to section 10.1 of the LSU Code of Student Conduct, ``A student may be charged with Academic Misconduct'' for a variety of offenses, including the following: unauthorized copying, collusion, or collaboration; ``falsifying'' data or citations; ``assisting someone in the commission or attempted commission of an offense''; and plagiarism, which is defined in section 10.1.H as a ``lack of appropriate citation, or the unacknowledged inclusion of someone else's words, structure, ideas, or data; failure to identify a source, or the submission of essentially the same work for two assignments without permission of the instructor(s).''\\
+
+\noindent \textbf{Plagiarism and Citation Method}
+Plagiarism is the ``lack of appropriate citation, or the unacknowledged inclusion of someone else's words, structure, ideas, or data; failure to identify a source, or the submission of essentially the same work for two assignments without permission of the instructor(s)'' (Sec. 10.1.H of the LSU Code of Student Conduct). As a student at LSU, it is your responsibility to refrain from plagiarizing the academic property of another and to utilize appropriate citation method for all coursework. In this class, it is recommended that you use Chicago Style author-date citations. Ignorance of the citation method is not an excuse for academic misconduct.\\
+
+\noindent \textbf{COVID-19 Statement}
+We remain under pandemic conditions and expect to be in this state for the entire semester. In
+order to consistently provide the highest quality LSU education, all students should follow
+current LSU guidelines. These include the following:
+\begin{enumerate}
+\item If you have any signs of illness, do not come to class.
+\item In order to protect all campus community members, the University requires everyone to
+wear facemasks/cloths on campus. Failure to do so is a violation of the code of student
+conduct.
+\item Wash hands with soap and water or clean with sanitizer frequently, and refrain from
+touching your face.
+\item If you have to cough or sneeze unexpectedly, please be mindful of others nearby and
+cough or sneeze into your elbow or shield yourself the best you can.
+\item If you have been exposed to others who have tested positive for COVID-19, self-quarantine consistent with current CDC guidelines.\\
+\end{enumerate}
+
+\noindent \textbf{Unexpected Changes to Courses}
+Due to the unpredictable nature of the situation, the
+format of the course and/or requirements may be forced to change.
+If this is the case you will be given appropriate notification. \\
+
+\end{document}

@@ -1,0 +1,362 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,article,oneside]{memoir}
+
+% packages
+\usepackage{org-preamble-xelatex}
+\usepackage{wallpaper}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+
+\AtBeginBibliography{\small}
+
+% Definitions
+\def\myauthor{Author}
+\def\mytitle{Title}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+\def\myaffiliation{Louisiana State University}
+\def\myaddress{309 Design}
+\def\myemail{baharmon@lsu.edu} 
+\def\myweb{https://baharmon.github.io/}
+\def\myphone{919.622.8414}
+\def\myversion{}
+\def\myrevision{}
+\def\myaffiliation{\ \\Louisiana State University}
+\def\myauthor{Brendan Harmon}
+\def\mykeywords{Landscape Architecture, Syllabus, Graduate, Undergraduate}
+\def\mysubtitle{Syllabus}
+\def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 4201 \& 7075 |} \Large GIS for Designers} 
+
+% color
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+% begin
+\begin{document}
+
+\setlength\bibitemsep{0.5em}
+
+% fonts
+\defaultfontfeatures{}
+\defaultfontfeatures{Scale=MatchLowercase}         
+\setmainfont[Scale=1, Path = ../fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setsansfont[Scale=1, Path = ../fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setmonofont[Mapping=tex-text,Scale=0.8,Path = ../fonts/inconsolata/]{i}
+
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+\def\labelitemi{$\cdot$}
+\chapterstyle{article-4-sans}  
+
+\title{\LARGE \mytitle}
+\author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
+\date{Fall 2021 Design 217.\newline Monday, Wednesday, \& Friday 9:30am--11:20pm.}
+\published{\,}
+
+% -------------------------------- COVER PAGE -------------------------------- 
+
+\pagenumbering{gobble}
+\globalcolor{black}
+\vspace*{-10em}
+\maketitle
+\ThisCenterWallPaper{1}{../images/new-orleans-portrait.png}
+\clearpage
+
+
+% -------------------------------- DESCRIPTION -------------------------------- 
+
+\pagenumbering{arabic}
+\globalcolor{black}
+\vspace*{-10em}
+\maketitle
+
+\section{Course Description}
+
+This course is an introduction to 
+Geographic Information Systems (GIS) and Science (GISc) for designers. 
+Learn about the history, theory, methods, and applications of GIS.
+Acquire, map, model, and analyze spatial and temporal data.
+Make beautiful maps and digitally fabricated models from spatiotemporal data.
+
+\vspace*{0.5em}
+
+% -------------------------------- SCHEDULE -------------------------------- 
+\section{Topics}
+
+\begin{table}[H]
+\begin{tabular}{l l @{\hskip 0.5cm} l l @{\hskip 0.5cm} l l}
+\small
+\textbf{1} & Geodesy & \textbf{6} & Map Algebra & \textbf{11} & Lidar\\
+\textbf{2} & Intro to GIS & \textbf{7} & Programming & \textbf{12} & Demographics\\
+\textbf{3} & Global Data & \textbf{8} & Hydrology & \textbf{13} & Map Overlays\\
+\textbf{4} & Urban Data & \textbf{9} & Visibility \& Solar & \textbf{14} & Critical Cartography\\
+\textbf{5} & Terrain Analysis & \textbf{10} & Cartography & \textbf{15} & Map Exhibition\\
+\end{tabular}
+\end{table}
+
+\vspace*{1em}
+
+\includegraphics[width=\textwidth]{../images/new-orleans-landscape-3.png}
+
+\clearpage
+
+% -------------------------------- Online -------------------------------- 
+\section{Online}
+
+This class will be taught online.
+All course content including tutorials, lectures, and datasets
+will be published on the course website at:
+\url{http://baharmon.github.io/gis-for-designers}.
+During our regularly scheduled class period on MWF from 9:30-11:20 am,
+we will meet on our Discord server at \url{https://discord.gg/rUpX6jRBzs}
+for live streamed lectures, discussions, student presentations, and troubleshooting. 
+Before each class please complete the assigned homework. 
+Post your homework and project work 
+on your channel on the Discord server. 
+Each tutorial will have a page on the course website
+and a video on Youtube.\\
+
+\noindent
+Course website | \url{http://baharmon.github.io/gis-for-designers}\\
+Discord | \url{https://discord.gg/rUpX6jRBzs}\\
+Youtube | \url{https://www.youtube.com/channel/UCmGEF6Bf1SO92oLQoGCPDTw}\\
+
+% -------------------------------- Projects -------------------------------- 
+
+\section{Projects}
+Map spatial and temporal data
+at global, city, and site scales.
+Make beautiful maps that 
+clearly, legibly represent the data,
+express your message, and
+follow cartographic conventions.
+Legends, scale bars, and north arrows are required.
+Upload your work to the course drive.
+Exhibit your collected work at the end of the semester.\\
+%on \emph{12/04/2021}.\\
+
+\noindent \textbf{City maps}
+Create a thematic map for a city of your choice. 
+Possible topics include the built environment, 
+cultural events, cultural and historic places, 
+socioeconomic conditions, public health, crime, education, 
+hydrology, terrain, levees, flooding, etc.\\
+
+\noindent \textbf{Suitability map}
+Use map overlay analysis 
+to develop a suitability map
+about a topic of your choice.
+Create a diagram illustrating 
+the logic of your analysis.\\
+
+\noindent \textbf{3D printed city}
+3D print Manhattan in New York City from lidar data. 
+As a class use a tiling scheme 
+to divide the lidar data into smaller tiles for printing.
+Each of you will 3D print a tile.\\
+%\emph{Draft due: 11/23/2021}\\
+
+\noindent \textbf{Portfolio}
+Collect your work in a course portfolio 
+for the school's accreditation archive.\\
+%\emph{Due: 12/11/2021}\\
+
+\clearpage
+
+% -------------------------------- Software -------------------------------- 
+\section{Software}
+\begin{multicols}{2}
+\raggedright
+QGIS | \url{https://qgis.org/}\\
+GRASS GIS | \url{https://grass.osgeo.org/}\\
+ArcGIS Pro | \url{https://www.esri.com/}\\
+Rhinoceros | \url{https://www.rhino3d.com/}\\
+RhinoTerrain | \url{http://www.rhinoterrain.com/}\\
+Thea Render for Rhino | \url{https://www.thearender.com/}\\
+\end{multicols}
+
+% -------------------------------- Data -------------------------------- 
+\section{Datasets}
+Natural Earth Dataset for GRASS GIS | \url{https://zenodo.org/record/3762852}\\
+Governor's Island Dataset for GRASS GIS | \url{https://zenodo.org/record/3940780}\\
+Governor's Island Dataset for QGIS | \url{https://zenodo.org/record/4044664}\\
+% Add raw dataset
+
+% -------------------------------- Resources -------------------------------- 
+\section{Resources}
+List of geospatial data sources | \url{http://baharmon.github.io/data}\\
+Intro to GRASS GIS | \url{https://ncsu-geoforall-lab.github.io/grass-intro-workshop/}\\
+Geospatial Modeling Course | \url{https://ncsu-geoforall-lab.github.io/geospatial-modeling-course/}\\
+GRASS GIS tutorials | \url{https://grass.osgeo.org/documentation/tutorials/}\\
+QGIS training material | \url{https://www.qgis.org/en/site/forusers/trainingmaterial/}\\
+ArcGIS training | \url{https://www.esri.com/training/}\\
+Learn ArcGIS | \url{https://learn.arcgis.com/}\\
+% ArcGIS Online | \url{https://arcg.is/1eLuHC} + \url{https://arcg.is/1zTvrn}\\
+
+% -------------------------------- Grading -------------------------------- 
+\section{Grading}
+%
+\begin{table}[H]
+%\small
+\begin{tabular}{l r @{\hskip 2cm} l @{\hskip 0.5cm} l}
+%
+City map & 20\% & Homework & 35\% \\
+Suitability map & 20\% & Portfolio & 5\% \\
+3D printing & 20\% \\
+
+%
+\end{tabular}
+\end{table}
+
+\clearpage
+
+%% -------------------------------- Terminology -------------------------------- 
+%\section{Terminology}
+%\begin{multicols}{2}
+%\raggedright
+%\small
+%%
+%\textbf{Geodesy}
+%\begin{itemize}
+%\item Datum
+%\item Geographic coordinate system
+%\item Map projection
+%\item Cartographic grid
+%\item Graticule
+%\end{itemize}
+%
+%\textbf{Spatial data}
+%\begin{itemize}
+%\item Raster \& vector
+%\item Array
+%\item Point \& point cloud
+%\item Mesh
+%\item Triangulated irregular network (TIN)
+%\item Discrete \& continuous data
+%\item Plain text
+%\item Comma separated values (CSV)
+%\item Integer \& floating point numbers
+%\end{itemize}
+%
+%\textbf{Geospatial}
+%\begin{itemize}
+%\item Geographic information system (GIS)
+%\item Digital terrain model (DTM)
+%\item Digital surface model (DSM)
+%\item Digital elevation model (DEM)
+%\item Depressionless DEM
+%\item Lidar
+%\item Delaunay triangulation
+%\item Bilinear interpolation
+%\item Nearest neighbors
+%\item Map algebra
+%\item Null value
+%\item Resampling
+%\item True color imagery
+%\item Image classification
+%\item Normalized difference vegetation index (NDVI)
+%\item Hypsometric tints
+%\item Contour
+%\item Hillshade
+%\item Slope
+%\item Aspect
+%\item Watershed
+%\item Single flow direction (SFD/D8)
+%\item Multiple flow direction (MFD)
+%\item Flow accumulation
+%\item Stream order
+%\end{itemize}
+%
+%\end{multicols}
+%
+%\clearpage
+
+% -------------------------------- Readings -------------------------------- 
+\section{Readings}
+\vspace*{0.5cm}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+\printbibliography[heading=none]
+
+% -------------------------------- Graduate Certificate -------------------------------- 
+\section{Graduate Certificate in GIS}
+This course counts as an applied topics course for the 
+Graduate Certificate in Geographic Information Science.
+The Graduate Certificate in Geographic Information Science at LSU 
+is a 12 credit hour standalone certificate
+with courses offered 
+in the Department of Geography and Anthropology, 
+College of Art and Design, 
+Department of Economics, 
+School of the Coast and Environment, 
+Department of Civil and Environmental Engineering, 
+and Department of Computer Science. 
+For more information about the Graduate Certificate in GIS visit: 
+\url{http://ga.lsu.edu/gis-certificate/}.
+
+% -------------------------------- CI Certificate -------------------------------- 
+
+\section{Communication-Intensive Certification}
+This is a certified Communication-Intensive (C-I) course which meets all of the requirements set forth by LSU's Communication across the Curriculum program, including
+instruction and assignments emphasizing informal and formal modes;
+teaching of discipline-specific communication techniques;
+use of feedback loops for learning;
+40\% of the course grade rooted in communication-based work; 
+and practice of ethical and professional work standards.
+Students interested in pursuing the LSU Communicator Certificate and/or the LSU Distinguished Communicator Medal may use this C-I course for credit. For more information about these student recognition programs, visit \url{www.cxc.lsu.edu}.\\
+
+% -------------------------------- Policies -------------------------------- 
+\section{Policies}
+
+\noindent \textbf{Accreditation Expectations}
+As an accredited Landscape Architecture program
+LSU's Robert Reich School of Landscape Architecture (RRSLA) 
+must meet the accreditation requirements 
+as stated by the Landscape Architectural Accreditation
+Board (LAAB) to ensure RRSLA is meeting the expectations of the field. 
+The LAAB requires programs to provide digital copies 
+of student work as part of this process.
+Students in this course will be expected 
+to comply with the following requirements
+as 5\% of their course grade: 
+(1) Students must provide a course portfolio
+with work samples specified by the instructor 
+before the end of the grading period. 
+(2) Each student's course portfolio must be saved as 
+a single, high resolution PDF file with multiple pages. 
+(3) Files must follow the naming convention
+established by the school: department-coursenumber-semesteryear-username.pdf.
+Example: LA7075-F2020-baharmon.pdf.\\
+
+\noindent \textbf{Time Commitment Expectations}
+LSU's general policy states that for each credit hour, you (the student) should plan to
+spend at least two hours working on course related activities outside of class. Since this course is for three credit hours, you should expect to spend a minimum of six hours outside of class each week working on assignments for this course. For more information see: 
+\url{http://catalog.lsu.edu/content.php?catoid=12&navoid=822}.\\
+
+\noindent \textbf{LSU student code of conduct}
+The LSU student code of conduct explains student rights, excused absences, and what is expected of student behavior. Students are expected to understand this code:  \url{http://students.lsu.edu/saa/students/code}.\\ %Any violations of the LSU student code will be duly reported to the Dean of Students.\\
+
+\noindent \textbf{Disability Code}
+The University is committed to making reasonable efforts to assist individuals with disabilities in
+their efforts to avail themselves of services and programs offered by the University. To this end,
+Louisiana State University will provide reasonable accommodations for persons with
+documented qualifying disabilities. If you have a disability and feel you need accommodations in
+this course, you must present a letter to me from Disability Services in 115 Johnston Hall,
+indicating the existence of a disability and the suggested accommodations.\\
+
+\noindent \textbf{Academic Integrity}
+According to section 10.1 of the LSU Code of Student Conduct, ``A student may be charged with Academic Misconduct'' for a variety of offenses, including the following: unauthorized copying, collusion, or collaboration; ``falsifying'' data or citations; ``assisting someone in the commission or attempted commission of an offense''; and plagiarism, which is defined in section 10.1.H as a ``lack of appropriate citation, or the unacknowledged inclusion of someone else's words, structure, ideas, or data; failure to identify a source, or the submission of essentially the same work for two assignments without permission of the instructor(s).''\\
+
+\noindent \textbf{Plagiarism and Citation Method}
+Plagiarism is the ``lack of appropriate citation, or the unacknowledged inclusion of someone else's words, structure, ideas, or data; failure to identify a source, or the submission of essentially the same work for two assignments without permission of the instructor(s)'' (Sec. 10.1.H of the LSU Code of Student Conduct). As a student at LSU, it is your responsibility to refrain from plagiarizing the academic property of another and to utilize appropriate citation method for all coursework. In this class, it is recommended that you use Chicago Style author-date citations. Ignorance of the citation method is not an excuse for academic misconduct.\\
+
+\end{document}

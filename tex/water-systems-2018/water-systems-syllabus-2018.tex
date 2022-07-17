@@ -1,0 +1,661 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,article,oneside]{memoir}
+
+% packages
+\usepackage{org-preamble-xelatex}
+\usepackage{wallpaper}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+\usepackage{tikz}
+\usepackage{tikzpagenodes} 
+
+\AtBeginBibliography{\small}
+
+% Definitions
+\def\myauthor{Author}
+\def\mytitle{Title}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+\def\myaffiliation{Louisiana State University}
+\def\myaddress{309 Design}
+\def\myemail{baharmon@lsu.edu} 
+\def\myweb{https://baharmon.github.io/}
+\def\myphone{919.622.8414}
+\def\myversion{}
+\def\myrevision{}
+\def\myaffiliation{\ \\Louisiana State University}
+\def\myauthor{Brendan Harmon}
+\def\mykeywords{Landscape Architecture, Syllabus, Graduate}
+\def\mysubtitle{Syllabus}
+\def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 7031 |} \Large Water Studio} 
+
+% color
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+
+\makeatother
+
+\begin{document}
+
+\setlength\bibitemsep{0.75em}
+
+% fonts
+\defaultfontfeatures{}
+\defaultfontfeatures{Scale=MatchLowercase}         
+\setmainfont[Scale=1, Path = ../fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setsansfont[Scale=1, Path = ../fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setmonofont[Mapping=tex-text,Scale=0.8,Path = ../fonts/inconsolata/]{i}
+
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+\def\labelitemi{$\cdot$}
+\chapterstyle{article-4-sans}  
+
+
+\title{\LARGE \mytitle}
+\author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
+\date{Fall 2018 | Design 217\newline Monday, Wednesday, \& Friday \\ 1:30pm--5:30pm}
+\published{\,}
+
+% -------------------------------- COVER PAGE -------------------------------- 
+
+\pagenumbering{gobble}
+\globalcolor{black}
+\begin{tikzpicture}[remember picture,overlay]
+\fill[white] ([xshift=-0.75cm,yshift=4cm]current page text area.west) rectangle (6.25,5);
+\end{tikzpicture}
+\vspace*{-10em}
+\maketitle
+\ThisCenterWallPaper{1.1}{../images/amite.jpg} 
+\clearpage
+\globalcolor{black}
+
+% -------------------------------- DESCRIPTION -------------------------------- 
+
+\pagenumbering{arabic}
+\globalcolor{black}
+
+\vspace*{-10em}
+\maketitle
+
+\section{Course Description}
+%
+The Water Systems Studio
+is an introduction the design and restoration of hydrological systems.
+This studio will address the derelict gravel mines on the Amite River
+that have straightened the course of the river,
+increased erosion and sediment loads,
+and heightened flooding downriver.
+In this studio you will learn 
+how to map and analyze hydrological systems,
+how processes and forms interact,
+how to design processes as well as forms, and
+how to design for disturbed landscapes. \\
+
+% -------------------------------- SCHEDULE -------------------------------- 
+\section{Schedule}
+%
+\begin{table}[H]
+\begin{tabular}{l l @{\hskip 1cm} l l @{\hskip 1cm} l l}
+\small
+\vspace*{0.25cm}
+& \textbf{Amite Basin} && \textbf{Amite Mines}  && \textbf{Generative systems} \\
+\textbf{1} & Introduction & \textbf{6} & Inventory & \textbf{11} & Bioengineering \\
+\textbf{2} & Topography & \textbf{7} & Fabrication & \textbf{12} & Generative morphology \\
+\textbf{3} & Diagramming & \textbf{8} & Imagery & \textbf{13} & Spatial catalysts \\
+\textbf{4} & Hydrology & \textbf{9} & Flows & \textbf{14} & Physical simulation \\
+\textbf{5} & Selection & \textbf{10} & History & \textbf{15} & Generative design \\
+%
+\end{tabular}
+\end{table}
+
+%\clearpage
+
+% -------------------------------- SCHEDULE -------------------------------- 
+\vspace*{-6em} %\section{Course Schedule} 
+\begin{table}[H]
+\small
+\begin{tabular}{l r @{\hskip 0.1cm} l @{\hskip 0.5cm} l} 
+\\
+\textbf{Amite Basin} & \textbf{Project |} & Mapping the Amite \\
+\\
+08.20.2018 & \textbf{Studio |} & Introduction \\
+08.22.2018 & \textbf{Studio |} & Research \\
+08.24.2018 & \textbf{Site visit |} & Kayaking the Amite \\
+%
+08.27.2018 & \textbf{Studio |} & Topographic mapping\\
+08.29.2018 & \textbf{Review |} & Precedents \\
+08.31.2018 & \textbf{Lab |} & Mapping the mines \\
+%
+09.05.2018 & \textbf{Studio |} & Diagramming \\
+09.07.2018 & \textbf{Lab |} & Digital diagramming & \\
+%
+09.10.2018 & \textbf{Studio |} & Watershed modeling \\
+09.12.2018 & \textbf{Studio |} & Hydrological mapping \\
+09.15.2018 & \textbf{Lab |} & Digital painting \\
+09.15.2018 & \textbf{Workshop |} & Drone photogrammetry \\
+%
+09.17.2018 & \textbf{Tutorial |} & Suitability \\
+09.19.2018 & \textbf{Tutorial |} & Cartography \\
+09.21.2018 & \textbf{Review |} & Map review \\
+\\
+\textbf{Amite Mines} & \textbf{Project |} & Modeling the Amite \\
+\\
+09.24.2018 & \textbf{Site visit |} & Amite Gravel Mines \\
+09.26.2018 & \textbf{Studio |} & Inventory analysis \\
+09.28.2018 & \textbf{Studio |} & Site mapping \\
+%
+10.01.2018 & \textbf{Lab |} & CNC toolpaths \\
+10.03.2018 & \textbf{Lab |} & CNC milling \\
+%
+10.08.2018 & \textbf{Studio |} & Imagery acquisition\\ 
+10.10.2018 & \textbf{Studio |} & Imagery interpretation \\ 
+10.12.2018 & \textbf{Lab |} & Imagery analysis \\  
+%
+10.15.2018 & \textbf{Studio |} & Water flow \\
+10.17.2018 & \textbf{Studio |} & Sediment flow \\
+10.19.2018 & \textbf{Lab |} & Physical simulation \\
+%
+10.22.2018 & \textbf{Studio |} & Historical mapping \\
+10.24.2018 & \textbf{Studio |} & Production \\
+10.26.2018 & \textbf{Review |} & Modeling review \\
+\\
+\textbf{Gen. Systems} & \textbf{Project |} & Restoring the Amite \\
+\\
+10.29.2018 & \textbf{Site visit |} & LSU Center for River Studies \\
+10.31.2018 & \textbf{Studio |} & Bioengineering charrette \\
+11.02.2018 & \textbf{Studio |} & Bioengineering \\
+%
+11.05.2018 & \textbf{Studio |} & Restoration strategies \\
+11.07.2018 & \textbf{Studio |} & Landform design \\
+11.09.2018 & \textbf{Studio |} & Landform construction \\
+%
+11.12.2018 & \textbf{Studio |} & Process diagramming \\
+11.14.2018 & \textbf{Studio |} & Evolving landforms \\
+11.16.2018 & \textbf{Studio |} & Planting design \\
+%
+11.19.2018 & \textbf{Lab |} & Physical simulation \\
+%
+11.26.2018 & \textbf{Studio |} & Production \\
+11.28.2018 & \textbf{Studio |} & Production \\ 
+11.30.2018 & \textbf{Studio |} & Production \\
+\\
+& \textbf{Review |} & Final review \\
+%
+\end{tabular}
+\end{table}
+
+\clearpage
+
+%% -------------------------------- PHASE I -------------------------------- 
+%\section{Mapping the Amite} 
+%
+%\noindent \textbf{Kayaking the Amite}
+%We will rent kayaks from University Recreation
+%and kayak along the Amite 
+%with a team from Gulf Restoration Network. 
+%%Check out a Phantom DJI drone
+%%and Ricoh Theta 360 degree cameras from the
+%%LSU cxC Art+Design Studio. \\
+%\textbf{Date:} 08.24.2018 \\
+%
+%\noindent \textbf{Precedent studies}
+%Prepare a 15 minute presentation on 
+%the Sand Motor, 
+%the Renaturation of the River Aire, 
+%a case study from Prominski and Stokman's book River.Space.Design,
+%or another project of your choice. 
+%\textbf{Due:} 08.29.2018 \\
+%
+%\noindent \textbf{Drone Workshop}
+%Conduct a topographic survey with an unmanned aerial system (UAS)
+%at Hilltop Arboretum. 
+%After a morning theory session, 
+%survey the arboretum grounds with a drone,
+%and then use stereophotogrammetry to generate a digital surface model.
+%\textbf{Date:} 09.15.2018\\
+%
+%\noindent \textbf{Mapping the Amite}
+%Research and map the history and impact of mining on the river.
+%Your maps can include text, sectional drawings, 3D visualizations,
+%charts, and diagrams. 
+%Represent phenomena in both time and space. Be creative.
+%Based on your research, develop a site selection methodology
+%and pick site for restoration.
+%Present your method and site with a map and logic model diagram.
+%Finally create a digital painting expressing the most important
+%qualities of your research.
+%\textbf{Due:} 09.15.2018
+%
+%\begin{table}[H]
+%\begin{tabular}{l r @{\hskip 0.1cm} l @{\hskip 0.5cm} l} 
+%\\
+%\textbf{Amite Basin} & \textbf{Project |} & Mapping the Amite \\
+%\\
+%08.20.2018 & \textbf{Studio |} & Introduction \\
+%08.22.2018 & \textbf{Studio |} & Research \\
+%08.24.2018 & \textbf{Site visit |} & Kayaking the Amite \\
+%%
+%08.27.2018 & \textbf{Studio |} & Topographic mapping\\
+%08.29.2018 & \textbf{Review |} & Precedent studies \\
+%08.31.2018 & \textbf{Lab |} & Mapping the mines \\
+%%
+%09.05.2018 & \textbf{Studio |} & Diagramming \\
+%09.07.2018 & \textbf{Lab |} & Digital diagramming & \\
+%%
+%09.10.2018 & \textbf{Studio |} & Watershed modeling \\
+%09.12.2018 & \textbf{Studio |} & Hydrological mapping \\
+%09.15.2018 & \textbf{Lab |} & Digital painting \\
+%09.15.2018 & \textbf{Workshop |} & Drone photogrammetry \\
+%%
+%09.17.2018 & \textbf{Tutorial |} & Suitability \\
+%09.19.2018 & \textbf{Tutorial |} & Cartography \\
+%09.21.2018 & \textbf{Review |} & Map review \\
+%%
+%\end{tabular}
+%\end{table}
+%
+%\clearpage
+%
+%% -------------------------------- PHASE II -------------------------------- 
+%\section{Modeling the Amite} 
+%
+%\noindent \textbf{Amite Gravel Mines}
+%Visit gravel mines and degraded river banks on the Amite River.
+%Document the sites with sketches, photography, photospheres, and
+%imagery and video from drones.
+%Come prepared with sunscreen, sunglasses, insect repellent, and water.
+%Please bring sketchbooks, DSLR cameras,
+%a DJI Phantom drone, and Ricoh Theta 360 degree cameras.
+%\textbf{Due:} 09.24.2018 \\
+%
+%\noindent \textbf{Modeling the Amite}
+%Inventory, model, and represent the existing conditions
+%on your site in 2D and 3D.
+%Curate and present the data you collect during site visits.
+%Use GIS data and your site inventory
+%to develop a map or series maps that explore and represent your site.
+%Then you will you will model water and sediment flows across your site in GIS.
+%CNC mill a physical model in high density urethane foam
+%of your site from lidar data.
+%Use this model to develop a physical simulation of sediment flow
+%and landscape evolution to intuitively explore how the site may change.
+%\textbf{Due:} 10.26.2018
+%
+%\begin{table}[H]
+%\begin{tabular}{l r @{\hskip 0.1cm} l @{\hskip 0.5cm} l} 
+%\\
+%\textbf{Amite Mines} & \textbf{Project |} & Modeling the Amite \\
+%\\
+%09.24.2018 & \textbf{Site visit |} & Amite Gravel Mines \\
+%09.26.2018 & \textbf{Studio |} & Inventory analysis \\
+%09.28.2018 & \textbf{Studio |} & Site mapping \\
+%%
+%10.01.2018 & \textbf{Lab |} & CNC toolpaths \\
+%10.03.2018 & \textbf{Lab |} & CNC milling \\
+%%
+%10.08.2018 & \textbf{Studio |} & Imagery acquisition\\ 
+%10.10.2018 & \textbf{Studio |} & Imagery interpretation \\ 
+%10.12.2018 & \textbf{Lab |} & Imagery analysis \\  
+%%
+%10.15.2018 & \textbf{Studio |} & Water flow \\
+%10.17.2018 & \textbf{Studio |} & Sediment flow \\
+%10.19.2018 & \textbf{Lab |} & Physical simulation \\
+%%
+%10.22.2018 & \textbf{Studio |} & Historical mapping \\
+%10.24.2018 & \textbf{Studio |} & Production \\
+%10.26.2018 & \textbf{Review |} & Modeling review \\
+%%
+%\end{tabular}
+%\end{table}
+%
+%\clearpage
+%
+%% -------------------------------- PHASE III -------------------------------- 
+%\section{Generative Water Systems} 
+%
+%\noindent \textbf{LSU Center for River Studies}
+%Tour the LSU Center for River Studies
+%and see a physical simulation of sediment transport on
+%the Lower Mississippi River Physical Model.
+%\textbf{Date:} 10.29.2018\\
+%
+%\noindent \textbf{Restoring the Amite}
+%Design a plan to restore a degraded, abandoned mining site
+%on the Amite River.
+%Your design should consider and illustrate the process of restoration,
+%the funding for the project, and the phasing of the project.
+%Consider the cost of restoration, the cost of maintenance and management,
+%and sources of income or funding.
+%Consider its future use as for example
+%a recreational park for kayaking,
+%a nature reserve with bird watching,
+%or a sustainable development.
+%As a class develop a masterplan showing the relationship
+%between each of your sites.
+%Individually develop a site plan, other design drawings and diagrams,
+%a conceptual model, and a physical model.
+%\textbf{Due:} 11.30.2018
+%
+%\begin{table}[H]
+%\begin{tabular}{l r @{\hskip 0.1cm} l @{\hskip 0.5cm} l} 
+%\\
+%\textbf{Gen. Systems} & \textbf{Project |} & Restoring the Amite \\
+%\\
+%10.29.2018 & \textbf{Site visit |} & LSU Center for River Studies \\
+%10.31.2018 & \textbf{Studio |} & Bioengineering charrette \\
+%11.02.2018 & \textbf{Studio |} & Bioengineering \\
+%%
+%11.05.2018 & \textbf{Studio |} & Restoration strategies \\
+%11.07.2018 & \textbf{Studio |} & Landform design \\
+%11.09.2018 & \textbf{Studio |} & Landform construction \\
+%%
+%11.12.2018 & \textbf{Studio |} & Process diagramming \\
+%11.14.2018 & \textbf{Studio |} & Evolving landforms \\
+%11.16.2018 & \textbf{Studio |} & Planting design \\
+%%
+%11.19.2018 & \textbf{Lab |} & Physical simulation \\
+%%
+%11.26.2018 & \textbf{Studio |} & Production \\
+%11.28.2018 & \textbf{Studio |} & Production \\ 
+%11.30.2018 & \textbf{Studio |} & Production \\
+%\\
+%& \textbf{Review |} & Final review \\
+%%
+%\end{tabular}
+%\end{table}
+%
+%\clearpage
+
+% -------------------------------- Projects -------------------------------- 
+\section{Projects}
+
+\noindent \textbf{Mapping the Amite}
+Research and map the history and impact of mining on the river.
+Your maps can include text, sectional drawings, 3D visualizations,
+charts, and diagrams. 
+Represent phenomena in both time and space. Be creative.
+Based on your research, develop a site selection methodology
+and pick site for restoration.
+Present your method and site with a map and logic model diagram.
+Finally create a digital painting expressing the most important
+qualities of your research.
+\textbf{Due:} 09.15.2018 \\
+
+\noindent \textbf{Modeling the Amite}
+Inventory, model, and represent the existing conditions
+on your site in 2D and 3D.
+Curate and present the data you collect during site visits.
+Use GIS data and your site inventory
+to develop a map or series maps that explore and represent your site.
+Then you will you will model water and sediment flows across your site in GIS.
+CNC mill a physical model in high density urethane foam
+of your site from lidar data.
+Use this model to develop a physical simulation of sediment flow
+and landscape evolution to intuitively explore how the site may change.
+\textbf{Due:} 10.26.2018 \\
+
+\noindent \textbf{Restoring the Amite}
+Design a plan to restore a degraded, abandoned mining site
+on the Amite River.
+Your design should consider and illustrate the process of restoration,
+the funding for the project, and the phasing of the project.
+Consider the cost of restoration, the cost of maintenance and management,
+and sources of income or funding.
+Consider its future use as for example
+a recreational park for kayaking,
+a nature reserve with bird watching,
+or a sustainable development.
+As a class develop a masterplan showing the relationship
+between each of your sites.
+Individually develop a site plan, other design drawings and diagrams,
+a conceptual model, and a physical model.
+\textbf{Due:} 11.30.2018 \\
+
+% -------------------------------- Grading -------------------------------- 
+\section{Grading}
+%
+\begin{table}[H]
+%\small
+\begin{tabular}{l r}
+%
+Mapping the Amite & 33\% \\
+Modeling the Amite & 33\% \\
+Generative Water Systems & 33\% \\
+%
+\end{tabular}
+\end{table}
+
+\clearpage
+
+% -------------------------------- Visits -------------------------------- 
+\section{Site Visits}
+
+\noindent \textbf{Kayaking the Amite}
+We will rent kayaks from University Recreation
+and kayak along the Amite 
+with a team from Gulf Restoration Network. 
+Check out a Phantom DJI drone
+and Ricoh Theta 360 degree cameras from the
+LSU cxC Art+Design Studio. 
+\textbf{Date:} 08.24.2018 \\
+
+\noindent \textbf{Precedent studies}
+Prepare a 15 minute presentation on 
+the Sand Motor, 
+the Renaturation of the River Aire, 
+a case study from Prominski and Stokman's book River.Space.Design,
+or another project of your choice. 
+\textbf{Due:} 08.29.2018 \\
+
+\noindent \textbf{Amite Gravel Mines}
+Visit gravel mines and degraded river banks on the Amite River.
+Document the sites with sketches, photography, photospheres, and
+imagery and video from drones.
+Come prepared with sunscreen, sunglasses, insect repellent, and water.
+Please bring sketchbooks, DSLR cameras,
+a DJI Phantom drone, and Ricoh Theta 360 degree cameras.
+\textbf{Due:} 09.24.2018 \\
+
+\noindent \textbf{LSU Center for River Studies}
+Tour the LSU Center for River Studies
+and see a physical simulation of sediment transport on
+the Lower Mississippi River Physical Model.
+\textbf{Date:} 10.29.2018\\
+
+% -------------------------------- Workshop -------------------------------- 
+\section{Workshop}
+\noindent \textbf{Drone photogrammetry}
+Conduct a topographic survey with an unmanned aerial system (UAS)
+at Hilltop Arboretum. 
+After a morning theory session, 
+survey the arboretum grounds with a drone,
+and then use stereophotogrammetry to generate a digital surface model.
+\textbf{Date:} 09.15.2018 \\
+
+
+\clearpage
+
+% -------------------------------- Readings -------------------------------- 
+\section{Readings}
+\renewcommand*{\bibfont}{\normalsize} %\small
+\vspace*{0.5cm}
+\nocite{*}
+\setlength\bibitemsep{1\baselineskip}
+\printbibliography[heading=none]
+
+\clearpage
+
+% -------------------------------- Reports -------------------------------- 
+\section{Reports}
+%
+\href{http://www.dtic.mil/dtic/tr/fulltext/u2/a471731.pdf}{Fluvial Instability and Channel Degradation of Amite River} \\
+%
+\href{http://www.amitebasin.org/2016Flood/August\%202016\%20Flood\%20Preliminary\%20Report.pdf}{August 2016 Flood Report Amite River Basin} \\
+%
+\href{https://data.femadata.com/Region6/mitigation/riskmap/lawrs/reports/LaWRS_Main\%20Report.pdf}{Louisiana Watershed Resiliency Study} \\
+%
+\href{https://data.femadata.com/Region6/mitigation/riskmap/lawrs/reports/Amite_Appendix.pdf}{Louisiana Watershed Resiliency Study: Amite Watershed} \\
+%
+\href{http://www.mvn.usace.army.mil/Portals/56/docs/PD/Projects/AmiteEcoSys/DEQ.pdf}{Amite River Sand and Gravel Mine Reclamation Demonstration Project} \\
+%
+\href{https://minerals.usgs.gov/mrerp/reports/Mossa-04HQGR0178/Mossa_Report1-04HQGR0178.pdf}{River Sand and Gravel Mining Data} \\
+
+% -------------------------------- Handbooks -------------------------------- 
+\section{Handbooks}
+%
+\href{http://go.usa.gov/BvNA}{USDA Stream Restoration} \\
+%
+\href{https://www.nrcs.usda.gov/wps/portal/nrcs/detailfull/national/water/manage/restoration/?cid=stelprdb1043244}{Federal Stream Corridor Restoration Handbook} \\
+%
+\href{https://semspub.epa.gov/work/01/554360.pdf}{Stream Restoration: A Natural Channel Design Handbook} \\
+%
+\href{http://www.mvr.usace.army.mil/Portals/48/docs/Environmental/EMP/HREP/EMP_Documents/2012\%20UMRR\%20EMP\%20Environmental\%20Design\%20Handbook\%20-\%20FINAL.pdf}{USACE Environmental Design Handbook} \\
+%
+\href{https://www.nrcs.usda.gov/Internet/FSE_PLANTMATERIALS/publications/idpmcpu116.pdf}{The Practical Streambank Bioengineering Guide} \\
+%
+\href{https://efotg.sc.egov.usda.gov/references/public/IA/Chapter-16_Streambank_and_Shoreline_Protection.pdf}{USDA NRCS Streambank and Shoreline Protection} \\
+%
+\href{https://coloradoewp.com/sites/coloradoewp.com/files/document/pdf/2016\%20National\%20Large\%20Wood\%20Manual.pdf}{National Large Wood Manual} \\
+%
+\href{https://www.fema.gov/pdf/about/regions/regionx/Engineering_With_Nature_Web.pdf}{FEMA Engineering with Nature} \\
+
+% -------------------------------- Software -------------------------------- 
+\section{Software}
+GRASS GIS | \url{https://grass.osgeo.org/} \\
+ArcGIS | \url{https://www.esri.com/} \\
+Rhinoceros | \url{https://www.rhino3d.com/}\\
+RhinoTerrain | \url{http://www.rhinoterrain.com/}\\
+RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}\\
+
+\clearpage
+
+% -------------------------------- Supplies -------------------------------- 
+\section{Supplies}
+\begin{multicols}{2}
+\raggedright
+\small
+%
+\textbf{Required supplies}
+\begin{itemize}
+\item 12" roll of tracing paper
+\item 24"+ roll of tracing paper
+\item Alcohol based makers
+\item Felt tipped pens
+\item Pencils and erasers
+\item Masking tape \& drafting dots
+\item Scale bar
+\item Drafting triangles
+\item Straight-edge cutting ruler 
+\item Knives \& blades
+\end{itemize}
+
+\textbf{Optional supplies}
+\begin{itemize}
+\item 24"+ roll of vellum
+\item 10-20 lbs Kinetic Sand
+\item Aluminum or bronze ingots
+\item Polystyrene foam
+\item Spray adhesive
+\end{itemize}
+
+\textbf{College supplies}
+\begin{itemize}
+\item High density urethane foam
+\item Kinetic sand
+\item Wax
+\item Propane torches
+\end{itemize}
+
+%\textbf{College equipment}
+%\begin{itemize}
+%\item Digital camera
+%\item 360 degree camera
+%\item DJI Phantom drone
+%\item Manfrotto tripod
+%\item Kayak
+%\end{itemize}
+
+\end{multicols}
+
+% -------------------------------- Terminology -------------------------------- 
+\section{Terminology}
+\begin{multicols}{2}
+\raggedright
+\small
+%
+\textbf{Bioenginnering}
+\begin{itemize}
+\item Bioengineering
+\item Engineering with Nature
+\item Gabion
+\item Fascine
+\item Willow mattress
+\item Pollard
+\item Coppice
+\item Short rotation coppice
+\end{itemize}
+
+\textbf{Geomorphology}
+\begin{itemize}
+\item Braided channel
+\item Meander
+\item Oxbow Lake
+\item Point bar
+\item Slip-off slope
+\item Cut bank
+\item Knickpoint
+\item RUSLE
+\item Unit Stream Power
+\item Mannings
+\item Spoil
+\item Pit
+\end{itemize}
+
+\textbf{Data types}
+\begin{itemize}
+\item Vector
+\item Raster
+\item Point cloud
+\item Mesh
+%\item Triangulated irregular network
+\end{itemize}
+%
+\end{multicols}
+
+\clearpage
+
+% -------------------------------- Policies -------------------------------- 
+\section{Policies}
+
+\noindent \textbf{Time Commitment Expectations}
+LSU's general policy states that for each credit hour, you (the student) should plan to
+spend at least two hours working on course related activities outside of class. Since this course is for three credit hours, you should expect to spend a minimum of six hours outside of class each week working on assignments for this course. For more information see: 
+\url{http://catalog.lsu.edu/content.php?catoid=12&navoid=822}.\\
+
+\noindent \textbf{LSU student code of conduct}
+The LSU student code of conduct explains student rights, excused absences, and what is expected of student behavior. Students are expected to understand this code:  \url{http://students.lsu.edu/saa/students/code}.\\ %Any violations of the LSU student code will be duly reported to the Dean of Students.\\
+
+\noindent \textbf{Disability Code}
+The University is committed to making reasonable efforts to assist individuals with disabilities in
+their efforts to avail themselves of services and programs offered by the University. To this end,
+Louisiana State University will provide reasonable accommodations for persons with
+documented qualifying disabilities. If you have a disability and feel you need accommodations in
+this course, you must present a letter to me from Disability Services in 115 Johnston Hall,
+indicating the existence of a disability and the suggested accommodations.\\
+
+\noindent \textbf{Academic Integrity}
+According to section 10.1 of the LSU Code of Student Conduct, ``A student may be charged with Academic Misconduct'' for a variety of offenses, including the following: unauthorized copying, collusion, or collaboration; ``falsifying'' data or citations; ``assisting someone in the commission or attempted commission of an offense''; and plagiarism, which is defined in section 10.1.H as a ``lack of appropriate citation, or the unacknowledged inclusion of someone else's words, structure, ideas, or data; failure to identify a source, or the submission of essentially the same work for two assignments without permission of the instructor(s).''\\
+
+\noindent \textbf{Plagiarism and Citation Method}
+Plagiarism is the ``lack of appropriate citation, or the unacknowledged inclusion of someone else's words, structure, ideas, or data; failure to identify a source, or the submission of essentially the same work for two assignments without permission of the instructor(s)'' (Sec. 10.1.H of the LSU Code of Student Conduct). As a student at LSU, it is your responsibility to refrain from plagiarizing the academic property of another and to utilize appropriate citation method for all coursework. In this class, it is recommended that you use Chicago Style author-date citations. Ignorance of the citation method is not an excuse for academic misconduct.
+
+\end{document}

@@ -1,0 +1,508 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%%%  Syllabus template for use with style files at http://kjhealy.github.com/latex-custom-kjh
+%%%  Kieran Healy
+
+\documentclass[11pt,article,oneside]{memoir}
+
+% packages
+\usepackage{org-preamble-xelatex}
+\usepackage{wallpaper}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+
+\AtBeginBibliography{\small}
+
+% Definitions
+\def\myauthor{Author}
+\def\mytitle{Title}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+\def\myaffiliation{Louisiana State University}
+\def\myaddress{309 Design}
+\def\myemail{baharmon@lsu.edu} 
+\def\myweb{https://baharmon.github.io/}
+\def\myphone{919.622.8414}
+\def\myversion{}
+\def\myrevision{}
+\def\myaffiliation{\ \\Louisiana State University}
+\def\myauthor{Brendan Harmon}
+\def\mykeywords{Landscape Architecture, Syllabus, Graduate}
+\def\mysubtitle{Syllabus}
+\def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 7032 |} \Large Generative Landscapes} 
+
+% color
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+% begin
+\begin{document}
+
+\setlength\bibitemsep{0.5em}
+
+% fonts
+\defaultfontfeatures{}
+\defaultfontfeatures{Scale=MatchLowercase}         
+\setmainfont[Scale=1, Path = ../fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setsansfont[Scale=1, Path = ../fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setmonofont[Mapping=tex-text,Scale=0.8,Path = ../fonts/inconsolata/]{i}
+
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+\def\labelitemi{$\cdot$}
+\chapterstyle{article-4-sans}  
+
+\title{\LARGE \mytitle}
+\author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
+\date{Spring 2020. Design 217.\newline Tuesday \& Thursday 1:00am--3:30pm.}
+\published{\,}
+
+% -------------------------------- COVER PAGE -------------------------------- 
+
+\pagenumbering{gobble}
+\globalcolor{black}
+\vspace*{-10em}
+\maketitle
+\ThisCenterWallPaper{1}{../images/yosemite.png}
+\clearpage
+
+
+% -------------------------------- DESCRIPTION -------------------------------- 
+
+\pagenumbering{arabic}
+\globalcolor{black}
+
+\vspace*{-10em}
+\maketitle
+
+\section{Course Description}
+
+This course is an introduction to 
+generative design for landscape architects.
+%
+In this course you will learn how to 
+algorithmically model landscapes,
+numerically simulate physcial processes 
+like the flow of water and sediment,
+and digitally fabricate landforms.  
+%
+You will conduct surveys with drones and terrestrial lidar,
+parametrically model variations on landfroms and planting
+using visual programming, 
+and photorealistically render 
+your algorithmic planting patterns.
+%photorealistically render your algorithmic planting patterns,
+% and computer numerical control (CNC) mill your landforms. 
+%
+Through this course you will 
+learn creative approaches to digital design 
+and apply emerging technologies to landscape architecture.
+\\
+
+\noindent\textbf{Keywords}
+\begin{multicols}{3}
+\raggedright
+\small
+\begin{itemize}
+\item Algorithmic architecture
+\item Generative design
+\item Parametric modeling
+\item Visual programming
+\item Digital fabrication
+\item 3D rendering
+\item Lidar analytics
+\item Drone photogrammetry
+\item Geospatial programming
+\end{itemize}
+\end{multicols}
+
+% -------------------------------- SCHEDULE -------------------------------- 
+\section{Topics}
+
+\begin{table}[H]
+\begin{tabular}{l @{\hskip 0.75cm} l @{\hskip 1.9cm} l}
+\textbf{Lidar \& drone analytics} & \textbf{Algorithmic design} & \textbf{Generative design}\\
+\end{tabular}
+\end{table}
+%
+\vspace*{-1em}
+%
+\begin{table}[H]
+\small
+\begin{tabular}{l l l l l l}
+\small
+\textbf{1} & Design week & \textbf{6} & Geospatial modeling & \textbf{11} & Spring break\\
+\textbf{2} & Alphabet \& algorithm & \textbf{7} & Geospatial programming & \textbf{12} & Waveforms\\
+\textbf{3} & Drone surveying & \textbf{8} & Generative design & \textbf{13} & Point clouds\\
+\textbf{4} & Drone photogrammetry & \textbf{9} & Parametric modeling & \textbf{14} & 3D rendering\\
+\textbf{5} & Lidar analytics & \textbf{10} & Spring Break & \textbf{15} & Geospatial analytics\\
+\end{tabular}
+\end{table}
+
+%\begin{table}[H]
+%\small
+%\begin{tabular}{l l l l l l}
+%\small
+%\textbf{1} & Design week & \textbf{6} & Geospatial modeling & \textbf{11} & Spring break\\
+%\textbf{2} & Alphabet \& algorithm & \textbf{7} & Geospatial programming & \textbf{12} & Attractors\\
+%\textbf{3} & Drone surveying & \textbf{8} & Generative design & \textbf{13} & 3D rendering\\
+%\textbf{4} & Drone photogrammetry & \textbf{9} & Families of form & \textbf{14} & CNC milling\\
+%\textbf{5} & Lidar analytics & \textbf{10} & Parametric modeling & \textbf{15} & Geospatial analytics\\
+%\end{tabular}
+%\end{table}
+
+\clearpage
+
+% -------------------------------- SCHEDULE -------------------------------- 
+\section{Course Schedule}
+
+\begin{table}[H]
+\begin{tabular}{l r @{\hskip 0.1cm} l @{\hskip 0.4cm} l}
+\\
+\textbf{Drones}\\
+\\
+01.14.2020 & \textbf{Studio |} & Introduction \\
+%01.16.2020 & \textbf{Studio |} & Design week \\
+%
+01.21.2020 & \textbf{Lecture |} & Coastal drones & \textbf{Tour:} Ctr.~for River Studies \\
+01.23.2020 & \textbf{Reading |} &Alphabet \& algorithm & \textbf{Essay:} Generative design \\
+%
+01.28.2020 & \textbf{Tutorial |} & Intro to drones \\
+01.30.2020 & \textbf{Fieldwork |} & Drone survey \\
+%
+02.04.2020 & \textbf{Tutorial |} & Drone photogrammetry I \\
+02.06.2020 & \textbf{Tutorial |} & Drone photogrammetry II & \textbf{Project:} Drone survey \\
+%
+02.11.2020 & \textbf{Fieldwork |} & Lidar survey \\
+02.13.2020 & \textbf{Tutorial |} & Point cloud processing & \textbf{Project:} Lidar survey \\
+\\
+%\textbf{Generative}\\
+\textbf{Algorithmic}\\
+\\
+02.18.2020 & \textbf{Tutorial |} & Terrain modeling \\
+02.20.2020 & \textbf{Tutorial |} & Hydrologic simulation \\
+%
+%02.22.2020 & \textbf{Holiday |} & Mardi Gras\\
+02.27.2020 & \textbf{Tutorial |} & Geospatial programming I\\
+%
+03.03.2020 & \textbf{Tutorial |} & Geospatial programming II \\
+03.05.2020 & \textbf{Tutorial |} & Generative design\\ 
+%
+03.10.2020 & \textbf{Tutorial |} & Parametric planting \\
+03.12.2020 & \textbf{Tutorial |} & Parametric landforms \\%& \textbf{Project:} Families of form \\
+\\
+%\textbf{Fabrication}\\
+\textbf{Generative}\\
+\\
+%03.17.2020 & \textbf{Tutorial |} & Parametric planting \\
+%03.19.2020 & \textbf{Studio |} & Workday\\
+%
+%03.24.2020 & \textbf{Holiday |} & Spring break \\
+%03.26.2020 & \textbf{Holiday |} & Spring break \\
+%
+%03.31.2020 & \textbf{Tutorial |} & Attractors \\
+03.31.2020 & \textbf{Tutorial |} & Waveforms I \\
+04.02.2020 & \textbf{Tutorial |} & Waveforms II \\
+%
+%04.07.2020 & \textbf{Tutorial |} & CNC milling I \\
+%04.09.2020 & \textbf{Lab |} & CNC milling II \\
+04.07.2020 & \textbf{Tutorial |} & Parametric point clouds I \\
+04.09.2020 & \textbf{Tutorial |} & Parametric point clouds II \\
+%
+04.14.2020 & \textbf{Tutorial |} & 3D rendering I \\
+04.16.2020 & \textbf{Tutorial |} & 3D rendering II \\
+%
+04.21.2020 & \textbf{Tutorial |} & Geospatial analytics I\\
+04.23.2020 & \textbf{Tutorial |} & Geospatial analytics II \\%& \textbf{Project:} Parametric landscapes \\ 
+%
+%04.28.2020 & \textbf{Studio |} & Workday\\
+04.30.2020 & \textbf{Review |} & Final review & \textbf{Project:} Parametric landscapes \\ 
+%
+\end{tabular}
+\end{table}
+
+
+\clearpage
+
+% -------------------------------- Projects -------------------------------- 
+\section{Projects}
+
+\noindent \textbf{Essay}
+Read Mario Carpo's \emph{The Alphabet and Algorithm}
+and Nick Dunn's \emph{Digital Fabrication in Architecture}
+and then in reponse write a 500-word critical essay.
+How have digital tools and processes transformed 
+the practice of landscape architecture
+and how do you think they will shape 
+the future of the discipline?
+How do you envision using
+digital design tools and processes in your work?
+
+\nocite{*} \printbibliography[keyword=intro, heading=none]
+
+\noindent \textbf{Drone survey}
+Conduct a topographic survey 
+of the landform at Hilltop Arboretum
+with an unmanned aerial system (UAS)
+and automated ground control points. 
+Use photogrammetry to generate a point cloud, 
+digital surface model, and orthophoto.
+%Upload your point cloud to Sketchfab.
+\\
+
+\noindent \textbf{Lidar survey}
+Conduct a terrestrial lidar survey of the 
+LSU College of Art \& Design quad. 
+%Upload your point cloud to Sketchfab.
+\\
+
+%\noindent \textbf{Families of form}
+%Use visual programming to 
+%simulate water and sediment flow 
+%for a series of nine landform variations
+%in a virtual flume. 
+%\\
+
+\noindent \textbf{Parametric landscapes}
+Use visual programming to parametrically model
+nine variations of landforms and planting. 
+Photorealistically 3D render your variants
+with 3D trees, shrubs, and grasses. 
+%CNC mill models of your nine landforms
+%in high density urethane foam.
+%Upload your landform models to Sketchab.
+
+
+\nocite{*} \printbibliography[keyword=grasshopper, heading=none]
+
+% -------------------------------- Online -------------------------------- 
+\section{Online}
+
+Lectures will be recorded and posted 
+on Youtube and Vimeo. 
+Please watch before class.
+During class we will have discussions 
+hosted on our Discord server. 
+Please check our Basecamp project
+for news and announcements.\\
+
+\noindent
+Basecamp | \url{https://basecamp.com/}\\
+Discord | \url{https://discord.gg/NBSdJRS}\\
+Youtube | \url{https://www.youtube.com/channel/UCmGEF6Bf1SO92oLQoGCPDTw}\\
+Vimeo | \url{https://vimeo.com/baharmon}\\
+% Course website | \url{http://baharmon.github.io/courses}\\
+
+% -------------------------------- Software -------------------------------- 
+\section{Software}
+%\begin{multicols}{2}
+%\raggedright
+%Agisoft Metashape | \url{https://www.agisoft.com/} \\
+%CloudCompare | \url{https://www.danielgm.net/cc/} \\
+%Sketchfab | \url{https://sketchfab.com/} \\
+%GRASS GIS | \url{https://grass.osgeo.org/} \\
+%ArcGIS | \url{https://www.esri.com/} \\
+%Rhinoceros | \url{https://www.rhino3d.com/}\\
+%Grasshopper | \url{http://grasshopper3d.com/}\\
+%RhinoTerrain | \url{http://www.rhinoterrain.com/}\\
+%RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}\\
+%Thea Render | \url{https://www.thearender.com/}\\
+%\end{multicols}
+
+Agisoft Metashape | \url{https://www.agisoft.com/} \\
+CloudCompare | \url{https://www.danielgm.net/cc/} \\
+Sketchfab | \url{https://sketchfab.com/} \\
+GRASS GIS | \url{https://grass.osgeo.org/} \\
+ArcGIS | \url{https://www.esri.com/} \\
+Rhinoceros | \url{https://www.rhino3d.com/}\\
+Grasshopper | \url{http://grasshopper3d.com/}\\
+RhinoTerrain | \url{http://www.rhinoterrain.com/}\\
+RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}\\
+Thea Render for Rhino | \url{https://www.thearender.com/}\\
+
+\section{Plugins}
+r.skyview | \url{https://grass.osgeo.org/grass78/manuals/addons/r.skyview.html}\\
+attr{\"a}ctor | \url{https://www.food4rhino.com/app/attractor}\\
+Pufferfish | \url{https://www.food4rhino.com/app/pufferfish}\\
+Nudibranch | \url{https://www.food4rhino.com/app/nudibranch}\\
+Docofossor | \url{https://www.food4rhino.com/app/docofossor}\\
+Bison | \url{https://www.bison.la/}\\
+
+% -------------------------------- Resources -------------------------------- 
+\section{Resources}
+Intro to GRASS GIS | \url{https://ncsu-geoforall-lab.github.io/grass-intro-workshop/}\\
+Hydrology in GRASS GIS | \url{https://grasswiki.osgeo.org/wiki/Hydrological_Sciences}\\
+Grasshopper Primer | \url{http://grasshopperprimer.com}\\
+
+%% -------------------------------- Certificate -------------------------------- 
+%\section{Graduate Certificate in GIS}
+%This course counts as an applied topics course for the 
+%Graduate Certificate in Geographic Information Science.
+%The Graduate Certificate in Geographic Information Science at LSU 
+%is a 12 credit hour standalone certificate. 
+%%with courses offered 
+%%in the Department of Geography and Anthropology, 
+%%College of Art and Design, 
+%%Department of Economics, 
+%%School of the Coast and Environment, 
+%%Department of Civil and Environmental Engineering, 
+%%and Department of Computer Science. 
+%For more information about the Graduate Certificate in GIS visit: 
+%\url{http://ga.lsu.edu/gis-certificate/}.
+
+% -------------------------------- Grading -------------------------------- 
+\section{Grading}
+%
+\begin{table}[H]
+%\small
+\begin{tabular}{l r @{\hskip 2cm} l @{\hskip 0.5cm} l}
+%\begin{tabular}{l l}
+%
+Essay & 5\% & Parametric landscapes & 50\% \\
+Drone survey & 20\% & Course portfolio & 5\% \\
+Lidar survey & 20\% \\
+%
+\end{tabular}
+\end{table}
+
+% -------------------------------- Readings -------------------------------- 
+\section{Readings}
+\vspace*{0.5cm}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+\printbibliography[heading=none]
+\clearpage
+
+% --------------------------------Network --------------------------------
+\section{Network drives}
+
+\noindent
+Windows: \verb|\\desn-knox.lsu.edu\Landscape-Classes\LA7032-S2020| \\
+
+\noindent
+Macs: \verb|smb://desn-knox.lsu.edu/Landscape-Classes/LA7032-S2020| \\
+
+% -------------------------------- Terminology -------------------------------- 
+\section{Terminology}
+\begin{multicols}{2}
+\raggedright
+\small
+%
+\textbf{Digital design}
+\begin{itemize}
+\item Mass customization
+\item Generative design
+\item Parametric modeling
+\item Performative design
+\item Algorithm
+%\item Scripting
+\end{itemize}
+
+\textbf{Spatial data}
+\begin{itemize}
+\item Raster \& Vector
+\item Array
+\item Point cloud
+\item Mesh
+\item Triangulated irregular network (TIN)
+%\item Discrete \& continuous data
+\item Plain text
+\item Comma separated values (CSV)
+\item Integer \& floating point numbers
+\item Quadtree \& octree
+\item Non-uniform rational basis spline (NURBS)
+\end{itemize}
+
+\textbf{Geospatial}
+\begin{itemize}
+\item Geographic information system (GIS)
+\item Digital terrain model (DTM)
+\item Digital elevation model (DEM)
+\item Digital surface model (DSM)
+\item Lidar
+\item Unmanned aerial system (UAS)
+\item Structure from motion (SfM)
+\item Delaunay triangulation
+\item Interpolation
+%\item Bilinear interpolation
+%\item Nearest neighbors
+\item Regularized spline with tension (RST)
+\item Map algebra
+%\item Null value
+%\item Least cost path (LCP)
+%\item Resampling
+%\item Image classification
+\end{itemize}
+
+\textbf{3D rendering}
+\begin{itemize}
+\item Ray tracing
+\item Diffuse shading
+\item Texture map
+\item Particle system
+\item Head mounted display (HMD)
+\item Cave automatic virtual environment (CAVE)
+\end{itemize}
+
+\textbf{Digital fabrication}
+\begin{itemize}
+\item 3D printing
+\item Computer numeric control (CNC)
+\item Collet \& Bit
+\item High density urethane (HDU)
+\item Medium density fiberboard (MDF)
+\end{itemize}
+
+%\textbf{Geomorphology}
+%\begin{itemize}
+%\item Watershed
+%\item Single flow direction (SFD/D8)
+%\item Multiple flow direction (MFD)
+%\item Revised Universal Soil Loss Equation (RUSLE)
+%\item Unit Stream Power-based Erosion Deposition (USPED)
+%\item Simulated Water Erosion (SIMWE)
+%\item R-factor
+%\item Mannings
+%\item Sediment mass density
+%\item Gully
+%\item Knickpoint
+%\end{itemize}
+%
+\end{multicols}
+
+\clearpage
+
+% -------------------------------- Policies -------------------------------- 
+\section{Policies}
+
+\noindent \textbf{Time Commitment Expectations}
+LSU's general policy states that for each credit hour, you (the student) should plan to
+spend at least two hours working on course related activities outside of class. Since this course is for three credit hours, you should expect to spend a minimum of six hours outside of class each week working on assignments for this course. For more information see: 
+\url{http://catalog.lsu.edu/content.php?catoid=12&navoid=822}.\\
+
+\noindent \textbf{LSU student code of conduct}
+The LSU student code of conduct explains student rights, excused absences, and what is expected of student behavior. Students are expected to understand this code:  \url{http://students.lsu.edu/saa/students/code}.\\ %Any violations of the LSU student code will be duly reported to the Dean of Students.\\
+
+\noindent \textbf{Disability Code}
+The University is committed to making reasonable efforts to assist individuals with disabilities in
+their efforts to avail themselves of services and programs offered by the University. To this end,
+Louisiana State University will provide reasonable accommodations for persons with
+documented qualifying disabilities. If you have a disability and feel you need accommodations in
+this course, you must present a letter to me from Disability Services in 115 Johnston Hall,
+indicating the existence of a disability and the suggested accommodations.\\
+
+\noindent \textbf{Academic Integrity}
+According to section 10.1 of the LSU Code of Student Conduct, ``A student may be charged with Academic Misconduct'' for a variety of offenses, including the following: unauthorized copying, collusion, or collaboration; ``falsifying'' data or citations; ``assisting someone in the commission or attempted commission of an offense''; and plagiarism, which is defined in section 10.1.H as a ``lack of appropriate citation, or the unacknowledged inclusion of someone else's words, structure, ideas, or data; failure to identify a source, or the submission of essentially the same work for two assignments without permission of the instructor(s).''\\
+
+\noindent \textbf{Plagiarism and Citation Method}
+Plagiarism is the ``lack of appropriate citation, or the unacknowledged inclusion of someone else's words, structure, ideas, or data; failure to identify a source, or the submission of essentially the same work for two assignments without permission of the instructor(s)'' (Sec. 10.1.H of the LSU Code of Student Conduct). As a student at LSU, it is your responsibility to refrain from plagiarizing the academic property of another and to utilize appropriate citation method for all coursework. In this class, it is recommended that you use Chicago Style author-date citations. Ignorance of the citation method is not an excuse for academic misconduct.
+
+\end{document}

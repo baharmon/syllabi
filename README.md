@@ -34,6 +34,8 @@
 [2020](generative-fabrication-syllabus-2020.pdf?raw=true)
 * **LA 4008 & 7051** Ecological Robotics:
 [2021](ecological-robotics-syllabus-2021.pdf?raw=true)
+* **LA 4008 & 7051** Generative Fabrication:
+[2022](generative-fabrication-syllabus-2022.pdf?raw=true)
 
 ## Electives
 

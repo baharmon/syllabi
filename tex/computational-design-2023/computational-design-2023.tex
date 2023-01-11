@@ -13,6 +13,8 @@
 \usepackage{multicol}
 \usepackage{enumitem}
 \setlist[itemize]{leftmargin=*}
+\usepackage{tikz}
+\usepackage{tikzpagenodes} 
 
 \AtBeginBibliography{\small}
 
@@ -35,7 +37,7 @@
 \def\myauthor{Brendan Harmon}
 \def\mykeywords{Landscape Architecture, Syllabus, Graduate}
 \def\mysubtitle{Syllabus}
-\def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 7032 |} \Large Generative Landscapes} 
+\def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 7032 |} \Large Computational Design} 
 
 % color
 \makeatletter
@@ -51,8 +53,8 @@
 
 % fonts
 \defaultfontfeatures{}
-\defaultfontfeatures{Scale=MatchLowercase}         
-\setmainfont{Lato Regular}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont{IBM Plex Sans}
 \setmonofont[Scale=0.8]{IBM Plex Mono}
 
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
@@ -61,16 +63,19 @@
 
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
-\date{Spring 2021. \newline Tuesday \& Thursday 1:00am--3:30pm.} %Design 217.
+\date{Spring 2023. \newline Tuesday \& Thursday \newline 1:00--3:30pm \newline Design 308}
 \published{\,}
 
 % -------------------------------- COVER PAGE -------------------------------- 
 
 \pagenumbering{gobble}
 \globalcolor{black}
+\begin{tikzpicture}[remember picture,overlay]
+\fill[white] ([xshift=-1cm,yshift=3.5cm]current page text area.west) rectangle (7.25,2);
+\end{tikzpicture}
 \vspace*{-10em}
 \maketitle
-\ThisCenterWallPaper{1}{../images/random-grove.jpg}
+\ThisCenterWallPaper{1.1}{../images/rosedown-landscape.jpg}
 \clearpage
 
 
@@ -85,22 +90,19 @@
 \section{Course Description}
 
 This course is an introduction to 
-generative design for landscape architects.
-%
+computational design for landscape architects.
 In this course you will learn how to 
 algorithmically model landscapes,
 numerically simulate physical processes 
 like the flow of water and sediment,
 and digitally fabricate landforms.  
-%
 You will conduct surveys with drones and terrestrial lidar,
-parametrically model variations on landforms and planting
+use point clouds to model and visualize terrain and planting,
+parametrically model variations on landscapes
 using visual programming, 
-photorealistically render your algorithmic planting patterns,
-and computer numerical control (CNC) mill your landforms. 
-%
-Through this course you will 
-learn creative approaches to digital design 
+and computer numerical control (CNC) mill landforms. 
+In this course you will 
+learn creative approaches to computational design 
 and apply emerging technologies to landscape architecture.
 \\
 
@@ -112,12 +114,12 @@ and apply emerging technologies to landscape architecture.
 \item Algorithmic architecture
 \item Generative design
 \item Parametric modeling
-\item Visual programming
-\item Digital fabrication
-\item 3D rendering
+\item Laser scanning
 \item Lidar analytics
 \item Drone photogrammetry
-\item Geospatial programming
+\item Visual programming
+\item Digital fabrication
+\item Robotics
 \end{itemize}
 \end{multicols}
 
@@ -125,8 +127,8 @@ and apply emerging technologies to landscape architecture.
 \section{Schedule}
 
 \begin{table}[H]
-\begin{tabular}{l @{\hskip 0.75cm} l @{\hskip 1.9cm} l}
-\textbf{Generative Design} & \textbf{Digital Fabrication} & \textbf{Drone Analytics}\\
+\begin{tabular}{l @{\hskip 2.1cm} l @{\hskip 2cm} l}
+\textbf{Sensing} & \textbf{Computation} & \textbf{Fabrication}\\
 \end{tabular}
 \end{table}
 %
@@ -136,45 +138,50 @@ and apply emerging technologies to landscape architecture.
 \small
 \begin{tabular}{l l l l l l}
 \small
-\textbf{1} & Design week & \textbf{6} & Parametric landforms I & \textbf{11} & Drone analytics I\\
-\textbf{2} & Parametric paving & \textbf{7} & Parametric landforms II & \textbf{12} & Drone analytics II\\
-\textbf{3} & Parametric planting I & \textbf{8} & Parametric landforms III & \textbf{13} & Geo.~programming I\\
-\textbf{4} & Parametric planting II & \textbf{9} & Digital fabrication I & \textbf{14} & Geo.~programming II\\
-\textbf{5} & Parametric planting III & \textbf{10} & Digital fabrication II & \textbf{15} & Geo.~programming III\\
+\textbf{1} & Laser scanning  I  & \textbf{6} & Visual programming & \textbf{11} & Grading\\
+\textbf{2} & Laser scanning  II & \textbf{7} & Randomness & \textbf{12} & Digital Fabrication I\\
+\textbf{3} & Drones I & \textbf{8} & Noise & \textbf{13} & Digital Fabrication II\\
+\textbf{4} & Drones II  & \textbf{9} & Attractors & \textbf{14} & Robotics\\
+\textbf{5} & Terrain Analysis & \textbf{10} & Physics & \textbf{15} & Robotic Wall\\
+
 \end{tabular}
 \end{table}
 
 \clearpage
 
-% -------------------------------- Online -------------------------------- 
-\section{Online}
+% -------------------------------- Logistics -------------------------------- 
+\section{Logistics}
 
-This class will be taught online.
+During our regularly scheduled class period
+on Tuesdays and Thursdays from 1:00-3:50 pm,
+we will meet in person, while also posting
+on our Discord server at \url{https://discord.gg/6kNkp2PSsu}.
+The discord server will be used for posting
+announcements, student work in progress, 
+reading responses, projects, and troubleshooting. 
 All course content including tutorials, lectures, and datasets
 will be published on the course website at:
-\url{https://baharmon.github.io/generative-landscapes}.
-During our regularly scheduled class period on Tuesdays and Thursdays from 1:00-3:50 pm,
-we will meet on our Discord server at \url{https://discord.gg/wvDneQJ48b}
-for live streamed lectures, discussions, student presentations, and troubleshooting. 
-Before each class please complete the assigned tutorial and homework. 
-Post your tutorial work, homework, and project work 
-on your channel on the Discord server. 
-Each tutorial will have a page on the course website
-and a video on both Youtube and Vimeo. \\
+\url{https://baharmon.github.io/generative-landscapes}.\\
 
 \noindent
 Course website | \url{https://baharmon.github.io/generative-landscapes}\\
-Discord | \url{https://discord.gg/wvDneQJ48b}\\
-Youtube | \url{https://www.youtube.com/c/BrendanHarmon}\\
-Vimeo | \url{https://vimeo.com/showcase/7356098}\\
+Discord | \url{https://discord.gg/6kNkp2PSsu}\\
+Youtube | \url{https://www.youtube.com/@baharmon}\\
 
-% -------------------------------- Projects -------------------------------- 
+% -------------------------------- Essays -------------------------------- 
+\section{Essays}
 
-\section{Projects}
+\noindent \textbf{Essay: Cloudism}
+Read Christophe Girot's essay \emph{Cloudism}
+and write a 500-word critical response. 
+What potential do you see in point clouds
+as a medium for landscape architecture?
+What makes point clouds different
+from other modes of representation?
+\nocite{*} \printbibliography[keyword=a, heading=none]
 
-\noindent \textbf{Essay}
+\noindent \textbf{Essay: The Alphabet and Algorithm}
 Read Mario Carpo's \emph{The Alphabet and Algorithm}
-%and Nick Dunn's \emph{Digital Fabrication in Architecture}
 and then in response write a 500-word critical essay.
 How have digital tools and processes transformed 
 the practice of landscape architecture
@@ -183,62 +190,40 @@ the future of the discipline?
 How do you envision using
 digital design tools and processes in your work?
 
-\nocite{*} \printbibliography[keyword=intro, heading=none]
+\nocite{*} \printbibliography[keyword=b, heading=none]
 
-\noindent \textbf{Paving Matrix}
-Use visual programming to generate
-a matrix of 16 algorithmically generated paving patterns.
-\\
+% -------------------------------- Projects -------------------------------- 
+\section{Projects}
 
-\noindent \textbf{Planting Matrix}
-Use visual programming to generate
-a matrix of 16 algorithmically generated planting patterns.
-\\
-
-\noindent \textbf{Landform Matrix}
-Use visual programming to generate
-a matrix of 16 algorithmically generated landforms.
-\\
-
-\noindent \textbf{3D Printed Landform}
-3D print an algorithmically generated landform.
-\\
-
-\noindent \textbf{CNC Milled Landforms}
-CNC mill and thermoform a family of  16 algorithmically generated landforms.
+\noindent \textbf{Point Cloud Library}
+Use laser scanning to capture a library of plants as point clouds. 
+Publish the point cloud to the web in an interactive viewer.
 \\
 
 \noindent \textbf{Drone Survey}
 Conduct a topographic survey 
 of the landform at Hilltop Arboretum
-with a drone and automated ground control points. 
-Use photogrammetry to generate a point cloud, 
-digital surface model, and orthophoto.
+with a drone.
+Use real-time kinematic GNSS
+to establish ground control points. 
+Use structure-from-motion photogrammetry 
+to generate a point cloud, 
+digital surface model, 
+and orthophoto.
 \\
 
-\noindent \textbf{Landform Analysis}
-Use geospatial programming to 
-calculate slope, solar irradiation,
-and water and sediment flows
-for 16 algorithmically generated landforms.
+\noindent \textbf{Parametric Landscape}
+Use visual programming to generate
+variations of landforms, plantings, and paving.
+CNC mill, thermoform, and then cast 
+an algorithmically generated terrain model.
 \\
 
-%\noindent \textbf{Rendered Landscape}
-
-%\noindent \textbf{Lidar survey}
-%Conduct a terrestrial lidar survey of the 
-%LSU College of Art \& Design quad. 
-%%Upload your point cloud to Sketchfab.
-%\\
-
-%\noindent \textbf{Parametric Landscapes}
-%Use visual programming to parametrically model
-%nine variations of landforms and planting. 
-%Photorealistically 3D render your variants
-%with 3D trees, shrubs, and grasses. 
-%%CNC mill models of your nine landforms
-%%in high density urethane foam.
-%%Upload your landform models to Sketchab.
+\noindent \textbf{Parametric Wall}
+Program a robotic arm to assemble 
+a parametrically modeled, curvilinear wall
+from bricks.
+\\
 
 % -------------------------------- Grading -------------------------------- 
 \section{Grading}
@@ -248,11 +233,9 @@ for 16 algorithmically generated landforms.
 \begin{tabular}{l r @{\hskip 2cm} l @{\hskip 0.5cm} l}
 %\begin{tabular}{l l}
 %
-Essay & 10\% & 3DP Landform & 10\% \\
-Paving Matrix & 10\% & CNC Landforms & 10\% \\
-Planting Matrix & 10\% & Drone Survey & 10\% \\
-Landform Matrix & 10\% & Landform Analysis & 10\% \\
-Tutorials & 15\% & Course Portfolio & 5\%\\
+Essays & 15\% &  Parametric Landscape & 20\% \\
+Point Cloud Library & 20\% & Parametric Wall & 20\%\\
+Drone Survey & 20\% & Course Portfolio & 5\% \\
 %
 \end{tabular}
 \end{table}
@@ -261,22 +244,23 @@ Tutorials & 15\% & Course Portfolio & 5\%\\
 \section{Software}
 
 Rhinoceros | \url{https://www.rhino3d.com/}\\
-Grasshopper | \url{http://grasshopper3d.com/}\\
+%Grasshopper | \url{http://grasshopper3d.com/}\\
 %RhinoTerrain | \url{http://www.rhinoterrain.com/}\\
-RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}\\
-Thea Render for Rhino | \url{https://www.thearender.com/}\\
-Agisoft Metashape | \url{https://www.agisoft.com/}\\
-%CloudCompare | \url{https://www.danielgm.net/cc/}\\
-%Sketchfab | \url{https://sketchfab.com/} \\
+%Thea Render for Rhino | \url{https://www.thearender.com/}\\
+Metashape | \url{https://www.agisoft.com/}\\
+Faro Scene | \url{https://www.faro.com/}\\
+CloudCompare | \url{https://www.danielgm.net/cc/}\\
 GRASS GIS | \url{https://grass.osgeo.org/}\\
+QGIS | \url{https://www.qgis.org/}\\
 %ArcGIS | \url{https://www.esri.com/}\\
-Python | \url{https://www.python.org/}\\
+%Python | \url{https://www.python.org/}\\
 
 \section{Plugins}
 Snapping Gecko | \url{https://www.food4rhino.com/app/snappinggecko}\\
-Noise 4D | \url{https://www.food4rhino.com/app/4d-noise}\\
-Elefront | \url{https://www.food4rhino.com/app/elefront}\\
+Bitmap+ | \url{https://www.food4rhino.com/en/app/bitmap}\\
 Docofossor | \url{https://www.food4rhino.com/app/docofossor}\\
+RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}\\
+%Elefront | \url{https://www.food4rhino.com/app/elefront}\\
 %Bison | \url{https://www.bison.la/}\\
 
 % -------------------------------- Resources -------------------------------- 
@@ -300,106 +284,95 @@ Hydrology in GRASS GIS | \url{https://grasswiki.osgeo.org/wiki/Hydrological_Scie
 \setlength\bibitemsep{0.65\baselineskip}
 \printbibliography[keyword=recommended, heading=none]
 
-% --------------------------------Network --------------------------------
-\section{Network drives}
-
-\noindent
-Windows: \verb|\\desn-knox.lsu.edu\Landscape-Classes\LA7032-S2020| \\
-
-\noindent
-Macs: \verb|smb://desn-knox.lsu.edu/Landscape-Classes/LA7032-S2020| \\
-
-\clearpage
-
-% -------------------------------- Terminology -------------------------------- 
-\section{Terminology}
-\begin{multicols}{2}
-\raggedright
-\small
-%
-\textbf{Digital design}
-\begin{itemize}
-\item Mass customization
-\item Generative design
-\item Parametric modeling
-\item Performative design
-\item Algorithm
-%\item Scripting
-\end{itemize}
-
-\textbf{Spatial data}
-\begin{itemize}
-\item Raster \& Vector
-\item Array
-\item Point cloud
-\item Mesh
-\item Triangulated irregular network (TIN)
-%\item Discrete \& continuous data
-\item Plain text
-\item Comma separated values (CSV)
-\item Integer \& floating point numbers
-\item Quadtree \& octree
-\item Non-uniform rational basis spline (NURBS)
-\end{itemize}
-
-\textbf{Geospatial}
-\begin{itemize}
-\item Geographic information system (GIS)
-\item Digital terrain model (DTM)
-\item Digital elevation model (DEM)
-\item Digital surface model (DSM)
-\item Lidar
-\item Unmanned aerial system (UAS)
-\item Structure from motion (SfM)
-\item Delaunay triangulation
-\item Interpolation
-%\item Bilinear interpolation
-%\item Nearest neighbors
-\item Regularized spline with tension (RST)
-\item Map algebra
-%\item Null value
-%\item Least cost path (LCP)
-%\item Resampling
-%\item Image classification
-\end{itemize}
-
-\textbf{3D rendering}
-\begin{itemize}
-\item Ray tracing
-\item Diffuse shading
-\item Texture map
-\item Particle system
-\item Head mounted display (HMD)
-\item Cave automatic virtual environment (CAVE)
-\end{itemize}
-
-\textbf{Digital fabrication}
-\begin{itemize}
-\item 3D printing
-\item Computer numeric control (CNC)
-\item Collet \& Bit
-\item High density urethane (HDU)
-\item Medium density fiberboard (MDF)
-\end{itemize}
-
-%\textbf{Geomorphology}
+%% -------------------------------- Terminology -------------------------------- 
+%\section{Terminology}
+%\begin{multicols}{2}
+%\raggedright
+%\small
+%%
+%\textbf{Digital design}
 %\begin{itemize}
-%\item Watershed
-%\item Single flow direction (SFD/D8)
-%\item Multiple flow direction (MFD)
-%\item Revised Universal Soil Loss Equation (RUSLE)
-%\item Unit Stream Power-based Erosion Deposition (USPED)
-%\item Simulated Water Erosion (SIMWE)
-%\item R-factor
-%\item Mannings
-%\item Sediment mass density
-%\item Gully
-%\item Knickpoint
+%\item Mass customization
+%\item Generative design
+%\item Parametric modeling
+%\item Performative design
+%\item Algorithm
+%%\item Scripting
 %\end{itemize}
 %
-\end{multicols}
-
-\clearpage
+%\textbf{Spatial data}
+%\begin{itemize}
+%\item Raster \& Vector
+%\item Array
+%\item Point cloud
+%\item Mesh
+%\item Triangulated irregular network (TIN)
+%%\item Discrete \& continuous data
+%\item Plain text
+%\item Comma separated values (CSV)
+%\item Integer \& floating point numbers
+%\item Quadtree \& octree
+%\item Non-uniform rational basis spline (NURBS)
+%\end{itemize}
+%
+%\textbf{Geospatial}
+%\begin{itemize}
+%\item Geographic information system (GIS)
+%\item Digital terrain model (DTM)
+%\item Digital elevation model (DEM)
+%\item Digital surface model (DSM)
+%\item Lidar
+%\item Unmanned aerial system (UAS)
+%\item Structure from motion (SfM)
+%\item Delaunay triangulation
+%\item Interpolation
+%%\item Bilinear interpolation
+%%\item Nearest neighbors
+%\item Regularized spline with tension (RST)
+%\item Map algebra
+%%\item Null value
+%%\item Least cost path (LCP)
+%%\item Resampling
+%%\item Image classification
+%\end{itemize}
+%
+%\textbf{3D rendering}
+%\begin{itemize}
+%\item Ray tracing
+%\item Diffuse shading
+%\item Texture map
+%\item Particle system
+%\item Head mounted display (HMD)
+%\item Cave automatic virtual environment (CAVE)
+%\end{itemize}
+%
+%\textbf{Digital fabrication}
+%\begin{itemize}
+%\item 3D printing
+%\item Computer numeric control (CNC)
+%\item Collet \& Bit
+%\item High density urethane (HDU)
+%\item Medium density fiberboard (MDF)
+%\end{itemize}
+%
+%%\textbf{Geomorphology}
+%%\begin{itemize}
+%%\item Watershed
+%%\item Single flow direction (SFD/D8)
+%%\item Multiple flow direction (MFD)
+%%\item Revised Universal Soil Loss Equation (RUSLE)
+%%\item Unit Stream Power-based Erosion Deposition (USPED)
+%%\item Simulated Water Erosion (SIMWE)
+%%\item R-factor
+%%\item Mannings
+%%\item Sediment mass density
+%%\item Gully
+%%\item Knickpoint
+%%\end{itemize}
+%%
+%\end{multicols}
+%
+%\clearpage
 
 % -------------------------------- Policies -------------------------------- 
 \section{Policies}
@@ -410,7 +383,10 @@ spend at least two hours working on course related activities outside of class. 
 \url{http://catalog.lsu.edu/content.php?catoid=12&navoid=822}.\\
 
 \noindent \textbf{LSU student code of conduct}
-The LSU student code of conduct explains student rights, excused absences, and what is expected of student behavior. Students are expected to understand this code:  \url{http://students.lsu.edu/saa/students/code}.\\ %Any violations of the LSU student code will be duly reported to the Dean of Students.\\
+The LSU student code of conduct explains student rights, excused absences, and what is expected of student behavior. Students are expected to understand this code:  \url{http://students.lsu.edu/saa/students/code}.\\ 
+%Any violations of the LSU student code will be duly reported to the Dean of Students.\\
+
+\clearpage
 
 \noindent \textbf{Disability Code}
 The University is committed to making reasonable efforts to assist individuals with disabilities in
@@ -425,8 +401,7 @@ According to section 10.1 of the LSU Code of Student Conduct, ``A student may be
 
 \noindent \textbf{Plagiarism and Citation Method}
 Plagiarism is the ``lack of appropriate citation, or the unacknowledged inclusion of someone else's words, structure, ideas, or data; failure to identify a source, or the submission of essentially the same work for two assignments without permission of the instructor(s)'' (Sec. 10.1.H of the LSU Code of Student Conduct). As a student at LSU, it is your responsibility to refrain from plagiarizing the academic property of another and to utilize appropriate citation method for all coursework. In this class, it is recommended that you use Chicago Style author-date citations. Ignorance of the citation method is not an excuse for academic misconduct.
-
-\clearpage
+\\
 
 \noindent \textbf{Accreditation Expectations}
 As an accredited Landscape Architecture program
@@ -446,6 +421,6 @@ before the end of the grading period.
 a single, high resolution PDF file with multiple pages. 
 (3) Files must follow the naming convention
 established by the school: department-coursenumber-semesteryear-username.pdf.
-Example: LA7032-S2021 -baharmon.pdf.\\
+Example: LA7032-S2023 -baharmon.pdf.\\
 
 \end{document}

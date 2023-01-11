@@ -5,23 +5,26 @@
 ## Courses
 
 * **LA 4201 & 7055** GIS for Designers:
-[2019](gis-for-designers-syllabus-2019.pdf?raw=true) &
-[2020](gis-for-designers-syllabus-2020.pdf?raw=true) &
-[2021](gis-for-designers-syllabus-2021.pdf?raw=true)
+[2019](gis-for-designers-syllabus-2019.pdf?raw=true),
+[2020](gis-for-designers-syllabus-2020.pdf?raw=true),
+[2021](gis-for-designers-syllabus-2021.pdf?raw=true), &
+[2022](gis-for-designers-syllabus-2022.pdf?raw=true)
 [:octocat:](https://baharmon.github.io/gis-for-designers)
 * **LA 2101 & 7102** Digital Landscapes:
 [2018](digital-landscapes-syllabus-2018.pdf?raw=true),
 [2019](digital-landscapes-syllabus-2019.pdf?raw=true),
 [2020](digital-landscapes-syllabus-2020.pdf?raw=true),
-[2021](digital-landscapes-syllabus-2021.pdf?raw=true), &
-[2022](digital-landscapes-syllabus-2022.pdf?raw=true)
+[2021](digital-landscapes-syllabus-2021.pdf?raw=true),
+[2022](digital-landscapes-syllabus-2022.pdf?raw=true), &
+[2023](digital-landscapes-syllabus-2023.pdf?raw=true), &
 [:octocat:](https://baharmon.github.io/digital-landscapes)
-* **LA 7032** Generative Landscapes:
+* **LA 7032** Computational Design:
 [2017](generative-landscapes-syllabus-2017.pdf?raw=true),
 [2018](generative-landscapes-syllabus-2018.pdf?raw=true),
 [2020](generative-landscapes-syllabus-2020.pdf?raw=true),
-[2021](generative-landscapes-syllabus-2021.pdf?raw=true), &
-[2022](generative-landscapes-syllabus-2022.pdf?raw=true)
+[2021](generative-landscapes-syllabus-2021.pdf?raw=true),
+[2022](generative-landscapes-syllabus-2022.pdf?raw=true), &
+[2023](computational-design-syllabus-2023.pdf?raw=true)
 [:octocat:](https://baharmon.github.io/generative-landscapes)
 
 ## Studios
@@ -45,13 +48,19 @@
 * **LA 7504** Ecological Robotics:
 [2020](ecological-robotics-syllabus-2020.pdf?raw=true)
 
----
+# Instructions
+To typeset these syllabi,
+install a TeX distribution,
+install Git and Git LFS,
+clone the GitHub repository,
+install the fonts Lato and Plex,
+set the bibtex engine to Biber,
+and use XeLaTeX as the typesetting engine.
 
-## License
-Open educational materials licensed CC BY-SA 4.0
-by Brendan Harmon.
+# License
+Open educational materials licensed CC BY-SA 4.0 by Brendan Harmon.
 The license does not apply to logos, fonts, linked material, data, quotations,
 or reprinted images by other authors which may have different licenses.
-The fonts used in this repository are licensed under the SIL Open Font License
-by their authors. The syllabi is based on a latex template by Kieran Healy
-hosted at https://github.com/kjhealy/latex-custom-kjh.
+Lato and Plex are licensed under the SIL Open Font License by their authors.
+The syllabi is based on a latex template by Kieran Healy hosted at
+https://github.com/kjhealy/latex-custom-kjh.

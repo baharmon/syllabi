@@ -1,0 +1,318 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,article,oneside]{memoir}
+
+% packages
+\usepackage{org-preamble-xelatex}
+\usepackage{wallpaper}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+
+\AtBeginBibliography{\small}
+
+% Definitions
+\def\myauthor{Author}
+\def\mytitle{Title}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+\def\myaffiliation{Louisiana State University}
+\def\myaddress{309 Design}
+\def\myemail{baharmon@lsu.edu} 
+\def\myweb{https://baharmon.github.io/}
+\def\myphone{919.622.8414}
+\def\myversion{}
+\def\myrevision{}
+\def\myaffiliation{\ \\Louisiana State University}
+\def\myauthor{Brendan Harmon}
+\def\mykeywords{Landscape Architecture, Syllabus, Graduate}
+\def\mysubtitle{Syllabus}
+\def\mytitle{\includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf}\\
+[0.1cm]{\Large Bonnet Carré National Park} \\ 
+[-0.2cm]{\normalfont \normalsize LA 4008 \& LA 7051}} 
+
+% color
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+% begin
+\begin{document}
+
+\setlength\bibitemsep{0.5em}
+
+% fonts
+\defaultfontfeatures{}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont{IBM Plex Sans}
+\setmonofont[Scale=0.8]{IBM Plex Mono}
+
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+\def\labelitemi{$\cdot$}
+\chapterstyle{article-4-sans}  
+
+\title{\LARGE \mytitle}
+\author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
+\date{Fall 2023 Design 225.\newline Monday, Wednesday, \& Friday\newline 1:30pm--5:20pm.}
+\published{\,}
+
+% -------------------------------- COVER PAGE -------------------------------- 
+
+\pagenumbering{gobble}
+\globalcolor{black}
+\begin{tikzpicture}[remember picture,overlay]
+\fill[white] ([xshift=-1cm,yshift=3.5cm]current page text area.west) rectangle (7.25,2);
+\end{tikzpicture}
+\vspace*{-10em}
+\maketitle
+\ThisCenterWallPaper{1.1}{../images/bonnet-carre-spillway.jpg}
+\clearpage
+
+
+% -------------------------------- DESCRIPTION -------------------------------- 
+
+\pagenumbering{arabic}
+\globalcolor{black}
+
+\vspace*{-10em}
+\maketitle
+
+\section{Course Description}
+
+This studio reimagines the Bonnet Carré Spillway
+and other control structures along the Mississippi River
+as a new national park.
+%
+The spillway is a dystopian landscape,
+flanked by chemical plants and refineries, 
+that was engineered to control the river
+and reduce the risk of catastrophic flooding.
+%
+The Bonnet Carré National Park
+would memorialize and problematize the cultural legacy
+of these landscapes as infrastructure
+-- as plantations, industrial sites, and flood control systems.
+%
+This studio will explore
+the site's history as a landscape of enslaved labor, 
+the erasure of African American burial grounds,
+the adjacent refineries and manufacturing,
+the infrastructure of flood control,
+the on-site economies, 
+and the dynamic hydrology, ecology, and geomorphology
+of the spillway. 
+%
+The design of the park should address themes such as
+otherness,
+the control of nature, 
+and the aesthetics of infrastructure.
+
+%\noindent\textbf{Keywords}
+%\begin{multicols}{3}
+%\raggedright
+%\small
+%\begin{itemize}
+%\end{itemize}
+%\end{multicols}
+
+% -------------------------------- SCHEDULE -------------------------------- 
+\section{Schedule}
+
+%\begin{table}[H]
+%\begin{tabular}{l l l l l l}
+%\small
+%\textbf{1-5}  & Research  & \textbf{6-10} & Planning & \textbf{11-15} & Design\\
+%\end{tabular}
+%\end{table}
+
+\noindent
+\begin{minipage}[t]{0.32\linewidth}
+\textbf{1-5} \quad Research
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\linewidth}
+\textbf{6-10} \quad Planning
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\linewidth}
+\textbf{11-15} \quad Design
+\end{minipage}
+
+% -------------------------------- Software -------------------------------- 
+
+\section{Software}
+
+Google Earth Pro | \url{https://www.google.com/earth/versions}\\
+QGIS | \url{https://www.qgis.org}\\
+ArcGIS Pro | \url{https://www.esri.com}\\
+AutoCAD | \url{https://www.autodesk.com/products/autocad}\\
+Rhinoceros | \url{https://www.rhino3d.com}\\
+RhinoTerrain | \url{http://www.rhinoterrain.com}\\
+Docofossor | \url{https://www.food4rhino.com/en/app/docofossor}\\
+RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}\\
+
+% -------------------------------- Projects -------------------------------- 
+\section{Projects}
+
+\paragraph{Research}
+Study the cultural, economic, infrastructural, and environmental history of the site.
+Deliverables include a 1900 x 927 px presentation
+and an ARCH D poster. 
+Choose one of the following topics to investigate in-depth:
+\\
+
+\noindent
+%Topics:\\
+\begin{minipage}[t]{0.32\linewidth}
+\textbf{Environmental}
+\begin{itemize}[label=\raisebox{0.2ex}{\small$\bullet$}]
+\item Geomorphology
+\item Ecology
+\item Hydrology
+\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\linewidth}
+\textbf{Infrastructural}
+\begin{itemize}[label=\raisebox{0.2ex}{\small$\bullet$}]
+\item Flood control
+\item Diversions
+\item Economy
+\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\linewidth}
+\textbf{Cultural}
+\begin{itemize}[label=\raisebox{0.2ex}{\small$\bullet$}]
+\item History
+\item Cultural landscape
+\item Pop culture
+\end{itemize}
+\end{minipage}
+ 
+\paragraph{Planning}
+Develop a vision for the national park
+that addresses the environmental, infrastructural, and cultural legacy
+of the Bonnet Carré Spillway and other control structures on the Mississippi River.
+Compile a GIS database, 
+prepare a CAD drawing,
+draw an illustrative masterplan, 
+and build a physical model of the site.
+Deliverables include 
+a CNC-machined model, 
+a 1900 x 927 px presentation,
+and ARCH D posters
+with research, maps, diagrams, and a masterplan. 
+
+\paragraph{Design}
+Design the landscape, architecture, and interpretation 
+for the national park,
+focusing on the Bonnet Carré Spillway site. 
+Deliverables include 
+a project statement, 
+a physical model,
+a 1900 x 927 px presentation,
+and ARCH D posters
+with research, maps, diagrams, a masterplan, a site plan,
+sections, perspectives, and details including signage.
+
+% -------------------------------- Grading -------------------------------- 
+\section{Grading}
+
+\noindent
+\begin{minipage}[t]{0.225\linewidth}
+Research: \enspace 30\%
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.225\linewidth}
+Planning: \enspace 30\%
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.225\linewidth}
+Design: \enspace 35\%
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.225\linewidth}
+Portfolio: \enspace 5\%
+\end{minipage}
+
+% -------------------------------- Resources -------------------------------- 
+\section{Resources}
+NOAA Digital Coast | \url{https://coast.noaa.gov/dataviewer}\\
+OpenTopography | \url{https://opentopography.org}\\
+
+\clearpage
+
+% -------------------------------- Readings -------------------------------- 
+\section{Required Readings}
+\vspace*{0.5cm}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+\printbibliography[keyword=required, heading=none]
+
+% -------------------------------- Readings -------------------------------- 
+\section{Recommended Readings}
+\vspace*{0.5cm}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+\printbibliography[keyword=recommended, heading=none]
+
+%\clearpage
+
+% -------------------------------- Policies -------------------------------- 
+\section{Policies}
+
+\paragraph{Time Commitment Expectations}
+LSU's general policy states that for each credit hour,  students should plan to
+spend at least two hours working on course related activities outside of class. Since this course is for six credit hours, you should expect to spend a minimum of twelve hours outside of class each week working on assignments for this course. For more information see: 
+\url{http://catalog.lsu.edu/content.php?catoid=12&navoid=822}.
+
+\paragraph{LSU student code of conduct}
+The LSU student code of conduct explains student rights, excused absences, and what is expected of student behavior. Students are expected to understand this code:  \url{http://students.lsu.edu/saa/students/code}.
+%Any violations of the LSU student code will be duly reported to the Dean of Students.\\
+
+\paragraph{Disability Code}
+The University is committed to making reasonable efforts to assist individuals with disabilities in
+their efforts to avail themselves of services and programs offered by the University. 
+Louisiana State University will provide reasonable accommodations for persons with
+documented qualifying disabilities. If you have a disability and feel you need accommodations in
+this course, you must present a letter to me from Disability Services %in 115 Johnston Hall,
+indicating the existence of a disability and the suggested accommodations.
+
+\paragraph{Academic Integrity}
+According to section 10.1 of the LSU Code of Student Conduct, ``A student may be charged with Academic Misconduct'' for a variety of offenses, including the following: unauthorized copying, collusion, or collaboration; ``falsifying'' data or citations; ``assisting someone in the commission or attempted commission of an offense''; and plagiarism, which is defined in section 10.1.H as a ``lack of appropriate citation, or the unacknowledged inclusion of someone else's words, structure, ideas, or data; failure to identify a source, or the submission of essentially the same work for two assignments without permission of the instructor(s).''
+
+\paragraph{Plagiarism and Citation Method}
+Plagiarism is the ``lack of appropriate citation, or the unacknowledged inclusion of someone else's words, structure, ideas, or data; failure to identify a source, or the submission of essentially the same work for two assignments without permission of the instructor(s)'' (Sec. 10.1.H of the LSU Code of Student Conduct). As a student at LSU, it is your responsibility to refrain from plagiarizing the academic property of another and to use the appropriate citation method for all coursework. In this class, the Chicago Style of author-date citation is recommended. %Ignorance of the citation method is not an excuse for academic misconduct.
+
+\paragraph{Accreditation Expectations}
+As an accredited program
+LSU's Robert Reich School of Landscape Architecture
+must meet the accreditation requirements 
+as stated by the Landscape Architectural Accreditation
+Board (LAAB) to ensure that the school 
+is meeting the expectations of the field. 
+The LAAB requires programs to provide digital copies 
+of student work as part of this process.
+Students in this course will be expected 
+to comply with the following requirements
+as 5\% of their course grade: 
+(1) Students must provide a course portfolio
+with work samples specified by the instructor 
+before the end of the grading period. 
+(2) Each student's course portfolio must be saved as 
+a single, high resolution PDF file with multiple pages. 
+(3) Files must follow the naming convention
+established by the school: department-coursenumber-semesteryear-username.pdf.
+Example: LA7051-F2023-baharmon.pdf.\\
+
+\end{document}

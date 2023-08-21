@@ -1,0 +1,276 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,article,oneside]{memoir}
+
+% packages
+\usepackage{org-preamble-xelatex}
+\usepackage{wallpaper}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+\usepackage{tikz}
+\usepackage{tikzpagenodes} 
+
+\AtBeginBibliography{\small}
+
+% Definitions
+\def\myauthor{Author}
+\def\mytitle{Title}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+\def\myaffiliation{Louisiana State University}
+\def\myaddress{309 Design}
+\def\myemail{baharmon@lsu.edu} 
+\def\myweb{https://baharmon.github.io/}
+\def\myphone{919.622.8414}
+\def\myversion{}
+\def\myrevision{}
+\def\myaffiliation{\ \\Louisiana State University}
+\def\myauthor{Brendan Harmon}
+\def\mykeywords{Landscape Architecture, Syllabus, Graduate}
+\def\mysubtitle{Syllabus}
+\def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 7201 |} \Large Research Methods} 
+
+% color
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+% begin
+\begin{document}
+
+\setlength\bibitemsep{0.5em}
+
+% fonts
+\defaultfontfeatures{}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont{IBM Plex Sans}
+\setmonofont[Scale=0.8]{IBM Plex Mono}
+
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+\def\labelitemi{$\cdot$}
+\chapterstyle{article-4-sans}  
+
+\title{\LARGE \mytitle}
+\author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
+\date{Spring 2023. \newline Tuesday \& Thursday \newline 1:30--2:50pm \newline Design 308}
+\published{\,}
+
+% -------------------------------- COVER PAGE -------------------------------- 
+
+%\pagenumbering{gobble}
+%\globalcolor{black}
+%\begin{tikzpicture}[remember picture,overlay]
+%\fill[white] ([xshift=-1cm,yshift=3.5cm]current page text area.west) rectangle (7.25,2);
+%\end{tikzpicture}
+%\vspace*{-10em}
+%\maketitle
+%\ThisCenterWallPaper{1.1}{../images/}
+%\clearpage
+
+
+% -------------------------------- DESCRIPTION -------------------------------- 
+
+\pagenumbering{arabic}
+\globalcolor{black}
+
+\vspace*{-10em}
+\maketitle
+
+\section{Course Description}
+This course is an introduction to
+research methods for landscape architects.
+% overview
+In this course you will 
+study design theories, 
+study a wide range of
+creative and scholarly research methods,
+learn fundamental research skills, 
+and develop your own research proposal.
+% workshop
+There will be guest lectures
+and a series of workshops
+introducing techniques such as 
+AI image generation and topic modeling.
+% projects
+Assignments include 
+keeping a research notebook,
+leading and participating in discussions, 
+writing a research proposal.
+
+% -------------------------------- Topics -------------------------------- 
+\section{Topics}
+Research-Creation
+\textbullet \space
+Participatory Design
+\textbullet \space
+Speculative Design
+\textbullet \space 
+Design Fiction
+\textbullet \space
+Afrofuturism
+\textbullet \space
+Chthulucene
+\textbullet \space
+Thing Theory
+\textbullet \space
+Object Oriented Ontology
+\textbullet \space
+Computational Design
+\textbullet \space
+Digital Fabrication
+\textbullet \space
+Biofabrication
+\textbullet \space
+Autonomous Construction
+\textbullet \space
+Data Science
+\textbullet \space
+Open Science
+\textbullet \space
+Spatial Science
+\textbullet \space
+Cartography
+\textbullet \space
+Remote Sensing
+\textbullet \space
+Cloudism
+\textbullet \space
+Artificial Intelligence
+\textbullet \space
+Neural Radiance Fields
+\textbullet \space
+Soundscapes
+\textbullet \space
+Computational Ecology
+\textbullet \space
+Fieldwork
+\textbullet \space
+Heritage Conservation
+\textbullet \space
+Archives
+\textbullet \space
+Aesthetics
+%\textbullet \space
+
+% -------------------------------- Projects -------------------------------- 
+\section{Assignments}
+
+\paragraph{Research Notebook}
+Keep a research notebook, updated weekly,
+with ideas,
+inspirations,
+discussions,
+notes,
+case studies,
+and sources.
+Record your thought process. 
+Draw as well as write!
+
+\paragraph{Discussions}
+Actively participate in weekly discussions
+on research methods. 
+Moderate one of the discussions.
+
+\paragraph{Research Proposal}
+Develop a research proposal over the course of the semester.
+Identify an interesting topic,
+formulate research questions,
+conduct a literature review,
+propose a methodology,
+and write a proposal. 
+
+% -------------------------------- Grading -------------------------------- 
+\section{Grading}
+%
+\begin{table}[H]
+%\small
+\begin{tabular}{l l @{\hskip 2cm} l @{\hskip 0.5cm} l @{\hskip 2cm} l @{\hskip 0.5cm} l}
+%\begin{tabular}{l l}
+%
+Notebook & 25\% & Discussions & 25\% &   Proposal & 40\% \\
+%
+\end{tabular}
+\end{table}
+
+% -------------------------------- Software -------------------------------- 
+
+\section{Software}
+\begin{minipage}{0.48\textwidth}
+Zotero | \url{https://www.zotero.org/}\\
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+Overleaf | \url{https://www.overleaf.com/}\\
+\end{minipage}
+
+% -------------------------------- Readings -------------------------------- 
+\section{Books}
+\vspace*{0.5cm}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+\printbibliography[type=book, heading=none]
+%\printbibliography[keyword=required, heading=none]
+
+% -------------------------------- Readings -------------------------------- 
+\section{Papers}
+\vspace*{0.5cm}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+\printbibliography[type=article, heading=none]
+
+% -------------------------------- Policies -------------------------------- 
+\section{Policies}
+
+\paragraph{Time Commitment Expectations}
+LSU's general policy states that for each credit hour, you (the student) should plan to
+spend at least two hours working on course related activities outside of class. Since this course is for three credit hours, you should expect to spend a minimum of six hours outside of class each week working on assignments for this course. For more information see: 
+\url{http://catalog.lsu.edu/content.php?catoid=12&navoid=822}.
+
+\paragraph{LSU student code of conduct}
+The LSU student code of conduct explains student rights, excused absences, and what is expected of student behavior. Students are expected to understand this code:  \url{http://students.lsu.edu/saa/students/code}.
+%Any violations of the LSU student code will be duly reported to the Dean of Students.
+
+
+\paragraph{Disability Code}
+The University is committed to making reasonable efforts to assist individuals with disabilities in
+their efforts to avail themselves of services and programs offered by the University. To this end,
+Louisiana State University will provide reasonable accommodations for persons with
+documented qualifying disabilities. If you have a disability and feel you need accommodations in
+this course, you must present a letter to me from Disability Services in 115 Johnston Hall,
+indicating the existence of a disability and the suggested accommodations.
+
+\paragraph{Academic Integrity}
+According to section 10.1 of the LSU Code of Student Conduct, ``A student may be charged with Academic Misconduct'' for a variety of offenses, including the following: unauthorized copying, collusion, or collaboration; ``falsifying'' data or citations; ``assisting someone in the commission or attempted commission of an offense''; and plagiarism, which is defined in section 10.1.H as a ``lack of appropriate citation, or the unacknowledged inclusion of someone else's words, structure, ideas, or data; failure to identify a source, or the submission of essentially the same work for two assignments without permission of the instructor(s).''
+
+\paragraph{Plagiarism and Citation Method}
+Plagiarism is the ``lack of appropriate citation, or the unacknowledged inclusion of someone else's words, structure, ideas, or data; failure to identify a source, or the submission of essentially the same work for two assignments without permission of the instructor(s)'' (Sec. 10.1.H of the LSU Code of Student Conduct). As a student at LSU, it is your responsibility to refrain from plagiarizing the academic property of another and to utilize appropriate citation method for all coursework. In this class, it is recommended that you use Chicago Style author-date citations. Ignorance of the citation method is not an excuse for academic misconduct.
+
+\paragraph{Expectations}
+As an accredited Landscape Architecture program
+LSU's Robert Reich School of Landscape Architecture (RRSLA) 
+must meet the accreditation requirements 
+as stated by the Landscape Architectural Accreditation
+Board (LAAB) to ensure RRSLA is meeting the expectations of the field. 
+The LAAB requires programs to provide digital copies 
+of student work as part of this process.
+Students in this course will be expected 
+to comply with the following requirements
+as 5\% of their course grade: 
+(1) Students must provide a course portfolio
+with work samples specified by the instructor 
+before the end of the grading period. 
+(2) Each student's course portfolio must be saved as 
+a single, high resolution PDF file with multiple pages. 
+(3) Files must follow the naming convention
+established by the school: department-coursenumber-semesteryear-username.pdf.
+Example: LA7201-F2023-baharmon.pdf.
+
+\end{document}

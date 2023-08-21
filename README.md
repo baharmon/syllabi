@@ -26,6 +26,8 @@
 [2022](generative-landscapes-syllabus-2022.pdf?raw=true), &
 [2023](computational-design-syllabus-2023.pdf?raw=true)
 [:octocat:](https://baharmon.github.io/generative-landscapes)
+* **LA 7201** Research Methods:
+[2023](research-methods-syllabus-2023.pdf?raw=true)
 
 ## Studios
 
@@ -39,12 +41,13 @@
 [2021](ecological-robotics-syllabus-2021.pdf?raw=true)
 * **LA 4008 & 7051** Generative Fabrication:
 [2022](generative-fabrication-syllabus-2022.pdf?raw=true)
+* **LA 4008 & 7051** Bonnet Carre National Park:
+[2023](bonnet-carre-syllabus-2023.pdf?raw=true)
 
 ## Electives
 
 * **DART 7003** Digital Culture Seminar:
 [2018](digital-culture-syllabus-2018.pdf?raw=true)
-<!--[:octocat:](https://github.com/baharmon/digital-culture-seminar)-->
 * **LA 7504** Ecological Robotics:
 [2020](ecological-robotics-syllabus-2020.pdf?raw=true)
 
@@ -62,5 +65,5 @@ Open educational materials licensed CC BY-SA 4.0 by Brendan Harmon.
 The license does not apply to logos, fonts, linked material, data, quotations,
 or reprinted images by other authors which may have different licenses.
 Lato and Plex are licensed under the SIL Open Font License by their authors.
-The syllabi is based on a latex template by Kieran Healy hosted at
+The syllabi are based on a latex template by Kieran Healy hosted at
 https://github.com/kjhealy/latex-custom-kjh.

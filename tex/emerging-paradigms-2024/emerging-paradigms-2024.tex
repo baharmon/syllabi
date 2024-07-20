@@ -1,0 +1,459 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,article,oneside]{memoir}
+
+% packages
+\usepackage{org-preamble-xelatex}
+\usepackage{wallpaper}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+\usepackage{tikz}
+\usepackage{tikzpagenodes} 
+
+\AtBeginBibliography{\small}
+
+% Definitions
+\def\myauthor{Author}
+\def\mytitle{Title}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+\def\myaffiliation{Louisiana State University}
+\def\myaddress{309 Design}
+\def\myemail{baharmon@lsu.edu} 
+\def\myweb{https://baharmon.github.io/}
+\def\myphone{919.622.8414}
+\def\myversion{}
+\def\myrevision{}
+\def\myaffiliation{\ \\Louisiana State University}
+\def\myauthor{Brendan Harmon}
+\def\mykeywords{Landscape Architecture, Syllabus, Graduate}
+\def\mysubtitle{Syllabus}
+\def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 7080 |} \Large Emerging Paradigms} 
+
+% color
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+% begin
+\begin{document}
+
+\setlength\bibitemsep{0.5em}
+\defaultfontfeatures{}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont{IBM Plex Sans}
+\setmonofont[Scale=0.8]{IBM Plex Mono}
+
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+\def\labelitemi{$\cdot$}
+\chapterstyle{article-4-sans}  
+
+\title{\LARGE \mytitle}
+\author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
+\date{Fall 2024 | Fridays | 9:30-12:30 | Design 308}
+\published{\,}
+
+% -------------------------------- DESCRIPTION -------------------------------- 
+
+\pagenumbering{arabic}
+\globalcolor{black}
+
+\vspace*{-10em}
+\maketitle
+
+\vspace*{-2em}
+\section{Description}
+This seminar is an introduction to 
+emerging paradigms of landscape architecture.
+Advances in technology are transforming 
+the practice of landscape architecture,
+while new philosophical paradigms 
+are shifting the theoretical foundations of the discipline. 
+While advances in artificial intelligence 
+have begun to distribute creative agency
+more broadly between humans and machines,
+new theoretical currents are 
+challenging anthropocentrism,
+advocating for the agency of non-humans, 
+and rethinking our relationship to the planet. 
+Where do these emerging directions
+in technology and theory converge
+and where do they diverge? 
+How are these advances reshaping
+the ethical, political, creative, and aesthetic dimensions 
+of the discipline? 
+This seminar will meet biweekly 
+on Friday mornings to 
+discuss and critically reflect on emerging paradigms
+in landscape architecture. 
+Every other Friday
+the class will convene for 
+research-creation sessions to explore
+how these emerging paradigms 
+can be put into practice. 
+Announcements, readings, student work, and support
+will be posted on the course's Discord server at 
+\url{https://discord.gg/aas6dzJxEc}.
+
+% -------------------------------- SCHEDULE -------------------------------- 
+
+\section{Schedule}
+
+\begin{table}[H]
+\begin{tabular}{l l l l}
+\textbf{1} & Artificial Intelligence I  \hspace{4em}  & \textbf{8} & Xenofeminism II \\
+\textbf{2} & Artificial Intelligence II \hspace{4em}  & \textbf{9} & Vibrant Matter I \\
+\textbf{3} & Radiance Fields I \hspace{4em}  & \textbf{10} & Vibrant Matter II \\
+\textbf{4} & Radiance Fields II \hspace{4em}  & \textbf{11} & More Than Human I \\
+\textbf{5} & Cloudism I \hspace{4em}  & \textbf{12} & More Than Human II \\
+\textbf{6} & Cloudism II \hspace{4em}  & \textbf{13} & Cyborgs I \\
+\textbf{7} & Xenofeminism I  \hspace{4em}  & \textbf{14} & Cyborgs II\\
+\end{tabular}
+\end{table}
+
+% ------------------------------- Software -------------------------------- 
+
+% Adobe Firefly, Photoshop, Luma AI, Luma Genie, etc
+
+% -------------------------------- Grading -------------------------------- 
+
+\section{Grading}
+
+\begin{table}[H]
+\begin{tabular}{l @{\hskip 1cm} l @{\hskip 1cm} l @{\hskip 1cm} l}
+\textbf{12\%} \enspace Artificial Intelligence & \textbf{12\%} \enspace Radiance Fields & \textbf{12\%} \enspace Cloudism \\
+\textbf{12\%} \enspace Xenofeminism & \textbf{12\%} \enspace Vibrant Matter & \textbf{12\%} \enspace More Than Human \\
+\textbf{12\%} \enspace Cyborgs & \textbf{12\%} \enspace Exhibition & \textbf{4\%} \quad Portfolio \\
+\end{tabular}
+\end{table}
+
+% -------------------------------- Readings -------------------------------- 
+
+\section{1 Artificial Intelligence}
+
+Generative artificial intelligence is being used by landscape architects 
+to conduct research,
+allocate program, 
+draw plans, 
+to render scenes,
+and generate asset libraries.
+How else can artificial intelligence be used in the discipline?
+How is artificial intelligence transforming 
+the practice of landscape architecture?
+
+\paragraph{Project:} Automatic Case Studies \\
+
+\noindent
+Use a custom large language model 
+to automatically conduct a case study 
+of a famous landscape architecture project. 
+Critique the results.
+Was the project correctly identified?
+Was the designer correctly attributed?
+How accurate was the stylistic analysis?
+\\
+
+\noindent
+\textbf{Readings}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+\printbibliography[keyword=ai, heading=none]
+
+\section{2 Radiance Fields}
+
+Neural radiance fields 
+-- an artificial intelligence based reconstruction technique -- 
+can be used to capture landscapes in immersive detail. 
+How can this emerging technology be used to 
+record, design, and imagine landscape? 
+
+\paragraph{Project:} Scanning Plants\\
+
+\noindent
+Capture a plant specimen as a neural radiance field,
+export a point cloud, and publish it online in the 
+\href{https://xyz.cct.lsu.edu/cloud-forest/}{Cloud Forest} collection.
+\\
+
+\noindent
+\textbf{Readings}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+\printbibliography[keyword=radiance-fields, heading=none]
+
+\section{3 Cloudism}
+
+Point clouds captured using remote sensing
+can be used to precisely model landscapes,
+capturing both the structure
+and the phenomenological detail
+of the scene.
+Landscape architects are experimenting
+with point cloud modeling
+as new creative medium.
+
+\paragraph{Project:} Sensing Landscapes \\
+
+\noindent
+Capture a tree specimen using terrestrial lidar
+and publish the point cloud online in the 
+\href{https://xyz.cct.lsu.edu/cloud-forest/}{Cloud Forest} collection.
+
+\paragraph{Precedents:} 
+Philipp Urech, 2020, \href{https://skfb.ly/oRCrE}{Dublin Green Retrofit}.
+\\
+
+\noindent
+\textbf{Readings}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+\printbibliography[keyword=cloudism, heading=none]
+
+\section{4 Xenofeminism}
+
+Xenofeminism is `a politics for alienation'.
+It seeks freedom through alterity; 
+it seeks to escape from
+essentialism, naturalism, universalization, and mass virtuality.
+It seeks to subvert technology for the sake of freedom. 
+So then what would an ecology without nature look like?
+How would a xenofeminist practice landscape architecture?
+
+\paragraph{Project:} Chimera \\
+
+\noindent
+Use a text-to-3D model to create a hybrid of human and a non-human.
+3D print your model. 
+
+\paragraph{Precedents:} 
+Špela Petrič, 2015--2017, \href{https://www.spelapetric.org/}{Confronting Vegetal Otherness}.
+\\
+
+\noindent
+\textbf{Readings}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+\printbibliography[keyword=xenofeminism, heading=none]
+
+\section{5 Vibrant Matter}
+
+In vital materialism agency is distributed. 
+Vital materialism 
+posits that matter matters,
+that together things 
+have the capacity enact change.
+How can inanimate matter have agency? 
+What you noticed the agency of a non-human assemblage before?
+How could the agency of design be distributed? 
+
+\paragraph{Project:} Assemblages \\
+
+\noindent
+Capture a non-human or more-than-human assemblage 
+as a neural radiance field. 
+Export and 3D print your model. 
+\\
+
+\noindent
+\textbf{Readings}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+\printbibliography[keyword=vibrant-matter, heading=none]
+
+\section{6 More Than Human}  
+
+More-than-human theory
+challenges anthropocentrism and
+binary classifications
+of us and them,
+of humans and nature.
+It posits an entangled state
+in which humans and non-humans
+are inextricably tied.
+How could more-than-human design be practiced?
+What would landscape architecture look like 
+if non-human agency were acknowledged
+and the designer de-centered? 
+
+\paragraph{Project:} A Day in the Life of... \\
+
+\noindent
+Observe, map, and illustrate a day in the life of a non-human.
+
+\paragraph{Precedents:} 
+Marshmallow Laser Feast, 2015, \href{http://intheeyesoftheanimal.com/}{In the Eyes of the Animal}.
+\\
+%Marshmallow Laser Feast, 2023, \href{https://marshmallowlaserfeast.com/}{Breathing with the Forest}.\\
+
+\noindent
+\textbf{Readings}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+\printbibliography[keyword=more-than-human, heading=none]
+
+\clearpage
+
+\section{7 Cyborgs}
+
+In cyborg landscapes 
+humans, non-humans, and infrastructure evolve together, 
+adapting to their changing environment. 
+How can landscapes be designed for change?
+
+\paragraph{Project:} Speculative Landscapes \\
+
+\noindent
+Use a text-to-image model to generate a rendering of a speculative cyborg landscape.
+
+\paragraph{Precedents:} 
+Lab for Environmental Design Strategies, 2022, \href{https://lab-eds.org}{Foresting Architecture}.
+\\
+
+\noindent
+\textbf{Readings}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+\printbibliography[keyword=cyborgs, heading=none]
+
+%\clearpage
+
+% -------------------------------- Policies -------------------------------- 
+
+\section{Policies}
+
+\paragraph{Attendance}
+
+To receive credit for the discussion seminar 
+you must be an active participant 
+and demonstrate an understanding of the assigned readings.
+If you have an excused absence from a seminar session,
+then you must write and submit a two page response to the topic
+to make up for the missed discussion.
+Your response should include references with citations
+beyond the required readings. 
+If you have an excused absence from a research-creation session,
+then you must complete the project outside of class to get credit. 
+
+\paragraph{Time Commitment Expectations}
+LSU's general policy states that for each credit hour, 
+you (the student) should plan to
+spend at least two hours working 
+on course related activities outside of class. 
+Since this course is for three credit hours, 
+you should expect to spend a minimum of six hours 
+outside of class each week 
+working on assignments for this course. 
+For more information see: 
+\url{http://catalog.lsu.edu/content.php?catoid=12&navoid=822}.
+
+\paragraph{LSU student code of conduct}
+The LSU student code of conduct explains 
+student rights, excused absences, 
+and what is expected of student behavior. 
+Students are expected to understand this code:  
+\url{http://students.lsu.edu/saa/students/code}.
+%Any violations of the LSU student code will be duly reported to the Dean of Students.
+
+\paragraph{Disability Code}
+The University is committed to making reasonable efforts 
+to assist individuals with disabilities in
+their efforts to avail themselves of 
+services and programs offered by the University. 
+To this end, Louisiana State University will provide 
+reasonable accommodations for persons
+with documented qualifying disabilities.
+ If you have a disability and 
+ feel you need accommodations in this course, 
+ you must present a letter to me 
+ from Disability Services in 115 Johnston Hall,
+indicating the existence of a disability 
+and the suggested accommodations.
+
+\paragraph{Academic Integrity}
+According to section 10.1 
+of the LSU Code of Student Conduct, 
+``A student may be charged with Academic Misconduct'' 
+for a variety of offenses, including the following: 
+unauthorized copying, collusion, or collaboration; 
+``falsifying'' data or citations; 
+``assisting someone in the commission 
+or attempted commission of an offense''; 
+and plagiarism, which is defined in section 10.1.H as a 
+``lack of appropriate citation, 
+or the unacknowledged inclusion 
+of someone else's words, structure, ideas, or data; 
+failure to identify a source, 
+or the submission of essentially the same work 
+for two assignments 
+without permission of the instructor(s).''
+
+\paragraph{Plagiarism and Citation Method}
+Plagiarism is the 
+``lack of appropriate citation, or the unacknowledged inclusion 
+of someone else's words, structure, ideas, or data; 
+failure to identify a source, 
+or the submission of essentially the same work 
+for two assignments without permission of the instructor(s)'' 
+(Sec. 10.1.H of the LSU Code of Student Conduct). 
+As a student at LSU, 
+it is your responsibility to refrain from 
+plagiarizing the academic property of another 
+and to utilize appropriate citation method for all coursework. 
+In this class, it is recommended that you use 
+Chicago Style author-date citations. 
+Ignorance of the citation method
+ is not an excuse for academic misconduct.
+
+\paragraph{Generative Artificial Intelligence}
+In this course the use of generative artificial intelligence (AI) 
+is permitted for the purposes of enhancing your understanding 
+of course materials, encouraging creative exploration, 
+and supporting academic growth. 
+The use of generative AI, however, 
+is not permitted for writing assignments. 
+These programs should not be used to produce work 
+that misrepresents your abilities 
+or deceives as to the conditions 
+under which the work was completed. 
+If you use AI to generate content 
+you must clearly acknowledge the use of AI generated material. 
+Proper attribution of AI program use
+should include an explanation of how the program 
+contributed to the assignment and your academic growth. 
+Failing to give proper attribution 
+to the use of AI programs in academic work
+ will be reported to Student Advocacy \& Accountability 
+ for review under the Code of Student Conduct 
+ and may result in impacts to your assignment and course grades.
+
+\paragraph{Expectations}
+As an accredited Landscape Architecture program
+LSU's Robert Reich School of Landscape Architecture (RRSLA) 
+must meet the accreditation requirements 
+as stated by the Landscape Architectural Accreditation
+Board (LAAB) to ensure RRSLA
+ is meeting the expectations of the field. 
+The LAAB requires programs to provide digital copies 
+of student work as part of this process.
+Students in this course will be expected 
+to comply with the following requirements
+as 4\% of their course grade: 
+(1) Students must provide a course portfolio
+with work samples specified by the instructor 
+before the end of the grading period. 
+(2) Each student's course portfolio must be saved as 
+a single, high resolution PDF file with multiple pages. 
+(3) Files must follow the naming convention
+established by the school: 
+department-coursenumber-semesteryear-username.pdf.
+Example: LA7080-F2024-baharmon.pdf.
+
+\end{document}

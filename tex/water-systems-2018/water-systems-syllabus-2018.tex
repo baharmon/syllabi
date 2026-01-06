@@ -1,18 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
+% Class
 \documentclass[11pt,article,oneside]{memoir}
 
-% packages
-\usepackage{org-preamble-xelatex}
-\usepackage{wallpaper}
-\usepackage{xcolor}
-\usepackage{multicol}
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
-\usepackage{tikz}
-\usepackage{tikzpagenodes} 
+% Packages
+\usepackage{../style/xelatex-preamble}
 
+% Settings
 \AtBeginBibliography{\small}
 
 % Definitions
@@ -36,35 +31,35 @@
 \def\mysubtitle{Syllabus}
 \def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 7031 |} \Large Water Studio} 
 
-% color
+% Color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
-
 \makeatother
 
+% Begin
 \begin{document}
 
-\setlength\bibitemsep{0.75em}
-
-% fonts
+% Fonts
 \defaultfontfeatures{}
-\defaultfontfeatures{Scale=MatchLowercase}         
-\setmainfont{Lato Regular}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont{IBM Plex Sans}
 \setmonofont[Scale=0.8]{IBM Plex Mono}
 
+% Style
+\setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
 \def\labelitemi{$\cdot$}
-\chapterstyle{article-4-sans}  
+\chapterstyle{syllabus}
 
-
+% Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
 \date{Fall 2018 | Design 217\newline Monday, Wednesday, \& Friday \\ 1:30pm--5:30pm}
 \published{\,}
 
-% -------------------------------- COVER PAGE -------------------------------- 
+% -------------------------------- Cover Page -------------------------------- 
 
 \pagenumbering{gobble}
 \globalcolor{black}
@@ -77,7 +72,7 @@
 \clearpage
 \globalcolor{black}
 
-% -------------------------------- DESCRIPTION -------------------------------- 
+% -------------------------------- Description -------------------------------- 
 
 \pagenumbering{arabic}
 \globalcolor{black}
@@ -99,7 +94,7 @@ how processes and forms interact,
 how to design processes as well as forms, and
 how to design for disturbed landscapes. \\
 
-% -------------------------------- SCHEDULE -------------------------------- 
+% -------------------------------- Schedule -------------------------------- 
 \section{Schedule}
 %
 \begin{table}[H]
@@ -116,10 +111,9 @@ how to design for disturbed landscapes. \\
 \end{tabular}
 \end{table}
 
-%\clearpage
+% -------------------------------- Schedule --------------------------------
 
-% -------------------------------- SCHEDULE -------------------------------- 
-\vspace*{-6em} %\section{Course Schedule} 
+\vspace*{-6em}
 \begin{table}[H]
 \small
 \begin{tabular}{l r @{\hskip 0.1cm} l @{\hskip 0.5cm} l} 
@@ -194,187 +188,8 @@ how to design for disturbed landscapes. \\
 
 \clearpage
 
-%% -------------------------------- PHASE I -------------------------------- 
-%\section{Mapping the Amite} 
-%
-%\noindent \textbf{Kayaking the Amite}
-%We will rent kayaks from University Recreation
-%and kayak along the Amite 
-%with a team from Gulf Restoration Network. 
-%%Check out a Phantom DJI drone
-%%and Ricoh Theta 360 degree cameras from the
-%%LSU cxC Art+Design Studio. \\
-%\textbf{Date:} 08.24.2018 \\
-%
-%\noindent \textbf{Precedent studies}
-%Prepare a 15 minute presentation on 
-%the Sand Motor, 
-%the Renaturation of the River Aire, 
-%a case study from Prominski and Stokman's book River.Space.Design,
-%or another project of your choice. 
-%\textbf{Due:} 08.29.2018 \\
-%
-%\noindent \textbf{Drone Workshop}
-%Conduct a topographic survey with an unmanned aerial system (UAS)
-%at Hilltop Arboretum. 
-%After a morning theory session, 
-%survey the arboretum grounds with a drone,
-%and then use stereophotogrammetry to generate a digital surface model.
-%\textbf{Date:} 09.15.2018\\
-%
-%\noindent \textbf{Mapping the Amite}
-%Research and map the history and impact of mining on the river.
-%Your maps can include text, sectional drawings, 3D visualizations,
-%charts, and diagrams. 
-%Represent phenomena in both time and space. Be creative.
-%Based on your research, develop a site selection methodology
-%and pick site for restoration.
-%Present your method and site with a map and logic model diagram.
-%Finally create a digital painting expressing the most important
-%qualities of your research.
-%\textbf{Due:} 09.15.2018
-%
-%\begin{table}[H]
-%\begin{tabular}{l r @{\hskip 0.1cm} l @{\hskip 0.5cm} l} 
-%\\
-%\textbf{Amite Basin} & \textbf{Project |} & Mapping the Amite \\
-%\\
-%08.20.2018 & \textbf{Studio |} & Introduction \\
-%08.22.2018 & \textbf{Studio |} & Research \\
-%08.24.2018 & \textbf{Site visit |} & Kayaking the Amite \\
-%%
-%08.27.2018 & \textbf{Studio |} & Topographic mapping\\
-%08.29.2018 & \textbf{Review |} & Precedent studies \\
-%08.31.2018 & \textbf{Lab |} & Mapping the mines \\
-%%
-%09.05.2018 & \textbf{Studio |} & Diagramming \\
-%09.07.2018 & \textbf{Lab |} & Digital diagramming & \\
-%%
-%09.10.2018 & \textbf{Studio |} & Watershed modeling \\
-%09.12.2018 & \textbf{Studio |} & Hydrological mapping \\
-%09.15.2018 & \textbf{Lab |} & Digital painting \\
-%09.15.2018 & \textbf{Workshop |} & Drone photogrammetry \\
-%%
-%09.17.2018 & \textbf{Tutorial |} & Suitability \\
-%09.19.2018 & \textbf{Tutorial |} & Cartography \\
-%09.21.2018 & \textbf{Review |} & Map review \\
-%%
-%\end{tabular}
-%\end{table}
-%
-%\clearpage
-%
-%% -------------------------------- PHASE II -------------------------------- 
-%\section{Modeling the Amite} 
-%
-%\noindent \textbf{Amite Gravel Mines}
-%Visit gravel mines and degraded river banks on the Amite River.
-%Document the sites with sketches, photography, photospheres, and
-%imagery and video from drones.
-%Come prepared with sunscreen, sunglasses, insect repellent, and water.
-%Please bring sketchbooks, DSLR cameras,
-%a DJI Phantom drone, and Ricoh Theta 360 degree cameras.
-%\textbf{Due:} 09.24.2018 \\
-%
-%\noindent \textbf{Modeling the Amite}
-%Inventory, model, and represent the existing conditions
-%on your site in 2D and 3D.
-%Curate and present the data you collect during site visits.
-%Use GIS data and your site inventory
-%to develop a map or series maps that explore and represent your site.
-%Then you will you will model water and sediment flows across your site in GIS.
-%CNC mill a physical model in high density urethane foam
-%of your site from lidar data.
-%Use this model to develop a physical simulation of sediment flow
-%and landscape evolution to intuitively explore how the site may change.
-%\textbf{Due:} 10.26.2018
-%
-%\begin{table}[H]
-%\begin{tabular}{l r @{\hskip 0.1cm} l @{\hskip 0.5cm} l} 
-%\\
-%\textbf{Amite Mines} & \textbf{Project |} & Modeling the Amite \\
-%\\
-%09.24.2018 & \textbf{Site visit |} & Amite Gravel Mines \\
-%09.26.2018 & \textbf{Studio |} & Inventory analysis \\
-%09.28.2018 & \textbf{Studio |} & Site mapping \\
-%%
-%10.01.2018 & \textbf{Lab |} & CNC toolpaths \\
-%10.03.2018 & \textbf{Lab |} & CNC milling \\
-%%
-%10.08.2018 & \textbf{Studio |} & Imagery acquisition\\ 
-%10.10.2018 & \textbf{Studio |} & Imagery interpretation \\ 
-%10.12.2018 & \textbf{Lab |} & Imagery analysis \\  
-%%
-%10.15.2018 & \textbf{Studio |} & Water flow \\
-%10.17.2018 & \textbf{Studio |} & Sediment flow \\
-%10.19.2018 & \textbf{Lab |} & Physical simulation \\
-%%
-%10.22.2018 & \textbf{Studio |} & Historical mapping \\
-%10.24.2018 & \textbf{Studio |} & Production \\
-%10.26.2018 & \textbf{Review |} & Modeling review \\
-%%
-%\end{tabular}
-%\end{table}
-%
-%\clearpage
-%
-%% -------------------------------- PHASE III -------------------------------- 
-%\section{Generative Water Systems} 
-%
-%\noindent \textbf{LSU Center for River Studies}
-%Tour the LSU Center for River Studies
-%and see a physical simulation of sediment transport on
-%the Lower Mississippi River Physical Model.
-%\textbf{Date:} 10.29.2018\\
-%
-%\noindent \textbf{Restoring the Amite}
-%Design a plan to restore a degraded, abandoned mining site
-%on the Amite River.
-%Your design should consider and illustrate the process of restoration,
-%the funding for the project, and the phasing of the project.
-%Consider the cost of restoration, the cost of maintenance and management,
-%and sources of income or funding.
-%Consider its future use as for example
-%a recreational park for kayaking,
-%a nature reserve with bird watching,
-%or a sustainable development.
-%As a class develop a masterplan showing the relationship
-%between each of your sites.
-%Individually develop a site plan, other design drawings and diagrams,
-%a conceptual model, and a physical model.
-%\textbf{Due:} 11.30.2018
-%
-%\begin{table}[H]
-%\begin{tabular}{l r @{\hskip 0.1cm} l @{\hskip 0.5cm} l} 
-%\\
-%\textbf{Gen. Systems} & \textbf{Project |} & Restoring the Amite \\
-%\\
-%10.29.2018 & \textbf{Site visit |} & LSU Center for River Studies \\
-%10.31.2018 & \textbf{Studio |} & Bioengineering charrette \\
-%11.02.2018 & \textbf{Studio |} & Bioengineering \\
-%%
-%11.05.2018 & \textbf{Studio |} & Restoration strategies \\
-%11.07.2018 & \textbf{Studio |} & Landform design \\
-%11.09.2018 & \textbf{Studio |} & Landform construction \\
-%%
-%11.12.2018 & \textbf{Studio |} & Process diagramming \\
-%11.14.2018 & \textbf{Studio |} & Evolving landforms \\
-%11.16.2018 & \textbf{Studio |} & Planting design \\
-%%
-%11.19.2018 & \textbf{Lab |} & Physical simulation \\
-%%
-%11.26.2018 & \textbf{Studio |} & Production \\
-%11.28.2018 & \textbf{Studio |} & Production \\ 
-%11.30.2018 & \textbf{Studio |} & Production \\
-%\\
-%& \textbf{Review |} & Final review \\
-%%
-%\end{tabular}
-%\end{table}
-%
-%\clearpage
+% -------------------------------- Projects --------------------------------
 
-% -------------------------------- Projects -------------------------------- 
 \section{Projects}
 
 \noindent \textbf{Mapping the Amite}
@@ -419,11 +234,11 @@ Individually develop a site plan, other design drawings and diagrams,
 a conceptual model, and a physical model.
 \textbf{Due:} 11.30.2018 \\
 
-% -------------------------------- Grading -------------------------------- 
+% -------------------------------- Grading --------------------------------
+
 \section{Grading}
 %
 \begin{table}[H]
-%\small
 \begin{tabular}{l r}
 %
 Mapping the Amite & 33\% \\
@@ -435,7 +250,8 @@ Generative Water Systems & 33\% \\
 
 \clearpage
 
-% -------------------------------- Visits -------------------------------- 
+% -------------------------------- Visits --------------------------------
+
 \section{Site Visits}
 
 \noindent \textbf{Kayaking the Amite}
@@ -470,7 +286,8 @@ and see a physical simulation of sediment transport on
 the Lower Mississippi River Physical Model.
 \textbf{Date:} 10.29.2018\\
 
-% -------------------------------- Workshop -------------------------------- 
+% -------------------------------- Workshop --------------------------------
+
 \section{Workshop}
 \noindent \textbf{Drone photogrammetry}
 Conduct a topographic survey with an unmanned aerial system (UAS)
@@ -480,10 +297,10 @@ survey the arboretum grounds with a drone,
 and then use stereophotogrammetry to generate a digital surface model.
 \textbf{Date:} 09.15.2018 \\
 
-
 \clearpage
 
-% -------------------------------- Readings -------------------------------- 
+% -------------------------------- Readings --------------------------------
+
 \section{Readings}
 \renewcommand*{\bibfont}{\normalsize} %\small
 \vspace*{0.5cm}
@@ -493,7 +310,8 @@ and then use stereophotogrammetry to generate a digital surface model.
 
 \clearpage
 
-% -------------------------------- Reports -------------------------------- 
+% -------------------------------- Reports --------------------------------
+
 \section{Reports}
 %
 \href{http://www.dtic.mil/dtic/tr/fulltext/u2/a471731.pdf}{Fluvial Instability and Channel Degradation of Amite River} \\
@@ -508,7 +326,8 @@ and then use stereophotogrammetry to generate a digital surface model.
 %
 \href{https://minerals.usgs.gov/mrerp/reports/Mossa-04HQGR0178/Mossa_Report1-04HQGR0178.pdf}{River Sand and Gravel Mining Data} \\
 
-% -------------------------------- Handbooks -------------------------------- 
+% -------------------------------- Handbooks --------------------------------
+
 \section{Handbooks}
 %
 \href{http://go.usa.gov/BvNA}{USDA Stream Restoration} \\
@@ -527,7 +346,8 @@ and then use stereophotogrammetry to generate a digital surface model.
 %
 \href{https://www.fema.gov/pdf/about/regions/regionx/Engineering_With_Nature_Web.pdf}{FEMA Engineering with Nature} \\
 
-% -------------------------------- Software -------------------------------- 
+% -------------------------------- Software --------------------------------
+
 \section{Software}
 GRASS GIS | \url{https://grass.osgeo.org/} \\
 ArcGIS | \url{https://www.esri.com/} \\
@@ -537,7 +357,8 @@ RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}\\
 
 \clearpage
 
-% -------------------------------- Supplies -------------------------------- 
+% -------------------------------- Supplies --------------------------------
+
 \section{Supplies}
 \begin{multicols}{2}
 \raggedright
@@ -574,18 +395,10 @@ RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}\\
 \item Propane torches
 \end{itemize}
 
-%\textbf{College equipment}
-%\begin{itemize}
-%\item Digital camera
-%\item 360 degree camera
-%\item DJI Phantom drone
-%\item Manfrotto tripod
-%\item Kayak
-%\end{itemize}
-
 \end{multicols}
 
-% -------------------------------- Terminology -------------------------------- 
+% -------------------------------- Terminology --------------------------------
+
 \section{Terminology}
 \begin{multicols}{2}
 \raggedright
@@ -625,14 +438,14 @@ RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}\\
 \item Raster
 \item Point cloud
 \item Mesh
-%\item Triangulated irregular network
 \end{itemize}
 %
 \end{multicols}
 
 \clearpage
 
-% -------------------------------- Policies -------------------------------- 
+% -------------------------------- Policies --------------------------------
+
 \section{Policies}
 
 \noindent \textbf{Time Commitment Expectations}

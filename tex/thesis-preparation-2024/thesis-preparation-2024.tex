@@ -1,18 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
+% Class
 \documentclass[11pt,article,oneside]{memoir}
 
-% packages
-\usepackage{org-preamble-xelatex}
-\usepackage{wallpaper}
-\usepackage{xcolor}
-\usepackage{multicol}
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
-\usepackage{tikz}
-\usepackage{tikzpagenodes} 
+% Packages
+\usepackage{../style/xelatex-preamble}
 
+% Settings
 \AtBeginBibliography{\small}
 
 % Definitions
@@ -36,34 +31,35 @@
 \def\mysubtitle{Syllabus}
 \def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 7052 |} \Large Thesis Preparation} 
 
-% color
+% Color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
 
-% begin
+% Begin
 \begin{document}
 
-\setlength\bibitemsep{0.5em}
-
-% fonts
+% Fonts
 \defaultfontfeatures{}
 \defaultfontfeatures{Scale=MatchLowercase}
 \setmainfont{IBM Plex Sans}
 \setmonofont[Scale=0.8]{IBM Plex Mono}
 
+% Style
+\setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
 \def\labelitemi{$\cdot$}
-\chapterstyle{article-4-sans}  
+\chapterstyle{syllabus}
 
+% Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
 \date{Spring 2024 \newline Tuesday \& Thursday \newline 16:30--18:00 \newline Design 308}
 \published{\,}
 
-% -------------------------------- COVER PAGE -------------------------------- 
+% -------------------------------- Cover Page -------------------------------- 
 
 %\pagenumbering{gobble}
 %\globalcolor{black}
@@ -76,7 +72,7 @@
 %\clearpage
 
 
-% -------------------------------- DESCRIPTION -------------------------------- 
+% -------------------------------- Description -------------------------------- 
 
 \pagenumbering{arabic}
 \globalcolor{black}
@@ -94,7 +90,7 @@ developing your outline,
 planning your methods, 
 and writing your introduction. 
 
-% -------------------------------- SCHEDULE -------------------------------- 
+% -------------------------------- Schedule -------------------------------- 
 \section{Schedule}
 
 \begin{table}[H]
@@ -109,7 +105,8 @@ and writing your introduction.
 \end{tabular}
 \end{table}
 
-% -------------------------------- Projects -------------------------------- 
+% -------------------------------- Projects --------------------------------
+
 \section{Projects}
 %
 \begin{table}[H]
@@ -118,7 +115,8 @@ and writing your introduction.
 \end{tabular}
 \end{table}
 
-% -------------------------------- Grading -------------------------------- 
+% -------------------------------- Grading --------------------------------
+
 \section{Assignments}
 %
 \begin{table}[H]
@@ -139,11 +137,6 @@ and writing your introduction.
 \setlength\bibitemsep{0.65\baselineskip}
 \printbibliography[keyword=infrastructure, heading=none]
 
-%\section{3 Cartography}
-%\nocite{*}
-%\setlength\bibitemsep{0.65\baselineskip}
-%\printbibliography[keyword=cartography, heading=none]
-
 \section{5 Vibrant Matter}
 \nocite{*}
 \setlength\bibitemsep{0.65\baselineskip}
@@ -158,7 +151,6 @@ and writing your introduction.
 \nocite{*}
 \setlength\bibitemsep{0.65\baselineskip}
 \printbibliography[keyword=case-studies, heading=none]
-
 
 % -------------------------------- Software -------------------------------- 
 
@@ -183,7 +175,6 @@ spend at least two hours working on course related activities outside of class. 
 
 \paragraph{LSU student code of conduct}
 The LSU student code of conduct explains student rights, excused absences, and what is expected of student behavior. Students are expected to understand this code:  \url{http://students.lsu.edu/saa/students/code}.
-%Any violations of the LSU student code will be duly reported to the Dean of Students.
 
 \paragraph{Disability Code}
 The University is committed to making reasonable efforts to assist individuals with disabilities in

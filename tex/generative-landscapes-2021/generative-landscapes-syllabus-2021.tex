@@ -1,19 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-%%%  Syllabus template for use with style files at http://kjhealy.github.com/latex-custom-kjh
-%%%  Kieran Healy
-
+% Class
 \documentclass[11pt,article,oneside]{memoir}
 
-% packages
-\usepackage{org-preamble-xelatex}
-\usepackage{wallpaper}
-\usepackage{xcolor}
-\usepackage{multicol}
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
+% Packages
+\usepackage{../style/xelatex-preamble}
 
+% Settings
 \AtBeginBibliography{\small}
 
 % Definitions
@@ -37,34 +31,35 @@
 \def\mysubtitle{Syllabus}
 \def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 7032 |} \Large Generative Landscapes} 
 
-% color
+% Color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
 
-% begin
+% Begin
 \begin{document}
 
-\setlength\bibitemsep{0.5em}
-
-% fonts
+% Fonts
 \defaultfontfeatures{}
-\defaultfontfeatures{Scale=MatchLowercase}         
-\setmainfont{Lato Regular}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont{IBM Plex Sans}
 \setmonofont[Scale=0.8]{IBM Plex Mono}
 
+% Style
+\setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
 \def\labelitemi{$\cdot$}
-\chapterstyle{article-4-sans}  
+\chapterstyle{syllabus}
 
+% Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
-\date{Spring 2021. \newline Tuesday \& Thursday 1:00am--3:30pm.} %Design 217.
+\date{Spring 2021. \newline Tuesday \& Thursday 1:00am--3:30pm.}
 \published{\,}
 
-% -------------------------------- COVER PAGE -------------------------------- 
+% -------------------------------- Cover Page -------------------------------- 
 
 \pagenumbering{gobble}
 \globalcolor{black}
@@ -74,7 +69,7 @@
 \clearpage
 
 
-% -------------------------------- DESCRIPTION -------------------------------- 
+% -------------------------------- Description -------------------------------- 
 
 \pagenumbering{arabic}
 \globalcolor{black}
@@ -121,7 +116,8 @@ and apply emerging technologies to landscape architecture.
 \end{itemize}
 \end{multicols}
 
-% -------------------------------- SCHEDULE -------------------------------- 
+% -------------------------------- Schedule --------------------------------
+
 \section{Schedule}
 
 \begin{table}[H]
@@ -146,7 +142,8 @@ and apply emerging technologies to landscape architecture.
 
 \clearpage
 
-% -------------------------------- Online -------------------------------- 
+% -------------------------------- Online --------------------------------
+
 \section{Online}
 
 This class will be taught online.
@@ -168,13 +165,12 @@ Discord | \url{https://discord.gg/wvDneQJ48b}\\
 Youtube | \url{https://www.youtube.com/c/BrendanHarmon}\\
 Vimeo | \url{https://vimeo.com/showcase/7356098}\\
 
-% -------------------------------- Projects -------------------------------- 
+% -------------------------------- Projects --------------------------------
 
 \section{Projects}
 
 \noindent \textbf{Essay}
 Read Mario Carpo's \emph{The Alphabet and Algorithm}
-%and Nick Dunn's \emph{Digital Fabrication in Architecture}
 and then in response write a 500-word critical essay.
 How have digital tools and processes transformed 
 the practice of landscape architecture
@@ -223,30 +219,12 @@ and water and sediment flows
 for 16 algorithmically generated landforms.
 \\
 
-%\noindent \textbf{Rendered Landscape}
+% -------------------------------- Grading --------------------------------
 
-%\noindent \textbf{Lidar survey}
-%Conduct a terrestrial lidar survey of the 
-%LSU College of Art \& Design quad. 
-%%Upload your point cloud to Sketchfab.
-%\\
-
-%\noindent \textbf{Parametric Landscapes}
-%Use visual programming to parametrically model
-%nine variations of landforms and planting. 
-%Photorealistically 3D render your variants
-%with 3D trees, shrubs, and grasses. 
-%%CNC mill models of your nine landforms
-%%in high density urethane foam.
-%%Upload your landform models to Sketchab.
-
-% -------------------------------- Grading -------------------------------- 
 \section{Grading}
 %
 \begin{table}[H]
-%\small
 \begin{tabular}{l r @{\hskip 2cm} l @{\hskip 0.5cm} l}
-%\begin{tabular}{l l}
 %
 Essay & 10\% & 3DP Landform & 10\% \\
 Paving Matrix & 10\% & CNC Landforms & 10\% \\
@@ -257,19 +235,16 @@ Tutorials & 15\% & Course Portfolio & 5\%\\
 \end{tabular}
 \end{table}
 
-% -------------------------------- Software -------------------------------- 
+% -------------------------------- Software --------------------------------
+
 \section{Software}
 
 Rhinoceros | \url{https://www.rhino3d.com/}\\
 Grasshopper | \url{http://grasshopper3d.com/}\\
-%RhinoTerrain | \url{http://www.rhinoterrain.com/}\\
 RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}\\
 Thea Render for Rhino | \url{https://www.thearender.com/}\\
 Agisoft Metashape | \url{https://www.agisoft.com/}\\
-%CloudCompare | \url{https://www.danielgm.net/cc/}\\
-%Sketchfab | \url{https://sketchfab.com/} \\
 GRASS GIS | \url{https://grass.osgeo.org/}\\
-%ArcGIS | \url{https://www.esri.com/}\\
 Python | \url{https://www.python.org/}\\
 
 \section{Plugins}
@@ -277,23 +252,25 @@ Snapping Gecko | \url{https://www.food4rhino.com/app/snappinggecko}\\
 Noise 4D | \url{https://www.food4rhino.com/app/4d-noise}\\
 Elefront | \url{https://www.food4rhino.com/app/elefront}\\
 Docofossor | \url{https://www.food4rhino.com/app/docofossor}\\
-%Bison | \url{https://www.bison.la/}\\
 
-% -------------------------------- Resources -------------------------------- 
+% -------------------------------- Resources --------------------------------
+
 \section{Resources}
 
 Grasshopper Basics | \url{https://vimeo.com/channels/basicgh}\\
 Grasshopper Primer | \url{http://grasshopperprimer.com}\\
 Hydrology in GRASS GIS | \url{https://grasswiki.osgeo.org/wiki/Hydrological_Sciences}\\
 
-% -------------------------------- Readings -------------------------------- 
+% -------------------------------- Readings --------------------------------
+
 \section{Required Readings}
 \vspace*{0.5cm}
 \nocite{*}
 \setlength\bibitemsep{0.65\baselineskip}
 \printbibliography[keyword=required, heading=none]
 
-% -------------------------------- Readings -------------------------------- 
+% -------------------------------- Readings --------------------------------
+
 \section{Recommended Readings}
 \vspace*{0.5cm}
 \nocite{*}
@@ -301,6 +278,7 @@ Hydrology in GRASS GIS | \url{https://grasswiki.osgeo.org/wiki/Hydrological_Scie
 \printbibliography[keyword=recommended, heading=none]
 
 % --------------------------------Network --------------------------------
+
 \section{Network drives}
 
 \noindent
@@ -311,7 +289,8 @@ Macs: \verb|smb://desn-knox.lsu.edu/Landscape-Classes/LA7032-S2020| \\
 
 \clearpage
 
-% -------------------------------- Terminology -------------------------------- 
+% -------------------------------- Terminology --------------------------------
+
 \section{Terminology}
 \begin{multicols}{2}
 \raggedright
@@ -324,7 +303,6 @@ Macs: \verb|smb://desn-knox.lsu.edu/Landscape-Classes/LA7032-S2020| \\
 \item Parametric modeling
 \item Performative design
 \item Algorithm
-%\item Scripting
 \end{itemize}
 
 \textbf{Spatial data}
@@ -334,7 +312,6 @@ Macs: \verb|smb://desn-knox.lsu.edu/Landscape-Classes/LA7032-S2020| \\
 \item Point cloud
 \item Mesh
 \item Triangulated irregular network (TIN)
-%\item Discrete \& continuous data
 \item Plain text
 \item Comma separated values (CSV)
 \item Integer \& floating point numbers
@@ -353,14 +330,8 @@ Macs: \verb|smb://desn-knox.lsu.edu/Landscape-Classes/LA7032-S2020| \\
 \item Structure from motion (SfM)
 \item Delaunay triangulation
 \item Interpolation
-%\item Bilinear interpolation
-%\item Nearest neighbors
 \item Regularized spline with tension (RST)
 \item Map algebra
-%\item Null value
-%\item Least cost path (LCP)
-%\item Resampling
-%\item Image classification
 \end{itemize}
 
 \textbf{3D rendering}
@@ -382,26 +353,12 @@ Macs: \verb|smb://desn-knox.lsu.edu/Landscape-Classes/LA7032-S2020| \\
 \item Medium density fiberboard (MDF)
 \end{itemize}
 
-%\textbf{Geomorphology}
-%\begin{itemize}
-%\item Watershed
-%\item Single flow direction (SFD/D8)
-%\item Multiple flow direction (MFD)
-%\item Revised Universal Soil Loss Equation (RUSLE)
-%\item Unit Stream Power-based Erosion Deposition (USPED)
-%\item Simulated Water Erosion (SIMWE)
-%\item R-factor
-%\item Mannings
-%\item Sediment mass density
-%\item Gully
-%\item Knickpoint
-%\end{itemize}
-%
 \end{multicols}
 
 \clearpage
 
-% -------------------------------- Policies -------------------------------- 
+% -------------------------------- Policies --------------------------------
+
 \section{Policies}
 
 \noindent \textbf{Time Commitment Expectations}

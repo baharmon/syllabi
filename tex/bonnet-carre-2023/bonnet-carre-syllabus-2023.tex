@@ -1,18 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
+% Class
 \documentclass[11pt,article,oneside]{memoir}
 
-% packages
-\usepackage{org-preamble-xelatex}
-\usepackage{wallpaper}
-\usepackage{xcolor}
-\usepackage{multicol}
-\usepackage{tikz}
-\usepackage{tikzpagenodes}
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
+% Packages
+\usepackage{../style/xelatex-preamble}
 
+% Settings
 \AtBeginBibliography{\small}
 
 % Definitions
@@ -38,34 +33,35 @@
 [0.1cm]{\Large Bonnet Carré National Park} \\ 
 [-0.2cm]{\normalfont \normalsize LA 4008 \& LA 7051}} 
 
-% color
+% Color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
 
-% begin
+% Begin
 \begin{document}
 
-\setlength\bibitemsep{0.5em}
-
-% fonts
+% Fonts
 \defaultfontfeatures{}
 \defaultfontfeatures{Scale=MatchLowercase}
 \setmainfont{IBM Plex Sans}
 \setmonofont[Scale=0.8]{IBM Plex Mono}
 
+% Style
+\setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
 \def\labelitemi{$\cdot$}
-\chapterstyle{article-4-sans}  
+\chapterstyle{syllabus}
 
+% Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
 \date{Fall 2023 Design 225.\newline Monday, Wednesday, \& Friday\newline 1:30pm--5:20pm.}
 \published{\,}
 
-% -------------------------------- COVER PAGE -------------------------------- 
+% -------------------------------- Cover Page -------------------------------- 
 
 \pagenumbering{gobble}
 \globalcolor{black}
@@ -78,7 +74,7 @@
 \clearpage
 
 
-% -------------------------------- DESCRIPTION -------------------------------- 
+% -------------------------------- Description -------------------------------- 
 
 \pagenumbering{arabic}
 \globalcolor{black}
@@ -116,23 +112,9 @@ otherness,
 the control of nature, 
 and the aesthetics of infrastructure.
 
-%\noindent\textbf{Keywords}
-%\begin{multicols}{3}
-%\raggedright
-%\small
-%\begin{itemize}
-%\end{itemize}
-%\end{multicols}
+% -------------------------------- Schedule --------------------------------
 
-% -------------------------------- SCHEDULE -------------------------------- 
 \section{Schedule}
-
-%\begin{table}[H]
-%\begin{tabular}{l l l l l l}
-%\small
-%\textbf{1-5}  & Research  & \textbf{6-10} & Planning & \textbf{11-15} & Design\\
-%\end{tabular}
-%\end{table}
 
 \noindent
 \begin{minipage}[t]{0.32\linewidth}
@@ -160,7 +142,8 @@ RhinoTerrain | \url{http://www.rhinoterrain.com}\\
 Docofossor | \url{https://www.food4rhino.com/en/app/docofossor}\\
 RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}\\
 
-% -------------------------------- Projects -------------------------------- 
+% -------------------------------- Projects --------------------------------
+
 \section{Projects}
 
 \paragraph{Research}
@@ -225,7 +208,8 @@ and ARCH D posters
 with research, maps, diagrams, a masterplan, a site plan,
 sections, perspectives, and details including signage.
 
-% -------------------------------- Grading -------------------------------- 
+% -------------------------------- Grading --------------------------------
+
 \section{Grading}
 
 \noindent
@@ -245,30 +229,32 @@ Design: \enspace 35\%
 Portfolio: \enspace 5\%
 \end{minipage}
 
-% -------------------------------- Resources -------------------------------- 
+% -------------------------------- Resources --------------------------------
+
 \section{Resources}
 NOAA Digital Coast | \url{https://coast.noaa.gov/dataviewer}\\
 OpenTopography | \url{https://opentopography.org}\\
 
 \clearpage
 
-% -------------------------------- Readings -------------------------------- 
+% -------------------------------- Readings --------------------------------
+
 \section{Required Readings}
 \vspace*{0.5cm}
 \nocite{*}
 \setlength\bibitemsep{0.65\baselineskip}
 \printbibliography[keyword=required, heading=none]
 
-% -------------------------------- Readings -------------------------------- 
+% -------------------------------- Readings --------------------------------
+
 \section{Recommended Readings}
 \vspace*{0.5cm}
 \nocite{*}
 \setlength\bibitemsep{0.65\baselineskip}
 \printbibliography[keyword=recommended, heading=none]
 
-%\clearpage
+% -------------------------------- Policies --------------------------------
 
-% -------------------------------- Policies -------------------------------- 
 \section{Policies}
 
 \paragraph{Time Commitment Expectations}
@@ -278,14 +264,13 @@ spend at least two hours working on course related activities outside of class. 
 
 \paragraph{LSU student code of conduct}
 The LSU student code of conduct explains student rights, excused absences, and what is expected of student behavior. Students are expected to understand this code:  \url{http://students.lsu.edu/saa/students/code}.
-%Any violations of the LSU student code will be duly reported to the Dean of Students.\\
 
 \paragraph{Disability Code}
 The University is committed to making reasonable efforts to assist individuals with disabilities in
 their efforts to avail themselves of services and programs offered by the University. 
 Louisiana State University will provide reasonable accommodations for persons with
 documented qualifying disabilities. If you have a disability and feel you need accommodations in
-this course, you must present a letter to me from Disability Services %in 115 Johnston Hall,
+this course, you must present a letter to me from Disability Services
 indicating the existence of a disability and the suggested accommodations.
 
 \paragraph{Academic Integrity}

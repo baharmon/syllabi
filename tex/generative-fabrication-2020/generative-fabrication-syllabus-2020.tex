@@ -1,18 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
+% Class
 \documentclass[11pt,article,oneside]{memoir}
 
-% packages
-\usepackage{org-preamble-xelatex}
-\usepackage{wallpaper}
-\usepackage{xcolor}
-\usepackage{multicol}
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
-\usepackage{tikz}
-\usepackage{tikzpagenodes} 
+% Packages
+\usepackage{../style/xelatex-preamble}
 
+% Settings
 \AtBeginBibliography{\small}
 
 % Definitions
@@ -36,35 +31,35 @@
 \def\mysubtitle{Syllabus}
 \def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 7051 |} \Large Generative Fabrication} 
 
-% color
+% Color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
 
-% begin
+% Begin
 \begin{document}
 
-\setlength\bibitemsep{0.5em}
-
-% fonts
+% Fonts
 \defaultfontfeatures{}
-\defaultfontfeatures{Scale=MatchLowercase}         
-\setmainfont{Lato Regular}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont{IBM Plex Sans}
 \setmonofont[Scale=0.8]{IBM Plex Mono}
-%\newfontfamily\icon[Scale=1, Path = ../fonts/fontawesome/]{fontawesome-regular-400}
 
+% Style
+\setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
 \def\labelitemi{$\cdot$}
-\chapterstyle{article-4-sans}  
+\chapterstyle{syllabus}
 
+% Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
 \date{Fall 2020 Design 324.\newline Monday, Wednesday, \& Friday\newline 1:30pm--5:20pm.}
 \published{\,}
 
-% -------------------------------- COVER PAGE -------------------------------- 
+% -------------------------------- Cover page -------------------------------- 
 
 \pagenumbering{gobble}
 \globalcolor{black}
@@ -76,7 +71,7 @@
 \ThisCenterWallPaper{1.1}{../images/robotic-inform-1.jpg}
 \clearpage
 
-% -------------------------------- DESCRIPTION -------------------------------- 
+% -------------------------------- Description -------------------------------- 
 
 \pagenumbering{arabic}
 \globalcolor{black}
@@ -127,7 +122,8 @@ stereolithography (SLA), and ceramic 3D printers.\\
 \end{itemize}
 \end{multicols}
 
-% -------------------------------- SCHEDULE -------------------------------- 
+% -------------------------------- Schedule --------------------------------
+
 \section{Topics}
 
 \vspace*{-1em}
@@ -146,7 +142,8 @@ stereolithography (SLA), and ceramic 3D printers.\\
 
 \clearpage
 
-% -------------------------------- Online -------------------------------- 
+% -------------------------------- Online --------------------------------
+
 \section{Online}
 
 This studio will be taught online.
@@ -169,10 +166,8 @@ and collaborative robots.\\
 \noindent
 Course Website | \url{http://baharmon.github.io/generative-fabrication}\\
 Discord | \url{https://discord.gg/B3Y5SDK}\\
-%Youtube | \url{https://www.youtube.com/channel/UCmGEF6Bf1SO92oLQoGCPDTw}\\
-%Vimeo | \url{https://vimeo.com/showcase/7356098}\\
 
-% -------------------------------- Projects -------------------------------- 
+% -------------------------------- Projects --------------------------------
 
 \section{Projects}
 
@@ -197,7 +192,8 @@ Collect your work in a course portfolio
 for the school's accreditation archive.
 \emph{Due: 12/11/2020}\\
 
-% -------------------------------- Grading -------------------------------- 
+% -------------------------------- Grading --------------------------------
+
 \section{Grading}
 %
 \begin{table}[H]
@@ -210,12 +206,13 @@ Greenwall Design & 30\% & Course Portfolio & 5\% \\
 \end{tabular}
 \end{table}
 
-% -------------------------------- Software -------------------------------- 
+% -------------------------------- Software --------------------------------
+
 \section{Software}
 Rhinoceros | \url{https://www.rhino3d.com/}\\
 Thea Render for Rhino | \url{https://www.thearender.com/}\\
 
-% -------------------------------- Resources -------------------------------- 
+% -------------------------------- Resources --------------------------------
 
 \section{Resources}
 \textbf{Design 324} | UR10e, Ender FDM 3D Printer, \& 3D PotterBot Micro 9\\
@@ -225,7 +222,8 @@ Thea Render for Rhino | \url{https://www.thearender.com/}\\
 
 %\clearpage
 
-% -------------------------------- Readings -------------------------------- 
+% -------------------------------- Readings --------------------------------
+
 \section{Readings}
 \vspace*{0.5cm}
 \nocite{*}
@@ -234,7 +232,8 @@ Thea Render for Rhino | \url{https://www.thearender.com/}\\
 
 \clearpage
 
-% -------------------------------- Policies -------------------------------- 
+% -------------------------------- Policies --------------------------------
+
 \section{Policies}
 
 \noindent \textbf{Accreditation Expectations}

@@ -1,19 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-%%%  Syllabus template for use with style files at http://kjhealy.github.com/latex-custom-kjh
-%%%  Kieran Healy
-
+% Class
 \documentclass[11pt,article,oneside]{memoir}
 
-% packages
-\usepackage{org-preamble-xelatex}
-\usepackage{wallpaper}
-\usepackage{xcolor}
-\usepackage{multicol}
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
+% Packages
+\usepackage{../style/xelatex-preamble}
 
+% Settings
 \AtBeginBibliography{\small}
 
 % Definitions
@@ -37,34 +31,35 @@
 \def\mysubtitle{Syllabus}
 \def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 2101 \& 7012 |} \Large Digital Landscapes}
 
-% color
+% Color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
 
-% begin
+% Begin
 \begin{document}
 
-\setlength\bibitemsep{0.5em}
-
-% fonts
+% Fonts
 \defaultfontfeatures{}
 \defaultfontfeatures{Scale=MatchLowercase}
-\setmainfont{Lato Regular}
+\setmainfont{IBM Plex Sans}
 \setmonofont[Scale=0.8]{IBM Plex Mono}
 
+% Style
+\setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
 \def\labelitemi{$\cdot$}
-\chapterstyle{article-4-sans}
+\chapterstyle{syllabus}
 
+% Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
-\date{Spring 2021 .\newline Monday, Wednesday, \& Friday 9:30am--11:50am.} % Design 217
+\date{Spring 2021 .\newline Monday, Wednesday, \& Friday 9:30am--11:50am.}
 \published{\,}
 
-% -------------------------------- COVER PAGE --------------------------------
+% -------------------------------- Cover page --------------------------------
 
 \pagenumbering{gobble}
 \globalcolor{black}
@@ -74,7 +69,7 @@
 \clearpage
 
 
-% -------------------------------- DESCRIPTION --------------------------------
+% -------------------------------- Description --------------------------------
 
 \pagenumbering{arabic}
 \globalcolor{black}
@@ -91,7 +86,7 @@ Topics will include how to model
 topography, furniture, landscape elements, and planting.
 %\vspace*{0.5em}
 
-% -------------------------------- SCHEDULE --------------------------------
+% -------------------------------- Schedule --------------------------------
 \section{Schedule}
 
 \begin{table}[H]

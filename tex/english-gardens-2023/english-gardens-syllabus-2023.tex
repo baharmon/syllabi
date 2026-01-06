@@ -1,16 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
+% Class
 \documentclass[11pt,article,oneside]{memoir}
 
-% packages
-\usepackage{org-preamble-xelatex}
-\usepackage{wallpaper}
-\usepackage{xcolor}
-\usepackage{multicol}
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
+% Packages
+\usepackage{../style/xelatex-preamble}
 
+% Settings
 \AtBeginBibliography{\small}
 
 % Definitions
@@ -34,34 +31,35 @@
 \def\mysubtitle{Syllabus}
 \def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize HNRS 2021 |} \Large English Gardens} 
 
-% color
+% Color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
 
-% begin
+% Begin
 \begin{document}
 
-\setlength\bibitemsep{0.5em}
-
-% fonts
+% Fonts
 \defaultfontfeatures{}
-\defaultfontfeatures{Scale=MatchLowercase}         
-\setmainfont[Scale=1, Path = ../fonts/lato/,BoldItalicFont=Lato-BolIta,BoldFont=Lato-Bol,ItalicFont=Lato-RegIta]{Lato-Reg}
-\setmonofont[Mapping=tex-text,Scale=0.8,Path = ../fonts/inconsolata/]{i}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont{IBM Plex Sans}
+\setmonofont[Scale=0.8]{IBM Plex Mono}
 
+% Style
+\setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
 \def\labelitemi{$\cdot$}
-\chapterstyle{article-4-sans}  
+\chapterstyle{syllabus}
 
+% Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
 \date{\textbf{Ogden Honors in Oxford} \newline Summer 2023}
 \published{\,}
 
-% -------------------------------- COVER PAGE -------------------------------- 
+% -------------------------------- Cover Page -------------------------------- 
 
 %\pagenumbering{gobble}
 %\globalcolor{black}
@@ -71,7 +69,7 @@
 %\clearpage
 
 
-% -------------------------------- DESCRIPTION -------------------------------- 
+% -------------------------------- Description -------------------------------- 
 
 \pagenumbering{arabic}
 \globalcolor{black}
@@ -84,7 +82,7 @@ This course will study the history and aesthetics of English gardens. Through ar
 
 \vspace*{0.5em}
 
-% -------------------------------- SCHEDULE -------------------------------- 
+% -------------------------------- Schedule -------------------------------- 
 \section{Schedule}
 
 \begin{table}[H]
@@ -134,8 +132,6 @@ hidden behind walls of Cotswold's stone.
 ...
 \\
 
-% Readings
-
 \noindent \textbf{3} 
 \enspace
 \textbf{Capability Brown}
@@ -168,7 +164,7 @@ hidden behind walls of Cotswold's stone.
 \\
 \noindent
 ...
-% punting on the Isis
+% Punting on the Isis
 \\
 
 \noindent \textbf{9} 

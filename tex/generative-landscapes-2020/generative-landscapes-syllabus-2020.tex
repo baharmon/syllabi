@@ -1,19 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-%%%  Syllabus template for use with style files at http://kjhealy.github.com/latex-custom-kjh
-%%%  Kieran Healy
-
+% Class
 \documentclass[11pt,article,oneside]{memoir}
 
-% packages
-\usepackage{org-preamble-xelatex}
-\usepackage{wallpaper}
-\usepackage{xcolor}
-\usepackage{multicol}
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
+% Packages
+\usepackage{../style/xelatex-preamble}
 
+% Settings
 \AtBeginBibliography{\small}
 
 % Definitions
@@ -37,34 +31,35 @@
 \def\mysubtitle{Syllabus}
 \def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 7032 |} \Large Generative Landscapes} 
 
-% color
+% Color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
 
-% begin
+% Begin
 \begin{document}
 
-\setlength\bibitemsep{0.5em}
-
-% fonts
+% Fonts
 \defaultfontfeatures{}
-\defaultfontfeatures{Scale=MatchLowercase}         
-\setmainfont{Lato Regular}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont{IBM Plex Sans}
 \setmonofont[Scale=0.8]{IBM Plex Mono}
 
+% Style
+\setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
 \def\labelitemi{$\cdot$}
-\chapterstyle{article-4-sans}  
+\chapterstyle{syllabus}
 
+% Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
 \date{Spring 2020. Design 217.\newline Tuesday \& Thursday 1:00am--3:30pm.}
 \published{\,}
 
-% -------------------------------- COVER PAGE -------------------------------- 
+% -------------------------------- Cover page -------------------------------- 
 
 \pagenumbering{gobble}
 \globalcolor{black}
@@ -74,7 +69,7 @@
 \clearpage
 
 
-% -------------------------------- DESCRIPTION -------------------------------- 
+% -------------------------------- Description -------------------------------- 
 
 \pagenumbering{arabic}
 \globalcolor{black}
@@ -98,8 +93,6 @@ parametrically model variations on landfroms and planting
 using visual programming, 
 and photorealistically render 
 your algorithmic planting patterns.
-%photorealistically render your algorithmic planting patterns,
-% and computer numerical control (CNC) mill your landforms. 
 %
 Through this course you will 
 learn creative approaches to digital design 
@@ -123,7 +116,8 @@ and apply emerging technologies to landscape architecture.
 \end{itemize}
 \end{multicols}
 
-% -------------------------------- SCHEDULE -------------------------------- 
+% -------------------------------- Schedule --------------------------------
+
 \section{Topics}
 
 \begin{table}[H]
@@ -146,21 +140,10 @@ and apply emerging technologies to landscape architecture.
 \end{tabular}
 \end{table}
 
-%\begin{table}[H]
-%\small
-%\begin{tabular}{l l l l l l}
-%\small
-%\textbf{1} & Design week & \textbf{6} & Geospatial modeling & \textbf{11} & Spring break\\
-%\textbf{2} & Alphabet \& algorithm & \textbf{7} & Geospatial programming & \textbf{12} & Attractors\\
-%\textbf{3} & Drone surveying & \textbf{8} & Generative design & \textbf{13} & 3D rendering\\
-%\textbf{4} & Drone photogrammetry & \textbf{9} & Families of form & \textbf{14} & CNC milling\\
-%\textbf{5} & Lidar analytics & \textbf{10} & Parametric modeling & \textbf{15} & Geospatial analytics\\
-%\end{tabular}
-%\end{table}
-
 \clearpage
 
-% -------------------------------- SCHEDULE -------------------------------- 
+% -------------------------------- SCHEDULE --------------------------------
+
 \section{Course Schedule}
 
 \begin{table}[H]
@@ -169,7 +152,6 @@ and apply emerging technologies to landscape architecture.
 \textbf{Drones}\\
 \\
 01.14.2020 & \textbf{Studio |} & Introduction \\
-%01.16.2020 & \textbf{Studio |} & Design week \\
 %
 01.21.2020 & \textbf{Lecture |} & Coastal drones & \textbf{Tour:} Ctr.~for River Studies \\
 01.23.2020 & \textbf{Reading |} &Alphabet \& algorithm & \textbf{Essay:} Generative design \\
@@ -183,36 +165,25 @@ and apply emerging technologies to landscape architecture.
 02.11.2020 & \textbf{Fieldwork |} & Lidar survey \\
 02.13.2020 & \textbf{Tutorial |} & Point cloud processing & \textbf{Project:} Lidar survey \\
 \\
-%\textbf{Generative}\\
 \textbf{Algorithmic}\\
 \\
 02.18.2020 & \textbf{Tutorial |} & Terrain modeling \\
 02.20.2020 & \textbf{Tutorial |} & Hydrologic simulation \\
 %
-%02.22.2020 & \textbf{Holiday |} & Mardi Gras\\
 02.27.2020 & \textbf{Tutorial |} & Geospatial programming I\\
 %
 03.03.2020 & \textbf{Tutorial |} & Geospatial programming II \\
 03.05.2020 & \textbf{Tutorial |} & Generative design\\ 
 %
 03.10.2020 & \textbf{Tutorial |} & Parametric planting \\
-03.12.2020 & \textbf{Tutorial |} & Parametric landforms \\%& \textbf{Project:} Families of form \\
+03.12.2020 & \textbf{Tutorial |} & Parametric landforms \\
 \\
-%\textbf{Fabrication}\\
 \textbf{Generative}\\
 \\
-%03.17.2020 & \textbf{Tutorial |} & Parametric planting \\
-%03.19.2020 & \textbf{Studio |} & Workday\\
 %
-%03.24.2020 & \textbf{Holiday |} & Spring break \\
-%03.26.2020 & \textbf{Holiday |} & Spring break \\
-%
-%03.31.2020 & \textbf{Tutorial |} & Attractors \\
 03.31.2020 & \textbf{Tutorial |} & Waveforms I \\
 04.02.2020 & \textbf{Tutorial |} & Waveforms II \\
 %
-%04.07.2020 & \textbf{Tutorial |} & CNC milling I \\
-%04.09.2020 & \textbf{Lab |} & CNC milling II \\
 04.07.2020 & \textbf{Tutorial |} & Parametric point clouds I \\
 04.09.2020 & \textbf{Tutorial |} & Parametric point clouds II \\
 %
@@ -220,9 +191,8 @@ and apply emerging technologies to landscape architecture.
 04.16.2020 & \textbf{Tutorial |} & 3D rendering II \\
 %
 04.21.2020 & \textbf{Tutorial |} & Geospatial analytics I\\
-04.23.2020 & \textbf{Tutorial |} & Geospatial analytics II \\%& \textbf{Project:} Parametric landscapes \\ 
+04.23.2020 & \textbf{Tutorial |} & Geospatial analytics II \\
 %
-%04.28.2020 & \textbf{Studio |} & Workday\\
 04.30.2020 & \textbf{Review |} & Final review & \textbf{Project:} Parametric landscapes \\ 
 %
 \end{tabular}
@@ -231,7 +201,8 @@ and apply emerging technologies to landscape architecture.
 
 \clearpage
 
-% -------------------------------- Projects -------------------------------- 
+% -------------------------------- Projects --------------------------------
+
 \section{Projects}
 
 \noindent \textbf{Essay}
@@ -254,35 +225,23 @@ with an unmanned aerial system (UAS)
 and automated ground control points. 
 Use photogrammetry to generate a point cloud, 
 digital surface model, and orthophoto.
-%Upload your point cloud to Sketchfab.
 \\
 
 \noindent \textbf{Lidar survey}
 Conduct a terrestrial lidar survey of the 
 LSU College of Art \& Design quad. 
-%Upload your point cloud to Sketchfab.
 \\
-
-%\noindent \textbf{Families of form}
-%Use visual programming to 
-%simulate water and sediment flow 
-%for a series of nine landform variations
-%in a virtual flume. 
-%\\
 
 \noindent \textbf{Parametric landscapes}
 Use visual programming to parametrically model
 nine variations of landforms and planting. 
 Photorealistically 3D render your variants
 with 3D trees, shrubs, and grasses. 
-%CNC mill models of your nine landforms
-%in high density urethane foam.
-%Upload your landform models to Sketchab.
-
 
 \nocite{*} \printbibliography[keyword=grasshopper, heading=none]
 
-% -------------------------------- Online -------------------------------- 
+% -------------------------------- Online --------------------------------
+
 \section{Online}
 
 Lectures will be recorded and posted 
@@ -298,23 +257,10 @@ Basecamp | \url{https://basecamp.com/}\\
 Discord | \url{https://discord.gg/NBSdJRS}\\
 Youtube | \url{https://www.youtube.com/channel/UCmGEF6Bf1SO92oLQoGCPDTw}\\
 Vimeo | \url{https://vimeo.com/baharmon}\\
-% Course website | \url{http://baharmon.github.io/courses}\\
 
-% -------------------------------- Software -------------------------------- 
+% -------------------------------- Software --------------------------------
+
 \section{Software}
-%\begin{multicols}{2}
-%\raggedright
-%Agisoft Metashape | \url{https://www.agisoft.com/} \\
-%CloudCompare | \url{https://www.danielgm.net/cc/} \\
-%Sketchfab | \url{https://sketchfab.com/} \\
-%GRASS GIS | \url{https://grass.osgeo.org/} \\
-%ArcGIS | \url{https://www.esri.com/} \\
-%Rhinoceros | \url{https://www.rhino3d.com/}\\
-%Grasshopper | \url{http://grasshopper3d.com/}\\
-%RhinoTerrain | \url{http://www.rhinoterrain.com/}\\
-%RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}\\
-%Thea Render | \url{https://www.thearender.com/}\\
-%\end{multicols}
 
 Agisoft Metashape | \url{https://www.agisoft.com/} \\
 CloudCompare | \url{https://www.danielgm.net/cc/} \\
@@ -335,35 +281,19 @@ Nudibranch | \url{https://www.food4rhino.com/app/nudibranch}\\
 Docofossor | \url{https://www.food4rhino.com/app/docofossor}\\
 Bison | \url{https://www.bison.la/}\\
 
-% -------------------------------- Resources -------------------------------- 
+% -------------------------------- Resources --------------------------------
+
 \section{Resources}
 Intro to GRASS GIS | \url{https://ncsu-geoforall-lab.github.io/grass-intro-workshop/}\\
 Hydrology in GRASS GIS | \url{https://grasswiki.osgeo.org/wiki/Hydrological_Sciences}\\
 Grasshopper Primer | \url{http://grasshopperprimer.com}\\
 
-%% -------------------------------- Certificate -------------------------------- 
-%\section{Graduate Certificate in GIS}
-%This course counts as an applied topics course for the 
-%Graduate Certificate in Geographic Information Science.
-%The Graduate Certificate in Geographic Information Science at LSU 
-%is a 12 credit hour standalone certificate. 
-%%with courses offered 
-%%in the Department of Geography and Anthropology, 
-%%College of Art and Design, 
-%%Department of Economics, 
-%%School of the Coast and Environment, 
-%%Department of Civil and Environmental Engineering, 
-%%and Department of Computer Science. 
-%For more information about the Graduate Certificate in GIS visit: 
-%\url{http://ga.lsu.edu/gis-certificate/}.
+% -------------------------------- Grading --------------------------------
 
-% -------------------------------- Grading -------------------------------- 
 \section{Grading}
 %
 \begin{table}[H]
-%\small
 \begin{tabular}{l r @{\hskip 2cm} l @{\hskip 0.5cm} l}
-%\begin{tabular}{l l}
 %
 Essay & 5\% & Parametric landscapes & 50\% \\
 Drone survey & 20\% & Course portfolio & 5\% \\
@@ -372,7 +302,8 @@ Lidar survey & 20\% \\
 \end{tabular}
 \end{table}
 
-% -------------------------------- Readings -------------------------------- 
+% -------------------------------- Readings --------------------------------
+
 \section{Readings}
 \vspace*{0.5cm}
 \nocite{*}
@@ -380,7 +311,8 @@ Lidar survey & 20\% \\
 \printbibliography[heading=none]
 \clearpage
 
-% --------------------------------Network --------------------------------
+% --------------------------------Network ----------------------------------
+
 \section{Network drives}
 
 \noindent
@@ -389,7 +321,8 @@ Windows: \verb|\\desn-knox.lsu.edu\Landscape-Classes\LA7032-S2020| \\
 \noindent
 Macs: \verb|smb://desn-knox.lsu.edu/Landscape-Classes/LA7032-S2020| \\
 
-% -------------------------------- Terminology -------------------------------- 
+% -------------------------------- Terminology -------------------------------
+
 \section{Terminology}
 \begin{multicols}{2}
 \raggedright
@@ -402,7 +335,6 @@ Macs: \verb|smb://desn-knox.lsu.edu/Landscape-Classes/LA7032-S2020| \\
 \item Parametric modeling
 \item Performative design
 \item Algorithm
-%\item Scripting
 \end{itemize}
 
 \textbf{Spatial data}
@@ -412,7 +344,6 @@ Macs: \verb|smb://desn-knox.lsu.edu/Landscape-Classes/LA7032-S2020| \\
 \item Point cloud
 \item Mesh
 \item Triangulated irregular network (TIN)
-%\item Discrete \& continuous data
 \item Plain text
 \item Comma separated values (CSV)
 \item Integer \& floating point numbers
@@ -431,14 +362,8 @@ Macs: \verb|smb://desn-knox.lsu.edu/Landscape-Classes/LA7032-S2020| \\
 \item Structure from motion (SfM)
 \item Delaunay triangulation
 \item Interpolation
-%\item Bilinear interpolation
-%\item Nearest neighbors
 \item Regularized spline with tension (RST)
 \item Map algebra
-%\item Null value
-%\item Least cost path (LCP)
-%\item Resampling
-%\item Image classification
 \end{itemize}
 
 \textbf{3D rendering}
@@ -460,26 +385,12 @@ Macs: \verb|smb://desn-knox.lsu.edu/Landscape-Classes/LA7032-S2020| \\
 \item Medium density fiberboard (MDF)
 \end{itemize}
 
-%\textbf{Geomorphology}
-%\begin{itemize}
-%\item Watershed
-%\item Single flow direction (SFD/D8)
-%\item Multiple flow direction (MFD)
-%\item Revised Universal Soil Loss Equation (RUSLE)
-%\item Unit Stream Power-based Erosion Deposition (USPED)
-%\item Simulated Water Erosion (SIMWE)
-%\item R-factor
-%\item Mannings
-%\item Sediment mass density
-%\item Gully
-%\item Knickpoint
-%\end{itemize}
-%
 \end{multicols}
 
 \clearpage
 
-% -------------------------------- Policies -------------------------------- 
+% -------------------------------- Policies --------------------------------
+
 \section{Policies}
 
 \noindent \textbf{Time Commitment Expectations}

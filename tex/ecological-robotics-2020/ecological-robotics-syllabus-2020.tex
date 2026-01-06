@@ -1,19 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-%%%  Syllabus template for use with style files at http://kjhealy.github.com/latex-custom-kjh
-%%%  Kieran Healy
-
+% Class
 \documentclass[11pt,article,oneside]{memoir}
 
-% packages
-\usepackage{org-preamble-xelatex}
-\usepackage{wallpaper}
-\usepackage{xcolor}
-\usepackage{multicol}
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
+% Packages
+\usepackage{../style/xelatex-preamble}
 
+% Settings
 \AtBeginBibliography{\small}
 
 % Definitions
@@ -32,7 +26,6 @@
 \def\myversion{}
 \def\myrevision{}
 \def\myaffiliation{\ \\Louisiana State University}
-%\def\myauthor{\normalsize M.~de Queiroz, H.~Gilbert, B.~Harmon, H.Y.~Nam, \& C.~Barbalata}
 \def\myauthor{\footnotesize Marcio de Queiroz, Hunter Gilbert, Brendan Harmon, Hye Yeon Nam, \& Corina Barbalata}
 \def\mykeywords{Landscape Architecture, Syllabus, Graduate}
 \def\mysubtitle{Syllabus}
@@ -44,28 +37,29 @@
 \\[0.1cm] {\normalfont \normalsize ME 4933 \& LA 7504 \& ART 7255 \& DART 7020 |} \Large Ecological Robotics
 } 
 
-% color
+% Color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
 
-% begin
+% Begin
 \begin{document}
 
-\setlength\bibitemsep{0.5em}
-
-% fonts
+% Fonts
 \defaultfontfeatures{}
-\defaultfontfeatures{Scale=MatchLowercase}         
-\setmainfont{Lato Regular}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont{IBM Plex Sans}
 \setmonofont[Scale=0.8]{IBM Plex Mono}
 
+% Style
+\setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
 \def\labelitemi{$\cdot$}
-\chapterstyle{article-4-sans}  
+\chapterstyle{syllabus}
 
+% Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
 \date{Robotics Lab, Patrick Taylor Hall 
@@ -73,7 +67,7 @@
 \newline Spring 2020}
 \published{\,}
 
-% -------------------------------- COVER PAGE -------------------------------- 
+% -------------------------------- Cover page -------------------------------- 
 
 \pagenumbering{gobble}
 \globalcolor{black}
@@ -84,7 +78,7 @@
 \clearpage
 
 
-% -------------------------------- DESCRIPTION -------------------------------- 
+% -------------------------------- Description -------------------------------- 
 
 \pagenumbering{arabic}
 \globalcolor{black}
@@ -125,7 +119,8 @@ College of Art \& Design and the College of Engineering.
 \end{itemize}
 \end{multicols}
 
-% -------------------------------- SCHEDULE -------------------------------- 
+% -------------------------------- Schedule --------------------------------
+
 \section{Topics}
 %
 \begin{table}[H]
@@ -147,13 +142,10 @@ College of Art \& Design and the College of Engineering.
 \textbf{5} & Pick \& place project & \textbf{10} & Lab planting project & \textbf{15} & Applied project\\
 \end{tabular}
 \end{table}
-%
-
-%\begin{tabular}{l l @{\hskip 1cm}l}
 
 \clearpage
 
-% -------------------------------- SCHEDULE -------------------------------- 
+% -------------------------------- Schedule -------------------------------- 
 \section{Course Schedule}
 
 \begin{table}[H]
@@ -207,7 +199,6 @@ College of Art \& Design and the College of Engineering.
 \small{%
 \begin{tabular}{l r @{\hskip 0.1cm} l @{\hskip 1cm} l}
 \\
-%greenwalls, wetland restoration, and/or precision agriculture
 \textbf{Week 11} & \textbf{Lecture |} & Environmental applications \\
 \textbf{} & \textbf{Workshop |} & Ideation\\
 %
@@ -228,7 +219,8 @@ College of Art \& Design and the College of Engineering.
 
 \clearpage
 
-% -------------------------------- Projects -------------------------------- 
+% -------------------------------- Projects --------------------------------
+
 \section{Projects}
 As interdisciplinary teams you will develop 
 novel environmental applications for robots.
@@ -261,48 +253,45 @@ a CNC milled greenwall module,
 and a 3D printed scale model of your design.
 \\
 
-% -------------------------------- Software -------------------------------- 
+% -------------------------------- Software --------------------------------
+
 \section{Software}
-%\begin{multicols}{2}
-%\raggedright
 SolidWorks | \url{https://www.solidworks.com/}\\
 Rhinoceros | \url{https://www.rhino3d.com/}\\
 Grasshopper | \url{http://grasshopper3d.com/}\\
 HAL Robotics Framework | \url{https://hal-robotics.com/}\\
 Thea Render | \url{https://www.thearender.com}\\
 Xfrog | \url{https://xfrog.com/}
-%\end{multicols}
 
-% -------------------------------- Resources -------------------------------- 
+% -------------------------------- Resources --------------------------------
+
 \section{Resources}
 Grasshopper Primer | \url{http://grasshopperprimer.com}\\
 Intro to HAL Playlist | \url{http://bit.ly/hal-playlist}
 
-% -------------------------------- Grading -------------------------------- 
+% -------------------------------- Grading --------------------------------
+
 \section{Grading}
-%
 \begin{table}[H]
-%\small
 \begin{tabular}{l r @{\hskip 2cm} l @{\hskip 0.5cm} l}
-%\begin{tabular}{l l}
-%
 Pick \& place & 20\% \\
 Laboratory planting & 40\%  \\
 Applied planting & 40\% \\
-%
 \end{tabular}
 \end{table}
 
 \clearpage
 
-% -------------------------------- Readings -------------------------------- 
+% -------------------------------- Readings --------------------------------
+
 \section{Readings}
 \vspace*{0.5cm}
 \nocite{*}
 \setlength\bibitemsep{0.65\baselineskip}
 \printbibliography[heading=none]
 \clearpage
-% -------------------------------- Policies -------------------------------- 
+% -------------------------------- Policies --------------------------------
+
 \section{Policies}
 
 \noindent \textbf{Time Commitment Expectations}

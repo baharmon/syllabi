@@ -1,18 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
+% Class
 \documentclass[11pt,article,oneside]{memoir}
 
-% packages
-\usepackage{org-preamble-xelatex}
-\usepackage{wallpaper}
-\usepackage{xcolor}
-\usepackage{multicol}
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
-\usepackage{tikz}
-\usepackage{tikzpagenodes} 
+% Packages
+\usepackage{../style/xelatex-preamble}
 
+% Settings
 \AtBeginBibliography{\small}
 
 % Definitions
@@ -36,32 +31,35 @@
 \def\mysubtitle{Syllabus}
 \def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 7080 |} \Large Emerging Paradigms} 
 
-% color
+% Color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
 
-% begin
+% Begin
 \begin{document}
 
-\setlength\bibitemsep{0.5em}
+% Fonts
 \defaultfontfeatures{}
 \defaultfontfeatures{Scale=MatchLowercase}
 \setmainfont{IBM Plex Sans}
 \setmonofont[Scale=0.8]{IBM Plex Mono}
 
+% Style
+\setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
 \def\labelitemi{$\cdot$}
-\chapterstyle{article-4-sans}  
+\chapterstyle{syllabus}
 
+% Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
 \date{Fall 2024 | Fridays | 9:30-12:30 | Design 308}
 \published{\,}
 
-% -------------------------------- DESCRIPTION -------------------------------- 
+% -------------------------------- Description -------------------------------- 
 
 \pagenumbering{arabic}
 \globalcolor{black}
@@ -103,7 +101,7 @@ Announcements, readings, student work, and support
 will be posted on the course's Discord server at 
 \url{https://discord.gg/aas6dzJxEc}.
 
-% -------------------------------- SCHEDULE -------------------------------- 
+% -------------------------------- Schedule -------------------------------- 
 
 \section{Schedule}
 
@@ -118,10 +116,6 @@ will be posted on the course's Discord server at
 \textbf{7} & Xenofeminism I  \hspace{4em}  & \textbf{14} & Cyborgs II\\
 \end{tabular}
 \end{table}
-
-% ------------------------------- Software -------------------------------- 
-
-% Adobe Firefly, Photoshop, Luma AI, Luma Genie, etc
 
 % -------------------------------- Grading -------------------------------- 
 
@@ -143,7 +137,7 @@ Generative artificial intelligence is being used by landscape architects
 to conduct research,
 allocate program, 
 draw plans, 
-to render scenes,
+render scenes,
 and generate asset libraries.
 How else can artificial intelligence be used in the discipline?
 How is artificial intelligence transforming 

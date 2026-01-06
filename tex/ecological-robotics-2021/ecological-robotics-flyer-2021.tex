@@ -1,19 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-%%%  Syllabus template for use with style files at http://kjhealy.github.com/latex-custom-kjh
-%%%  Kieran Healy
-
+% Class
 \documentclass[11pt,article,oneside]{memoir}
 
-% packages
-\usepackage{org-preamble-xelatex}
-\usepackage{wallpaper}
-\usepackage{xcolor}
-\usepackage{multicol}
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
+% Packages
+\usepackage{../style/xelatex-preamble}
 
+% Settings
 \AtBeginBibliography{\small}
 
 % Definitions
@@ -41,28 +35,29 @@
 \\[0.1cm] {\normalfont \normalsize LA 4008 \& LA 7051 |} \Large Ecological Robotics
 } 
 
-% color
+% Color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
 
-% begin
+% Begin
 \begin{document}
 
-\setlength\bibitemsep{0.5em}
-
-% fonts
+% Fonts
 \defaultfontfeatures{}
-\defaultfontfeatures{Scale=MatchLowercase}         
-\setmainfont{Lato Regular}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont{IBM Plex Sans}
 \setmonofont[Scale=0.8]{IBM Plex Mono}
 
+% Style
+\setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
 \def\labelitemi{$\cdot$}
-\chapterstyle{article-4-sans}  
+\chapterstyle{syllabus}
 
+% Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
 \date{
@@ -71,7 +66,7 @@ MWF 1:30pm--5:30pm
 }
 \published{\,}
 
-% -------------------------------- DESCRIPTION -------------------------------- 
+% -------------------------------- Description -------------------------------- 
 
 \pagenumbering{gobble}
 \globalcolor{black}
@@ -85,7 +80,7 @@ MWF 1:30pm--5:30pm
 \footnotesize
 This studio will explore ecological applications for robots. In this studio you will learn how to program industrial robots, design your own robotic tools, and robotically plant a landscape. Through a series of projects you will design a robotic process for algorithmic planting and test it both in the studio and in the field. The field site will be a set of plots at Burden where you will conduct a controlled planting experiment. As an introduction to robotics for designers, this studio will cover topics such as visual programming, generative design, robotic operations, 3D printing, 3D scanning, and drone photogrammetry. 
 
-% -------------------------------- SCHEDULE ---------------------------------- 
+% -------------------------------- Schedule ---------------------------------- 
 
 \section{Topics}
 

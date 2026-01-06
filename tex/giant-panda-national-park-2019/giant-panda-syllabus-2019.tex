@@ -1,19 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-%%%  Syllabus template for use with style files at http://kjhealy.github.com/latex-custom-kjh
-%%%  Kieran Healy
-
+% Class
 \documentclass[11pt,article,oneside]{memoir}
 
-% packages
-\usepackage{org-preamble-xelatex}
-\usepackage{wallpaper}
-\usepackage{xcolor}
-\usepackage{multicol}
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
+% Packages
+\usepackage{../style/xelatex-preamble}
 
+% Settings
 \AtBeginBibliography{\small}
 
 % Definitions
@@ -37,35 +31,36 @@
 \def\mysubtitle{Syllabus}
 \def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 7051 |} \Large Giant Panda Studio} 
 
-% color
+% Color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
 
-% begin
+% Begin
 \begin{document}
 
-\setlength\bibitemsep{0.5em}
-
-% fonts
+% Fonts
 \defaultfontfeatures{}
-\defaultfontfeatures{Scale=MatchLowercase}         
-\setmainfont{Lato Regular}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont{IBM Plex Sans}
 \setmonofont[Scale=0.8]{IBM Plex Mono}
 
+% Style
+\setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
 \def\labelitemi{$\cdot$}
-\chapterstyle{article-4-sans}  
+\chapterstyle{syllabus}
 
+% Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
 \date{Fall 2019 \newline Monday, Wednesday, \& Friday \\
 1:30pm--5:30pm}
 \published{\,}
 
-% -------------------------------- DESCRIPTION -------------------------------- 
+% -------------------------------- Description -------------------------------- 
 
 \pagenumbering{arabic}
 \globalcolor{black}
@@ -116,7 +111,7 @@ landscape ecology,  island biogeography, conservation corridors,
 systematic conservation planning, biodiversity hotspots, 
 adaptive management, and climate change. 
 
-% -------------------------------- SCHEDULE -------------------------------- 
+% -------------------------------- Schedule -------------------------------- 
 
 \section{Topics}
 %
@@ -144,7 +139,8 @@ adaptive management, and climate change.
 \end{table}
 %
 
-% -------------------------------- FIELDWORK -------------------------------- 
+% -------------------------------- Fieldwork --------------------------------
+
 \section{Fieldwork}
 
 The fieldwork excursion to Sichuan Province in China 
@@ -174,31 +170,11 @@ Each student is recommended to bring around
 \end{tabular}
 \end{table}
 
-%\begin{table}[H]
-%\begin{tabular}{l r @{\hskip 0.1cm} l @{\hskip 0.5cm} l}
-%\\
-%08.17.2019 & \textbf{Flight |} & Baton Rouge --- Chengdu \\
-%08.18.2019 & \textbf{Course |} & Chinese language \\
-%08.19.2019 & \textbf{Travel |} & Dujiangyan \& Mt. Qingcheng\\
-%08.20.2019 & \textbf{Course |} & Chinese gardens \\
-%08.21.2019 & \textbf{Course |} & Panda Breeding Center \\
-%08.22.2019 & \textbf{Site visit |} & Fengtongzhai \\
-%08.23.2019 & \textbf{Site visit |} & Fengtongzhai \\
-%08.24.2019 & \textbf{Travel |} & Mt. Emei \\
-%08.25.2019 & \textbf{Travel |} & Mt. Emei \\
-%08.26.2019 & \textbf{Course |} & Ink painting \\
-%08.27.2019 & \textbf{Course |} & Ink painting \\
-%08.28.2019 & \textbf{Travel |} & Tea culture \\
-%08.29.2019 & \textbf{Travel |} & Tea culture \\
-%08.30.2019 & \textbf{Travel |} & Bamboo culture \\
-%08.31.2019 & \textbf{Flight |} & Chengdu --- Baton Rouge \\
-%%
-%\end{tabular}
-%\end{table}
 
 \clearpage
 
-% -------------------------------- Projects -------------------------------- 
+% -------------------------------- Projects --------------------------------
+
 \section{Projects}
 This studio will be an introduction to 
 computational methods for landscape ecology and planning. 
@@ -229,7 +205,8 @@ observation points, wildlife over/underpasses, or signage.\\
 As a class you will prepare and publish a report 
 for our partners in Sichuan. 
 
-% -------------------------------- Grading -------------------------------- 
+% -------------------------------- Grading --------------------------------
+
 \section{Grading}
 %
 \begin{table}[H]
@@ -241,7 +218,8 @@ Planning & 33\% & Design & 33\% & Report & 33\% \\
 \end{tabular}
 \end{table}
 
-% -------------------------------- Software -------------------------------- 
+% -------------------------------- Software --------------------------------
+
 \section{Software}
 \begin{multicols}{2}
 \raggedright
@@ -249,31 +227,26 @@ QGIS | \url{https://qgis.org/} \\
 ArcGIS | \url{https://www.esri.com/} \\
 GRASS GIS | \url{https://grass.osgeo.org/} \\
 Rhinoceros | \url{https://www.rhino3d.com/}
-%RhinoTerrain | \url{http://www.rhinoterrain.com/}\\
-%RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}\\
-%Grasshopper | \url{http://grasshopper3d.com/}\\
 \end{multicols}\vspace*{-0.4cm}
 \noindent
 LandScape Corridors | \url{https://github.com/LEEClab/LS_CORRIDORS/wiki}\\
 MaxEnt | \url{https://biodiversityinformatics.amnh.org/open_source/maxent/}
 
-% -------------------------------- Resources -------------------------------- 
+% -------------------------------- Resources --------------------------------
+
 \section{Resources}
 Sichuan Dataset | \url{https://doi.org/10.5281/zenodo.3359645}\\
 Intro to QGIS | \url{https://docs.qgis.org/2.18/en/docs/gentle_gis_introduction/}\\
 Intro to GRASS GIS | \url{https://ncsu-geoforall-lab.github.io/grass-intro-workshop/}\\
-%Hydrology in GRASS GIS | \url{https://grasswiki.osgeo.org/wiki/Hydrological_Sciences}\\
 Grasshopper Primer | \url{http://grasshopperprimer.com}\\
 Learn ArcGIS | \url{https://learn.arcgis.com/en/projects/build-a-model-to-connect-mountain-lion-habitat/}
 
-%\clearpage
+% -------------------------------- Readings --------------------------------
 
-% -------------------------------- Readings -------------------------------- 
 \section{Readings}
 \vspace*{0.25cm}
 \nocite{*}
 \setlength\bibitemsep{0.65\baselineskip}
-%\printbibliography[heading=none]
 
 \printbibliography[title={\normalsize{Architecture}},keyword=architecture, heading=subbibliography]
 
@@ -286,7 +259,9 @@ Learn ArcGIS | \url{https://learn.arcgis.com/en/projects/build-a-model-to-connec
 \printbibliography[title={\normalsize{Conservation}},keyword=conservation, heading=subbibliography]
 
 \clearpage
-% -------------------------------- Policies -------------------------------- 
+
+% -------------------------------- Policies --------------------------------
+
 \section{Policies}
 
 \noindent \textbf{Time Commitment Expectations}

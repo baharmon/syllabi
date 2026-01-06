@@ -1,19 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-%%%  Syllabus template for use with style files at http://kjhealy.github.com/latex-custom-kjh
-%%%  Kieran Healy
-
+% Class
 \documentclass[11pt,article,oneside]{memoir}
 
-% packages
-\usepackage{org-preamble-xelatex}
-\usepackage{wallpaper}
-\usepackage{xcolor}
-\usepackage{multicol}
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
+% Packages
+\usepackage{../style/xelatex-preamble}
 
+% Settings
 \AtBeginBibliography{\small}
 
 % Definitions
@@ -37,34 +31,35 @@
 \def\mysubtitle{Syllabus}
 \def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 4201 \& 7075 |} \Large GIS for Designers} 
 
-% color
+% Color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
 
-% begin
+% Begin
 \begin{document}
 
-\setlength\bibitemsep{0.5em}
-
-% fonts
+% Fonts
 \defaultfontfeatures{}
-\defaultfontfeatures{Scale=MatchLowercase}         
-\setmainfont{Lato Regular}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont{IBM Plex Sans}
 \setmonofont[Scale=0.8]{IBM Plex Mono}
 
+% Style
+\setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
 \def\labelitemi{$\cdot$}
-\chapterstyle{article-4-sans}  
+\chapterstyle{syllabus}
 
+% Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
 \date{Fall 2019. Design 301.\newline Monday, Wednesday, \& Friday 9:30am--11:30pm.}
 \published{\,}
 
-% -------------------------------- COVER PAGE -------------------------------- 
+% -------------------------------- Cover Page -------------------------------- 
 
 \pagenumbering{gobble}
 \globalcolor{black}
@@ -73,7 +68,7 @@
 \ThisCenterWallPaper{1}{../images/new-orleans-portrait.png}
 \clearpage
 
-% -------------------------------- DESCRIPTION -------------------------------- 
+% -------------------------------- Description -------------------------------- 
 
 \pagenumbering{arabic}
 \globalcolor{black}
@@ -91,7 +86,8 @@ Make beautiful maps and digitally fabricated models from spatiotemporal data
 
 \vspace*{0.5em}
 
-% -------------------------------- SCHEDULE -------------------------------- 
+% -------------------------------- Schedule --------------------------------
+
 \section{Topics}
 %
 \begin{table}[H]
@@ -111,7 +107,8 @@ Make beautiful maps and digitally fabricated models from spatiotemporal data
 
 \clearpage
 
-% -------------------------------- Projects -------------------------------- 
+% -------------------------------- Projects --------------------------------
+
 \section{Projects}
 Map spatial and temporal data
 at global, national, state, and city scales.
@@ -170,7 +167,8 @@ for the school's accreditation archive.
 
 \clearpage
 
-% -------------------------------- Software -------------------------------- 
+% -------------------------------- Software --------------------------------
+
 \section{Software}
 \begin{multicols}{2}
 \raggedright
@@ -181,7 +179,8 @@ Rhinoceros | \url{https://www.rhino3d.com/}\\
 RhinoTerrain | \url{http://www.rhinoterrain.com/}\\
 \end{multicols}
 
-% -------------------------------- Resources -------------------------------- 
+% -------------------------------- Resources --------------------------------
+
 \section{Resources}
 Intro to GRASS GIS | \url{https://ncsu-geoforall-lab.github.io/grass-intro-workshop/}\\
 GRASS GIS tutorials | \url{https://grass.osgeo.org/documentation/tutorials/}\\
@@ -194,7 +193,8 @@ Global Dataset | \url{https://doi.org/10.5281/zenodo.3359632}\\
 Louisiana Dataset | \url{https://doi.org/10.5281/zenodo.3359620}\\
 New Orleans Dataset | \url{https://doi.org/10.5281/zenodo.3359642}
 
-% -------------------------------- Certificate -------------------------------- 
+% -------------------------------- Certificate --------------------------------
+
 \section{Graduate Certificate in GIS}
 This course counts as an applied topics course for the 
 Graduate Certificate in Geographic Information Science.
@@ -210,13 +210,12 @@ and Department of Computer Science.
 For more information about the Graduate Certificate in GIS visit: 
 \url{http://ga.lsu.edu/gis-certificate/}.
 
-% -------------------------------- Grading -------------------------------- 
+% -------------------------------- Grading --------------------------------
+
 \section{Grading}
 %
 \begin{table}[H]
-%\small
 \begin{tabular}{l r @{\hskip 2cm} l @{\hskip 0.5cm} l}
-%\begin{tabular}{l l}
 %
 Global maps & 20\% & Suitability maps & 20\% \\
 National \& state maps & 20\% & 3D printed city & 15\% \\
@@ -227,7 +226,8 @@ City maps & 20\% & Portfolio & 5\% \\
 
 \clearpage
 
-% -------------------------------- Terminology -------------------------------- 
+% -------------------------------- Terminology --------------------------------
+
 \section{Terminology}
 \begin{multicols}{2}
 \raggedright
@@ -292,14 +292,16 @@ City maps & 20\% & Portfolio & 5\% \\
 
 \clearpage
 
-% -------------------------------- Readings -------------------------------- 
+% -------------------------------- Readings --------------------------------
+
 \section{Readings}
 \vspace*{0.5cm}
 \nocite{*}
 \setlength\bibitemsep{0.65\baselineskip}
 \printbibliography[heading=none]
 
-% -------------------------------- Policies -------------------------------- 
+% -------------------------------- Policies --------------------------------
+
 \section{Policies}
 
 \noindent \textbf{Accreditation Expectations}

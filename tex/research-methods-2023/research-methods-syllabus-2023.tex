@@ -1,18 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
+% Class
 \documentclass[11pt,article,oneside]{memoir}
 
-% packages
-\usepackage{org-preamble-xelatex}
-\usepackage{wallpaper}
-\usepackage{xcolor}
-\usepackage{multicol}
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
-\usepackage{tikz}
-\usepackage{tikzpagenodes} 
+% Packages
+\usepackage{../style/xelatex-preamble}
 
+% Settings
 \AtBeginBibliography{\small}
 
 % Definitions
@@ -36,34 +31,35 @@
 \def\mysubtitle{Syllabus}
 \def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 7201 |} \Large Research Methods} 
 
-% color
+% Color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
 
-% begin
+% Begin
 \begin{document}
 
-\setlength\bibitemsep{0.5em}
-
-% fonts
+% Fonts
 \defaultfontfeatures{}
 \defaultfontfeatures{Scale=MatchLowercase}
 \setmainfont{IBM Plex Sans}
 \setmonofont[Scale=0.8]{IBM Plex Mono}
 
+% Style
+\setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
 \def\labelitemi{$\cdot$}
-\chapterstyle{article-4-sans}  
+\chapterstyle{syllabus}
 
+% Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
 \date{Fall 2023 \newline Tuesday \& Thursday \newline 1:30--2:50pm \newline Design 308}
 \published{\,}
 
-% -------------------------------- COVER PAGE -------------------------------- 
+% -------------------------------- Cover Page -------------------------------- 
 
 %\pagenumbering{gobble}
 %\globalcolor{black}
@@ -75,7 +71,7 @@
 %\ThisCenterWallPaper{1.1}{../images/}
 %\clearpage
 
-% -------------------------------- DESCRIPTION -------------------------------- 
+% -------------------------------- Description -------------------------------- 
 
 \pagenumbering{arabic}
 \globalcolor{black}
@@ -104,7 +100,8 @@ keeping a research notebook,
 leading and participating in discussions, 
 writing a research proposal.
 
-% -------------------------------- Topics -------------------------------- 
+% -------------------------------- Topics --------------------------------
+
 \section{Topics}
 Research-Creation
 \textbullet \space
@@ -159,7 +156,8 @@ Archives
 Aesthetics
 %\textbullet \space
 
-% -------------------------------- Projects -------------------------------- 
+% -------------------------------- Projects --------------------------------
+
 \section{Assignments}
 
 \paragraph{Research Notebook}
@@ -186,20 +184,19 @@ conduct a literature review,
 propose a methodology,
 and write a proposal. 
 
-% -------------------------------- Grading -------------------------------- 
+% -------------------------------- Grading --------------------------------
+
 \section{Grading}
 %
 \begin{table}[H]
-%\small
 \begin{tabular}{l l @{\hskip 2cm} l @{\hskip 0.5cm} l @{\hskip 2cm} l @{\hskip 0.5cm} l}
-%\begin{tabular}{l l}
 %
 Notebook & 25\% & Discussions & 25\% &   Proposal & 40\% \\
 %
 \end{tabular}
 \end{table}
 
-% -------------------------------- Software -------------------------------- 
+% -------------------------------- Software --------------------------------
 
 \section{Software}
 \begin{minipage}{0.48\textwidth}
@@ -210,22 +207,24 @@ Zotero | \url{https://www.zotero.org/}\\
 Overleaf | \url{https://www.overleaf.com/}\\
 \end{minipage}
 
-% -------------------------------- Readings -------------------------------- 
+% -------------------------------- Readings --------------------------------
+
 \section{Books}
 \vspace*{0.5cm}
 \nocite{*}
 \setlength\bibitemsep{0.65\baselineskip}
 \printbibliography[type=book, heading=none]
-%\printbibliography[keyword=required, heading=none]
 
-% -------------------------------- Readings -------------------------------- 
+% -------------------------------- Readings --------------------------------
+
 \section{Papers}
 \vspace*{0.5cm}
 \nocite{*}
 \setlength\bibitemsep{0.65\baselineskip}
 \printbibliography[type=article, heading=none]
 
-% -------------------------------- Policies -------------------------------- 
+% -------------------------------- Policies --------------------------------
+
 \section{Policies}
 
 \paragraph{Time Commitment Expectations}
@@ -235,8 +234,6 @@ spend at least two hours working on course related activities outside of class. 
 
 \paragraph{LSU student code of conduct}
 The LSU student code of conduct explains student rights, excused absences, and what is expected of student behavior. Students are expected to understand this code:  \url{http://students.lsu.edu/saa/students/code}.
-%Any violations of the LSU student code will be duly reported to the Dean of Students.
-
 
 \paragraph{Disability Code}
 The University is committed to making reasonable efforts to assist individuals with disabilities in

@@ -1,21 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-%%%  Syllabus template for use with style files at http://kjhealy.github.com/latex-custom-kjh
-%%%  Kieran Healy
-
+% Class
 \documentclass[11pt,article,oneside]{memoir}
 
-% packages
-\usepackage{org-preamble-xelatex}
-\usepackage{wallpaper}
-\usepackage{xcolor}
-\usepackage{multicol}
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
-\usepackage{tikz}
-\usepackage{tikzpagenodes} 
+% Packages
+\usepackage{../style/xelatex-preamble}
 
+% Settings
 \AtBeginBibliography{\small}
 
 % Definitions
@@ -39,34 +31,35 @@
 \def\mysubtitle{Syllabus}
 \def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 7032 |} \Large Computational Design} 
 
-% color
+% Color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
 
-% begin
+% Begin
 \begin{document}
 
-\setlength\bibitemsep{0.5em}
-
-% fonts
+% Fonts
 \defaultfontfeatures{}
 \defaultfontfeatures{Scale=MatchLowercase}
 \setmainfont{IBM Plex Sans}
 \setmonofont[Scale=0.8]{IBM Plex Mono}
 
+% Style
+\setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
 \def\labelitemi{$\cdot$}
-\chapterstyle{article-4-sans}  
+\chapterstyle{syllabus}
 
+% Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
 \date{Spring 2023. \newline Tuesday \& Thursday \newline 1:00--3:30pm \newline Design 308}
 \published{\,}
 
-% -------------------------------- COVER PAGE -------------------------------- 
+% -------------------------------- Cover Page -------------------------------- 
 
 \pagenumbering{gobble}
 \globalcolor{black}
@@ -79,7 +72,7 @@
 \clearpage
 
 
-% -------------------------------- DESCRIPTION -------------------------------- 
+% -------------------------------- Description -------------------------------- 
 
 \pagenumbering{arabic}
 \globalcolor{black}
@@ -123,7 +116,8 @@ and apply emerging technologies to landscape architecture.
 \end{itemize}
 \end{multicols}
 
-% -------------------------------- SCHEDULE -------------------------------- 
+% -------------------------------- Schedule --------------------------------
+
 \section{Schedule}
 
 \begin{table}[H]
@@ -149,7 +143,8 @@ and apply emerging technologies to landscape architecture.
 
 \clearpage
 
-% -------------------------------- Logistics -------------------------------- 
+% -------------------------------- Logistics --------------------------------
+
 \section{Logistics}
 
 During our regularly scheduled class period
@@ -168,7 +163,8 @@ Course website | \url{https://baharmon.github.io/generative-landscapes}\\
 Discord | \url{https://discord.gg/6kNkp2PSsu}\\
 Youtube | \url{https://www.youtube.com/@baharmon}\\
 
-% -------------------------------- Essays -------------------------------- 
+% -------------------------------- Essays --------------------------------
+
 \section{Essays}
 
 \paragraph{Essay: Cloudism}
@@ -192,13 +188,13 @@ digital design tools and processes in your work?
 
 \nocite{*} \printbibliography[keyword=b, heading=none]
 
-% -------------------------------- Projects -------------------------------- 
+% -------------------------------- Projects --------------------------------
+
 \section{Projects}
 
 \noindent \textbf{Point Cloud Library}
 Use laser scanning to capture a library of plants as point clouds. 
 Publish the point cloud to the web in an interactive viewer.
-\\
 
 \paragraph{Drone Survey}
 Conduct a topographic survey 
@@ -210,28 +206,24 @@ Use structure-from-motion photogrammetry
 to generate a point cloud, 
 digital surface model, 
 and orthophoto.
-\\
 
 \paragraph{Parametric Landscape}
 Use visual programming to generate
 variations of landforms, plantings, and paving.
 CNC mill, thermoform, and then cast 
 an algorithmically generated terrain model.
-\\
 
 \paragraph{Parametric Wall}
 Program a robotic arm to assemble 
 a parametrically modeled, curvilinear wall
 from bricks.
-\\
 
-% -------------------------------- Grading -------------------------------- 
+% -------------------------------- Grading --------------------------------
+
 \section{Grading}
 %
 \begin{table}[H]
-%\small
 \begin{tabular}{l r @{\hskip 2cm} l @{\hskip 0.5cm} l}
-%\begin{tabular}{l l}
 %
 Essays & 15\% &  Parametric Landscape & 20\% \\
 Point Cloud Library & 20\% & Parametric Wall & 20\%\\
@@ -240,51 +232,48 @@ Drone Survey & 20\% & Course Portfolio & 5\% \\
 \end{tabular}
 \end{table}
 
-% -------------------------------- Software -------------------------------- 
-\section{Software}
+% -------------------------------- Software --------------------------------
 
+\section{Software}
 Rhinoceros | \url{https://www.rhino3d.com/}\\
-%Grasshopper | \url{http://grasshopper3d.com/}\\
-%RhinoTerrain | \url{http://www.rhinoterrain.com/}\\
-%Thea Render for Rhino | \url{https://www.thearender.com/}\\
 Metashape | \url{https://www.agisoft.com/}\\
 Faro Scene | \url{https://www.faro.com/}\\
 CloudCompare | \url{https://www.danielgm.net/cc/}\\
 GRASS GIS | \url{https://grass.osgeo.org/}\\
 QGIS | \url{https://www.qgis.org/}\\
-%ArcGIS | \url{https://www.esri.com/}\\
-%Python | \url{https://www.python.org/}\\
 
 \section{Plugins}
 Snapping Gecko | \url{https://www.food4rhino.com/app/snappinggecko}\\
 Bitmap+ | \url{https://www.food4rhino.com/en/app/bitmap}\\
 Docofossor | \url{https://www.food4rhino.com/app/docofossor}\\
 RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}\\
-%Elefront | \url{https://www.food4rhino.com/app/elefront}\\
-%Bison | \url{https://www.bison.la/}\\
 
-% -------------------------------- Resources -------------------------------- 
+% -------------------------------- Resources --------------------------------
+
 \section{Resources}
 
 Grasshopper Basics | \url{https://vimeo.com/channels/basicgh}\\
 Grasshopper Primer | \url{http://grasshopperprimer.com}\\
 Hydrology in GRASS GIS | \url{https://grasswiki.osgeo.org/wiki/Hydrological_Sciences}\\
 
-% -------------------------------- Readings -------------------------------- 
+% -------------------------------- Readings --------------------------------
+
 \section{Required Readings}
 \vspace*{0.5cm}
 \nocite{*}
 \setlength\bibitemsep{0.65\baselineskip}
 \printbibliography[keyword=required, heading=none]
 
-% -------------------------------- Readings -------------------------------- 
+% -------------------------------- Readings --------------------------------
+
 \section{Recommended Readings}
 \vspace*{0.5cm}
 \nocite{*}
 \setlength\bibitemsep{0.65\baselineskip}
 \printbibliography[keyword=recommended, heading=none]
 
-% -------------------------------- Policies -------------------------------- 
+% -------------------------------- Policies --------------------------------
+
 \section{Policies}
 
 \paragraph{Time Commitment Expectations}
@@ -294,9 +283,6 @@ spend at least two hours working on course related activities outside of class. 
 
 \paragraph{LSU student code of conduct}
 The LSU student code of conduct explains student rights, excused absences, and what is expected of student behavior. Students are expected to understand this code:  \url{http://students.lsu.edu/saa/students/code}.
-%Any violations of the LSU student code will be duly reported to the Dean of Students.
-
-\clearpage
 
 \paragraph{Disability Code}
 The University is committed to making reasonable efforts to assist individuals with disabilities in

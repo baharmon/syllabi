@@ -1,0 +1,75 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{xelatex-preamble}[XeLaTeX preamble]
+
+% Minted
+\RequirePackage{ifthen}
+\newboolean{@minted}
+\setboolean{@minted}{false}
+\DeclareOption{minted}{
+  \setboolean{@minted}{true}
+}
+
+\ProcessOptions
+
+% Packages
+\RequirePackage{xltxtra}
+\RequirePackage{fontspec}
+\RequirePackage{xunicode}
+\RequirePackage{xurl}
+\RequirePackage{rotating}
+\RequirePackage{../style/syllabus}
+\RequirePackage[american]{babel}
+\RequirePackage[babel]{csquotes}
+\RequirePackage[svgnames]{xcolor}
+\RequirePackage{soul}
+\RequirePackage[xetex, colorlinks=true, urlcolor=DarkSlateBlue,
+citecolor=DarkSlateBlue, filecolor=DarkSlateBlue, plainpages=false,
+pdfpagelabels, bookmarksnumbered]{hyperref}
+\RequirePackage{etoolbox}
+\RequirePackage{setspace}
+\RequirePackage{wallpaper}
+\RequirePackage{xcolor}
+\RequirePackage{multicol}
+\RequirePackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+\RequirePackage{float}
+\RequirePackage{graphicx}
+\RequirePackage{tikz}
+\RequirePackage{tikzpagenodes}
+
+% Biber
+\RequirePackage[
+style=chicago-authordate,
+sorting=ydnt,
+url=true,
+doi=true,
+datamodel=software,
+natbib=true,
+bibencoding=utf8,
+abbreviate=false,
+hyperref=true,
+dashed=false,
+maxnames=36,
+isbn=false,
+backend=biber,
+block=space,
+bibencoding=inputenc]{biblatex}
+\renewbibmacro{in:}{%
+\ifentrytype{article}{}{%
+\printtext{\bibstring{}\intitlepunct}}}
+
+% Bibliography
+\addbibresource{readings.bib}
+
+% Page style
+\pagestyle{basic}
+
+% Minted
+\ifthenelse{\boolean{@minted}}{
+\RequirePackage{minted}
+\usemintedstyle{tango} 
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+\setkeys{Gin}{width=1\@textwidth} 
+}{}
+
+\endinput

@@ -1,0 +1,369 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+% Class
+\documentclass[11pt,article,oneside]{memoir}
+
+% Packages
+\usepackage{../style/xelatex-preamble}
+
+% Settings
+\AtBeginBibliography{\small}
+
+% Definitions
+\def\myauthor{Author}
+\def\mytitle{Title}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+\def\myaffiliation{Louisiana State University}
+\def\myemail{baharmon@lsu.edu} 
+\def\myweb{https://baharmon.github.io/}
+\def\myphone{919.622.8414}
+\def\myversion{}
+\def\myrevision{}
+\def\myaffiliation{\ \\Louisiana State University}
+\def\myauthor{Brendan Harmon}
+\def\mykeywords{Landscape Architecture, Syllabus, Graduate}
+\def\mysubtitle{Syllabus}
+\def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\
+[0.1cm] {\normalfont \normalsize LA 7504 |} \Large Computational Design} 
+
+% Color
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+% Begin
+\begin{document}
+
+% Fonts
+\defaultfontfeatures{}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont{IBM Plex Sans}
+\setmonofont[Scale=0.8]{IBM Plex Mono}
+
+% Style
+\setlength\bibitemsep{0.5em}
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+\def\labelitemi{$\cdot$}
+\chapterstyle{syllabus}
+
+% Frontmatter
+\title{\LARGE \mytitle}
+\author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
+\date{Spring 2026 \newline Tuesday \& Thursday \newline 14:30--15:50 \newline Design 308}
+\published{\,}
+
+% -------------------------------- Cover Page -------------------------------- 
+
+\pagenumbering{gobble}
+\globalcolor{black}
+\vspace*{-10em}
+\maketitle
+\ThisCenterWallPaper{1.1}{../images/hilltop-lidar.png}
+\clearpage
+
+% -------------------------------- Description -------------------------------- 
+
+\pagenumbering{arabic}
+\globalcolor{black}
+
+\vspace*{-10em}
+\maketitle
+
+\ThisCenterWallPaper{1}{../images/robotic-wall-2.png}
+
+\vfill
+
+\section{Course Description}
+
+This course is an introduction to 
+computational design for architects and landscape architects.
+In this course you will learn visual programming with Grasshopper
+and use algorithms to generate, analyze, and build designs.
+Experiment with emerging technologies 
+for the design and construction of the built environment.
+Learn how to procedurally model landscape and urban form,
+record and analyze your environment, 
+numerically simulate physical processes 
+such as the flow of wind and water,
+digitally fabricate models,
+and autonomously construct structures.
+
+% -------------------------------- Schedule ----------------------------
+
+\section{Schedule}
+
+\begin{table}[H]
+\begin{tabular}{@{} l @{\hskip 7.3em} l @{\hskip 10.2em} l}
+\textbf{Fundamentals} & \textbf{Modeling} & \textbf{Fabrication}\\
+\end{tabular}
+\end{table}
+
+\vspace*{-1em}
+
+\begin{table}[H]
+\small
+\begin{tabular}{@{} l l l l l l}
+\small
+\textbf{1} & Introduction \hspace{6em}  & \textbf{6} & Physics  \hspace{8em} & \textbf{11} & Soundscapes\\
+\textbf{2} & Stochasticity & \textbf{7} & Terrain & \textbf{12} & Machining\\
+\textbf{3} & Randomness & \textbf{8} & Earthworks & \textbf{13} & Printing\\
+\textbf{4} & Attractors & \textbf{9} & -- & \textbf{14} & Robotics\\
+\textbf{5} & Point Clouds & \textbf{10} & Noise & \textbf{15} & Construction\\
+\end{tabular}
+\end{table}
+
+\clearpage
+
+% ---------------------------- Assignments -----------------------------
+
+\section{Assignments}
+
+\paragraph{1 Computational Design} Learn the fundamentals of Grasshopper \dotfill
+
+\paragraph{2 Stochasticity} Find the cumulative sum of random numbers to model a random walk \dotfill
+
+\paragraph{3 Randomness} Use randomness to generate procedural paving and planting \dotfill
+
+\paragraph{4 Attractors} Use attractors to generate gradients of topography, paving, and planting \dotfill
+
+\paragraph{5 Point Clouds} Model a landscape using a library of scanned point clouds \dotfill
+
+\paragraph{6 Physics} Use a physics engine to simulate gravity and solve geometric packing problems \dotfill 
+
+\paragraph{7 Terrain} Acquire topographic data, model the terrain, and then model its hydrology \dotfill
+
+\paragraph{8 Earthworks} Use cut and fill operations to procedurally model landforms \dotfill
+
+\paragraph{9 ---} \dotfill
+
+\paragraph{10 Noise} Generate terrain from cellular noise and its biome from gradient noise \dotfill
+
+\paragraph{11 Soundscapes} Plot the spectrogram of a bioacoustic recording \dotfill
+
+\paragraph{12 Machining} CNC mill a terrain model generated from cellular noise \dotfill
+
+\paragraph{13 Printing}  3D print a spectrogram in clay \dotfill
+
+\paragraph{14 Robotics} Program pick-and-place operations with a 6-axis collaborative robotic arm \dotfill
+
+\paragraph{15 Autonomous Construction} Program a robotic arm to assemble a procedural brick wall \dotfill
+
+% -------------------------------- Projects -------------------------------- 
+
+\section{Project}
+
+\paragraph{Point Cloud Landscape}
+Experiment with point clouds as a new design medium
+by procedurally designing, modeling, and rendering a landscape.
+First use algorithms to procedurally design a landscape.
+Then model your design as a point cloud using assets 
+from a library of laser scanned or neural rendered landscape elements. 
+Upload your design to \href{https://sketchfab.com/}{Sketchfab}.
+\textbf{Due:} Week 15
+
+% -------------------------------- Grading -------------------------------- 
+
+\section{Grading}
+%
+\begin{table}[H]
+\begin{tabular}{ @{} l @{\hskip 1em} l @{\hskip 9em} l @{\hskip 1em} l @{\hskip 9em} l @{\hskip 1em} l}
+\textbf{Assignments} & 60\% & \textbf{Project} & 35\% & \textbf{Portfolio} & 5\% \\
+\end{tabular}
+\end{table}
+
+% -------------------------------- Logistics -------------------------------- 
+
+\section{Logistics}
+
+We will meet on Tuesdays and Thursdays 
+from 14:30--15:50
+in Design 308. 
+All course content including tutorials, lectures, and datasets
+will be published on the course
+\href{https://baharmon.github.io/tutorials/design}{website}.
+Our Discord \href{https://discord.gg/DcKmz6wZBe}{server}
+will be used for posting announcements, 
+student work in progress, reading responses, 
+projects, and troubleshooting. 
+During class please post each step of your work
+to your channel on the 
+\href{https://discord.gg/DcKmz6wZBe}{server}.
+\\
+
+\noindent
+Website | \url{https://baharmon.github.io/tutorials/design}\\
+Server | \url{https://discord.gg/DcKmz6wZBe}\\ 
+Videos | \url{https://www.youtube.com/@baharmon}
+
+% -------------------------------- Software -------------------------------- 
+\section{Software}
+
+Rhinoceros | \url{https://www.rhino3d.com/}\\
+Python | \url{https://www.python.org/}
+
+% ---------------------------------- Plugins ---------------------------------- 
+
+\section{Plugins}
+Snapping Gecko | \url{https://www.food4rhino.com/app/snappinggecko}\\
+Bitmap+ | \url{https://www.food4rhino.com/en/app/bitmap}\\
+Docofossor | \url{https://www.food4rhino.com/app/docofossor}\\
+Dendro | \url{https://www.food4rhino.com/en/app/dendro}\\
+RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}%\\
+
+% -------------------------------- Precedents ------------------------------- 
+
+%\section{Precedents} 
+%Philipp Urech, 2020, \href{https://skfb.ly/pztrn}{Parque Copan} \\
+%ETHZ, Endless Wall
+%ETHZ, Kitvus Vinery
+%ETHZ, Circularity Park
+% Snohetta, MAX Lab Landscape
+
+% -------------------------------- Resources --------------------------------
+\section{Dataset}
+Computational Design Dataset | \url{https://doi.org/10.5281/zenodo.8191264} \\
+Cloud Forest Library | \url{https://xyz.cct.lsu.edu/cloud-forest} \\
+Cloud Forest Dataset | \url{https://doi.org/10.5281/zenodo.8194066}
+
+\clearpage
+
+% -------------------------------- Resources -------------------------------- 
+\section{Resources}
+
+Jump Start Grasshopper | \url{https://vimeo.com/showcase/9410915}\\
+Grasshopper Guides | \url{https://developer.rhino3d.com/guides/grasshopper}\\
+Grasshopper Primer | \url{http://grasshopperprimer.com}\\
+TU Delft DigiPedia | \url{https://digipedia.tudelft.nl/software/grasshopper}\\
+Parametric Camp | \url{https://www.youtube.com/parametriccamp}
+
+% -------------------------------- Readings -------------------------------- 
+\section{Required Readings}
+\vspace*{0.5cm}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+\printbibliography[keyword=required, heading=none]
+
+% -------------------------------- Readings -------------------------------- 
+\section{Recommended Readings}
+\vspace*{0.5cm}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+\printbibliography[keyword=recommended, heading=none]
+
+% -------------------------------- Policies -------------------------------- 
+
+\section{Policies}
+
+\paragraph{Time Commitment Expectations}
+LSU's general policy states that for each credit hour, 
+you (the student) should plan to
+spend at least two hours working 
+on course related activities outside of class. 
+Since this course is for three credit hours, 
+you should expect to spend a minimum of six hours 
+outside of class each week 
+working on assignments for this course. 
+For more information see: 
+\url{https://catalog.lsu.edu}.
+
+\paragraph{LSU student code of conduct}
+The LSU student code of conduct explains 
+student rights, excused absences, 
+and what is expected of student behavior. 
+Students are expected to understand this code:  
+\url{https://www.lsu.edu/saa/students/codeofconduct.php}.
+
+\paragraph{Disability Code}
+The University is committed to making reasonable efforts 
+to assist individuals with disabilities in
+their efforts to avail themselves of 
+services and programs offered by the University. 
+To this end, Louisiana State University will provide 
+reasonable accommodations for persons
+with documented qualifying disabilities.
+If you have a disability and 
+feel you need accommodations in this course, 
+you must present a letter to me 
+from Disability Services in 115 Johnston Hall,
+indicating the existence of a disability 
+and the suggested accommodations.
+
+\paragraph{Academic Integrity}
+According to section 10.1 
+of the LSU Code of Student Conduct, 
+``A student may be charged with Academic Misconduct'' 
+for a variety of offenses, including the following: 
+unauthorized copying, collusion, or collaboration,
+falsifying data or citations,
+``assisting someone in the commission 
+or attempted commission of an offense'',
+and plagiarism.
+
+\paragraph{Plagiarism and Citation Method}
+Plagiarism is the 
+``lack of appropriate citation, or the unacknowledged inclusion 
+of someone else's words, structure, ideas, or data; 
+failure to identify a source, 
+or the submission of essentially the same work 
+for two assignments without permission of the instructor(s)'' 
+(Sec. 10.1.H of the LSU Code of Student Conduct). 
+As a student at LSU, 
+it is your responsibility to refrain from 
+plagiarizing the academic property of another 
+and to utilize appropriate citation method for all coursework. 
+In this class, it is recommended that you use 
+Chicago Style author-date citations. 
+Ignorance of the citation method
+is not an excuse for academic misconduct.
+
+\paragraph{Generative Artificial Intelligence}
+In this course the use of generative artificial intelligence (AI) 
+is permitted for the purposes of enhancing your understanding 
+of course materials, encouraging creative exploration, 
+and supporting academic growth. 
+The use of generative AI, however, 
+is not permitted for writing assignments. 
+These programs should not be used to produce work 
+that misrepresents your abilities 
+or deceives as to the conditions 
+under which the work was completed. 
+If you use AI to generate content 
+you must clearly acknowledge the use of AI generated material. 
+Proper attribution of AI program use
+should include an explanation of how the program 
+contributed to the assignment and your academic growth. 
+Failing to give proper attribution 
+to the use of AI programs in academic work
+will be reported to Student Advocacy \& Accountability 
+for review under the Code of Student Conduct 
+and may result in impacts to your assignment and course grades.
+
+\paragraph{Accreditation}
+LSU's Robert Reich School of Landscape Architecture (RRSLA) 
+must meet the accreditation requirements 
+as stated by the Landscape Architectural Accreditation
+Board (LAAB) to ensure the school
+ is meeting the expectations of the field. 
+The LAAB requires programs to provide digital copies 
+of student work as part of this process.
+Students in this course will be expected 
+to comply with the following requirements
+as 5\% of their course grade: 
+(1) Students must provide a course portfolio
+with work samples specified by the instructor 
+before the end of the grading period. 
+(2) Each student's course portfolio must be saved as 
+a single, high resolution PDF file with multiple pages. 
+(3) Files must follow the naming convention
+established by the school: 
+department-coursenumber-semesteryear-username.pdf.
+Example: LA7504-S2026-baharmon.pdf.
+
+\end{document}

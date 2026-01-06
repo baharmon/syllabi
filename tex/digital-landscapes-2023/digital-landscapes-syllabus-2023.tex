@@ -1,19 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-%%%  Syllabus template for use with style files at http://kjhealy.github.com/latex-custom-kjh
-%%%  Kieran Healy
-
+% Class
 \documentclass[11pt,article,oneside]{memoir}
 
-% packages
-\usepackage{org-preamble-xelatex}
-\usepackage{wallpaper}
-\usepackage{xcolor}
-\usepackage{multicol}
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
+% Packages
+\usepackage{../style/xelatex-preamble}
 
+% Settings
 \AtBeginBibliography{\small}
 
 % Definitions
@@ -37,34 +31,35 @@
 \def\mysubtitle{Syllabus}
 \def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 2101 \& 7012 |} \Large Digital Landscapes}
 
-% color
+% Color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
 
-% begin
+% Begin
 \begin{document}
 
-\setlength\bibitemsep{0.5em}
-
-% fonts
+% Fonts
 \defaultfontfeatures{}
 \defaultfontfeatures{Scale=MatchLowercase}
-\setmainfont{Lato Regular}
+\setmainfont{IBM Plex Sans}
 \setmonofont[Scale=0.8]{IBM Plex Mono}
 
+% Style
+\setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
 \def\labelitemi{$\cdot$}
-\chapterstyle{article-4-sans}
+\chapterstyle{syllabus}
 
+% Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
 \date{Spring 2023 \newline Monday, Wednesday, \& Friday \newline 9:30am--11:50am \newline Design 301}
 \published{\,}
 
-% -------------------------------- COVER PAGE --------------------------------
+% -------------------------------- Cover Page --------------------------------
 
 \pagenumbering{gobble}
 \globalcolor{black}
@@ -73,8 +68,7 @@
 \ThisCenterWallPaper{1}{../images/yosemite.png}
 \clearpage
 
-
-% -------------------------------- DESCRIPTION --------------------------------
+% -------------------------------- Description --------------------------------
 
 \pagenumbering{arabic}
 \globalcolor{black}
@@ -91,7 +85,8 @@ photomontage, vector illustration, diagramming,
 Topics will include how to model and render
 topography, hardscape, landscape elements, and planting.
 
-% -------------------------------- SCHEDULE --------------------------------
+% -------------------------------- Schedule --------------------------------
+
 \section{Schedule}
 
 \begin{table}[H]
@@ -102,7 +97,6 @@ topography, hardscape, landscape elements, and planting.
 \textbf{3} & Graphic Design & \textbf{8} & Spring Break & \textbf{13} & Virtual Reality\\
 \textbf{4} & Illustration & \textbf{9} & Bioswale & \textbf{14} & Project\\
 \textbf{5} & Mardi Gras & \textbf{10} & Terrain & \textbf{15} & Exhibition \\[0.15cm]
-%& \textbf{Sections} && \textbf{Elements} && \textbf{Renderings}
 \end{tabular}
 \end{table}
 
@@ -116,26 +110,14 @@ we will meet in person, while also posting
 on our Discord server at \url{https://discord.gg/rPaJD35hQq}.
 The discord server will be used for posting
 announcements, classwork, homework, projects, and troubleshooting. 
-%Course content including tutorials, lectures, and datasets
-%will be published on the course website at:
-%\url{https://baharmon.github.io/digital-landscapes}.\\
 \\
 
 \noindent
-%Course website | \url{https://baharmon.github.io/digital-landscapes}\\
 Discord | \url{https://discord.gg/rPaJD35hQq}\\
 Youtube | \url{https://www.youtube.com/@baharmon}\\
 
-%% -------------------------------- Classwork ------------------------------
-%\section{Classwork}
-%
-%During class, follow the demonstrations 
-%and regularly post your progress on your Discord channel. 
-%Class participation will be assessed based on these posts.
-%Classwork must be clearly labeled to get credit.
-%\\
-
 % ------------------------------- Homework -------------------------------
+
 \section{Homework}
 
 During class, follow the demonstrations 
@@ -157,6 +139,7 @@ and lasercutting.
 \\
 
 % -------------------------------- Projects --------------------------------
+
 \section{Project}
 
 Design, model, and render
@@ -175,25 +158,20 @@ and the quality, clarity, and expressiveness
 of your graphics. 
 \\
 
-%%\emph{Due:} 04/29/2022
-%\\
-
 % -------------------------------- Portfolio--------------------------------
+
 \section{Course Portfolio}
 
 Collect your work in a course portfolio
 for the school's accreditation archive.
-%\emph{Due:} 05/13/2022
 \\
 
 % -------------------------------- Grading --------------------------------
+
 \section{Grading}
 
 \begin{table}[H]
 \begin{tabular}{l r @{\hskip 2cm} l @{\hskip 0.5cm} l}
-%Classwork & 20\% & Project & 35\%\\
-%Homework& 40\% & Course Portfolio & 5\% \\
-%Classwork & 20\%\\
 Homework& 60\%\\
 Project & 35\%\\
 Course Portfolio & 5\%\\
@@ -201,12 +179,12 @@ Course Portfolio & 5\%\\
 \end{table}
 
 % -------------------------------- Software --------------------------------
+
 \section{Software}
 \begin{multicols}{2}
 \raggedright
 Adobe CC | \url{https://www.adobe.com/}\\
 Rhinoceros | \url{https://www.rhino3d.com/}\\
-%Thea Render | \url{www.thearender.com/}\\
 Lumion | \url{https://lumion.com}\\
 Enscape | \url{https://enscape3d.com/}\\
 \end{multicols}
@@ -219,9 +197,8 @@ Enscape | \url{https://enscape3d.com/}\\
 \setlength\bibitemsep{0.65\baselineskip}
 \printbibliography[heading=none]
 
-%\clearpage
-
 % -------------------------------- Policies --------------------------------
+
 \section{Policies}
 
 \noindent \textbf{Communication Intensive}
@@ -271,8 +248,6 @@ When students have valid reasons for absence, they are responsible for providing
 \noindent \textbf{Time Commitment Expectations}
 LSU's general policy states that for each credit hour, you (the student) should plan to
 spend at least two hours working on course related activities outside of class. Since this course is for three credit hours, you should expect to spend a minimum of six hours outside of class each week working on assignments for this course.\\  
-%For more information see:
-%\url{http://catalog.lsu.edu/content.php?catoid=12&navoid=822}.\\
 
 \noindent \textbf{LSU Student Code of Conduct}
 The LSU student code of conduct explains student rights, excused absences, and what is expected of student behavior. Students are expected to understand this code:  \url{http://students.lsu.edu/saa/students/code}. Any violations of the LSU student code will be duly reported to the Dean of Students.\\

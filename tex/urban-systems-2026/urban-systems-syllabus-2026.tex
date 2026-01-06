@@ -1,0 +1,350 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+% Class
+\documentclass[11pt,article,oneside]{memoir}
+
+% Packages
+\usepackage{../style/xelatex-preamble}
+
+% Settings
+\AtBeginBibliography{\small}
+
+% Definitions
+\def\myauthor{Author}
+\def\mytitle{Title}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+\def\myaffiliation{Louisiana State University}
+\def\myemail{baharmon@lsu.edu} 
+\def\myweb{https://baharmon.github.io/}
+\def\myphone{919.622.8414}
+\def\myversion{}
+\def\myrevision{}
+\def\myaffiliation{\ \\Louisiana State University}
+\def\myauthor{Brendan Harmon}
+\def\mykeywords{Landscape Architecture, Syllabus, Graduate}
+\def\mysubtitle{Syllabus}
+\def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\
+[0.1cm] {\normalfont \normalsize LA 7041 |} \Large Urban Systems} 
+
+% Color
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+% Begin
+\begin{document}
+
+% Fonts
+\defaultfontfeatures{}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont{IBM Plex Sans}
+\setmonofont[Scale=0.8]{IBM Plex Mono}
+
+% Style
+\setlength\bibitemsep{0.5em}
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+\def\labelitemi{$\cdot$}
+\chapterstyle{syllabus} 
+
+% Frontmatter
+\title{\LARGE \mytitle}
+\author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
+\date{Spring 2026 \newline Monday, Wednesday, \& Friday \newline 12:30--16:20 \newline Design 304}
+\published{\,}
+
+% -------------------------------- Cover page -------------------------------- 
+
+%\pagenumbering{gobble}
+%\globalcolor{black}
+%\vspace*{-10em}
+%\maketitle
+%\ThisCenterWallPaper{1.1}{../images/.png}
+%\clearpage
+
+% -------------------------------- Description -------------------------------- 
+
+\pagenumbering{arabic}
+\globalcolor{black}
+
+\vspace*{-10em}
+\maketitle
+
+\section{Course Description}
+
+The City of Lake Charles 
+in Calcasieu Parish 
+in southwestern Louisiana
+is threatened by coastal flooding, 
+suffers from extreme heat in the summers,
+and has more than 670 vacant and adjudicated properties. 
+The regional masterplan -- 
+\href{https://www.visitlakecharles.org/just-imagine-swla/}
+{Just Imagine SWLA: 50-Year Resilience Master Plan for Calcasieu and Cameron Parishes}
+-- calls for 
+\href{https://www.visitlakecharles.org/just-imagine-swla/projects/underutilized-property/}
+{strategies to address underutilized property}.
+This studio explores how 
+underutilized streets and properties
+can be transformed into an urban forest
+that shelters and cools the city, 
+captures and filters stormwater,
+supports biodiversity, 
+and brings beauty into 
+underinvested neighborhoods.
+What species of trees should be planted where?
+Where will all of these trees come from?
+Can native species be sourced locally?
+How can they be planted and managed for resilience to storms? 
+What ecosystems services can they provide?
+What other species can they host and feed?
+How will the urban forest canopy evolve over time?
+This studio is a collaboration 
+with a graduate architecture studio
+transforming underutilized properties
+into mixed used developments. 
+
+% -------------------------------- Schedule -------------------------------- 
+\section{Schedule}
+
+\begin{table}[H]
+\begin{tabular}{@{} l @{\hskip 10em} l @{\hskip 10em} l}
+\textbf{Planning} & \textbf{Streetscape} & \textbf{Site Design}\\
+\end{tabular}
+\end{table}
+
+\vspace*{-1em}
+
+\begin{table}[H]
+\small
+\begin{tabular}{@{} l l l l l l}
+\small
+\textbf{1} & Planning I \hspace{7em}  & \textbf{6} & Streetscape I \hspace{7em} & \textbf{11} & Site I\\
+\textbf{2} & Planning II & \textbf{7} & Streetscape II & \textbf{12} & Site II\\
+\textbf{3} & Planning III & \textbf{8} & Streetscape III & \textbf{13} & Site III\\
+\textbf{4} & Planning IV & \textbf{9} & Streetscape IV & \textbf{14} & Site IV\\
+\textbf{5} & Planning V & \textbf{10} & Streetscape V & \textbf{15} & Site V\\
+ & \textbf{Review} & & \textbf{Review} & & \textbf{Review}\\
+\end{tabular}
+\end{table}
+
+\clearpage
+
+% -------------------------------- Projects -------------------------------- 
+
+\section{Project}
+
+\paragraph{Masterplan}
+As a class, develop a masterplan 
+for establishing an urban forest 
+in the City of Lake Charles.
+The masterplan should include strategies
+for greening underutilized properties and streetscapes. 
+Consider what trees should be planted,
+which nurseries could supply them, 
+and how densely they should spaced. 
+Deliverables include maps, diagrams, 
+a masterplan, a planting scheme,
+and conceptual sections. 
+\textbf{Due:} Week 5
+
+\paragraph{Streetscape}
+In small teams, design green, tree lined streetscapes 
+that were identified as priorities in your masterplan. 
+These streets should be lined with underutilized properties
+that can be be connected into a forested network. 
+The streetscape should enhance mobility, calm traffic, 
+manage and filter stormwater, create habitat, 
+and give its neighborhood a unique aesthetic. 
+Design in detail -- consider paving patterns, curbs,
+site furniture, tree pits, planters, and bioswales. 
+Deliverables include diagrams, 
+a plan, a planting plan, a paving plan,
+sections, a set of details,
+and a laser cut model. 
+\textbf{Due:} Week 10
+
+\paragraph{Site Design}
+Design an intervention for an underutilized property
+along your team's streetscape. 
+Transform this lot into a patch of urban forest. 
+Consider concepts such as food forests, tiny forests, 
+Miyawaki forests, and phytoremediation. 
+Deliverables include a plan, a planting plan, a paving plan, 
+ssections, perspectives, and diagrams. 
+\textbf{Due:} Week 15
+
+% -------------------------------- Grading -------------------------------- 
+
+\section{Grading}
+%
+\begin{table}[H]
+\begin{tabular}{ @{} l @{\hskip 0.75em} l @{\hskip 3em} l @{\hskip 0.75em} l @{\hskip 3em} l @{\hskip 0.75em} l @{\hskip 3em} l @{\hskip 0.75em} l}
+\textbf{Masterplan} & 32\% & \textbf{Streetscape} & 32\% & \textbf{Site Design} & 32\% & \textbf{Portfolio} & 4\%\\
+\end{tabular}
+\end{table}
+
+% -------------------------------- Logistics -------------------------------- 
+
+\section{Logistics}
+
+We will meet on Mondays, Wednesdays, and Fridays 
+from 12:30--16:20
+in Design 304. 
+Our Discord \href{https://discord.gg/S3W8npES5A}{server}
+will be used for posting announcements, 
+updates, projects, and troubleshooting. 
+\\
+
+\noindent
+Server | \url{https://discord.gg/DcKmz6wZBe}\\
+Videos | \url{https://www.youtube.com/@baharmon}
+
+\clearpage
+
+% -------------------------------- Software -------------------------------- 
+\section{Software}
+
+ArcGIS | \url{https://www.esri.com/}\\
+Rhinoceros | \url{https://www.rhino3d.com}\\
+Lumion | \url{https://lumion.com/}\\
+Adobe Creative Cloud | \url{https://www.adobe.com}
+
+% -------------------------------- Resources -------------------------------- 
+\section{Resources}
+
+SWLA Masterplan | \url{https://www.visitlakecharles.org/just-imagine-swla}\\ 
+National Association of City Transportation Officials | \url{https://nacto.org}\\
+Calcasieu Parish GIS | \url{https://gis.calcasieu.gov}\\
+Calcasieu Parish Interactive Property Map | \url{https://cppj.totaland.com}\\
+City of Lake Charles Interactive Property Map | \url{http://colc.totaland.com}\\
+NOAA Digital Coast | \url{https://coast.noaa.gov/digitalcoast}
+
+% -------------------------------- Readings -------------------------------- 
+\section{Required Readings}
+\vspace*{0.5cm}
+\nocite{*}
+\setlength\bibitemsep{0.65\baselineskip}
+\printbibliography[keyword=required, heading=none]
+
+% -------------------------------- Readings -------------------------------- 
+\section{Recommended Readings}
+\vspace*{0.5cm}
+\printbibliography[notkeyword=required, heading=none]
+
+% -------------------------------- Policies -------------------------------- 
+
+\section{Policies}
+
+\paragraph{Time Commitment Expectations}
+LSU's general policy states that for each credit hour, 
+you (the student) should plan to
+spend at least two hours working 
+on course related activities outside of class. 
+Since this studio is for six credit hours, 
+you should expect to spend a minimum of twelve hours 
+outside of class each week 
+working on assignments for this course. 
+For more information see: 
+\url{https://catalog.lsu.edu}.
+
+\paragraph{LSU student code of conduct}
+The LSU student code of conduct explains 
+student rights, excused absences, 
+and what is expected of student behavior. 
+Students are expected to understand this code:  
+\url{https://www.lsu.edu/saa/students/codeofconduct.php}.
+
+\paragraph{Disability Code}
+The University is committed to making reasonable efforts 
+to assist individuals with disabilities in
+their efforts to avail themselves of 
+services and programs offered by the University. 
+Louisiana State University will provide 
+reasonable accommodations for persons
+with documented qualifying disabilities.
+If you have a disability and 
+feel you need accommodations in this course, 
+you must present a letter 
+from Disability Services in 115 Johnston Hall,
+indicating the existence of a disability 
+and the suggested accommodations.
+
+\paragraph{Academic Integrity}
+According to section 10.1 
+of the LSU Code of Student Conduct, 
+``A student may be charged with Academic Misconduct'' 
+for a variety of offenses, including the following: 
+unauthorized copying, collusion, or collaboration,
+``falsifying'' data or citations,
+``assisting someone in the commission 
+or attempted commission of an offense''; 
+and plagiarism.
+
+\paragraph{Plagiarism and Citation Method}
+Plagiarism is the 
+``lack of appropriate citation, or the unacknowledged inclusion 
+of someone else's words, structure, ideas, or data; 
+failure to identify a source, 
+or the submission of essentially the same work 
+for two assignments without permission of the instructor(s)''
+(Sec. 10.1.H of the LSU Code of Student Conduct). 
+As a student at LSU, 
+it is your responsibility to refrain from 
+plagiarizing the academic property of another 
+and to utilize the appropriate citation method for all coursework. 
+In this class, it is recommended that you use 
+Chicago Style author-date citations. 
+Ignorance of the citation method
+is not an excuse for academic misconduct.
+
+\paragraph{Generative Artificial Intelligence}
+In this course the use of generative artificial intelligence (AI) 
+is permitted for the purposes of enhancing your understanding 
+of course materials, encouraging creative exploration, 
+and supporting academic growth. 
+The use of generative AI, however, 
+is not permitted for writing assignments. 
+These programs should not be used to produce work 
+that misrepresents your abilities 
+or deceives as to the conditions 
+under which the work was completed. 
+If you use AI to generate content 
+you must clearly acknowledge the use of AI generated material. 
+Proper attribution of AI program use
+should include an explanation of how the program 
+contributed to the assignment and your academic growth. 
+Failing to give proper attribution 
+to the use of AI programs in academic work
+ will be reported to Student Advocacy \& Accountability 
+ for review under the Code of Student Conduct 
+ and may result in impacts to your assignment and course grades.
+
+\paragraph{Accreditation}
+LSU's Robert Reich School of Landscape Architecture (RRSLA) 
+must meet the accreditation requirements 
+as stated by the Landscape Architectural Accreditation
+Board (LAAB) to ensure the school
+ is meeting the expectations of the field. 
+The LAAB requires programs to provide digital copies 
+of student work as part of this process.
+Students in this course will be expected 
+to comply with the following requirements
+as 4\% of their course grade: 
+(1) Students must provide a course portfolio
+with work samples specified by the instructor 
+before the end of the grading period. 
+(2) Each student's course portfolio must be saved as 
+a single, high resolution PDF file with multiple pages. 
+(3) Files must follow the naming convention
+established by the school: 
+department-coursenumber-semesteryear-username.pdf.
+Example: LA7504-S2026-baharmon.pdf.
+
+\end{document}

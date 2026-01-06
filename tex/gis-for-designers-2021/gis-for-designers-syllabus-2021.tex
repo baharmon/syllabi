@@ -1,16 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
+% Class
 \documentclass[11pt,article,oneside]{memoir}
 
-% packages
-\usepackage{org-preamble-xelatex}
-\usepackage{wallpaper}
-\usepackage{xcolor}
-\usepackage{multicol}
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=*}
+% Packages
+\usepackage{../style/xelatex-preamble}
 
+% Settings
 \AtBeginBibliography{\small}
 
 % Definitions
@@ -34,34 +31,35 @@
 \def\mysubtitle{Syllabus}
 \def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\[0.1cm] {\normalfont \normalsize LA 4201 \& 7075 |} \Large GIS for Designers} 
 
-% color
+% Color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
 
-% begin
+% Begin
 \begin{document}
 
-\setlength\bibitemsep{0.5em}
-
-% fonts
+% Fonts
 \defaultfontfeatures{}
-\defaultfontfeatures{Scale=MatchLowercase}         
-\setmainfont{Lato Regular}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont{IBM Plex Sans}
 \setmonofont[Scale=0.8]{IBM Plex Mono}
 
+% Style
+\setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
 \def\labelitemi{$\cdot$}
-\chapterstyle{article-4-sans}  
+\chapterstyle{syllabus}
 
+% Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
 \date{Fall 2021 Design 217.\newline Monday, Wednesday, \& Friday 9:30am--11:20pm.}
 \published{\,}
 
-% -------------------------------- COVER PAGE -------------------------------- 
+% -------------------------------- Cover Page -------------------------------- 
 
 \pagenumbering{gobble}
 \globalcolor{black}
@@ -71,7 +69,7 @@
 \clearpage
 
 
-% -------------------------------- DESCRIPTION -------------------------------- 
+% -------------------------------- Description --------------------------------
 
 \pagenumbering{arabic}
 \globalcolor{black}
@@ -88,7 +86,8 @@ Make beautiful maps and digitally fabricated models from spatiotemporal data.
 
 \vspace*{0.5em}
 
-% -------------------------------- SCHEDULE -------------------------------- 
+% -------------------------------- Schedule --------------------------------
+
 \section{Topics}
 
 \begin{table}[H]
@@ -108,7 +107,8 @@ Make beautiful maps and digitally fabricated models from spatiotemporal data.
 
 \clearpage
 
-% -------------------------------- Online -------------------------------- 
+% -------------------------------- Online --------------------------------
+
 \section{Online}
 
 This class will be taught online.
@@ -129,7 +129,7 @@ Course website | \url{http://baharmon.github.io/gis-for-designers}\\
 Discord | \url{https://discord.gg/rUpX6jRBzs}\\
 Youtube | \url{https://www.youtube.com/channel/UCmGEF6Bf1SO92oLQoGCPDTw}\\
 
-% -------------------------------- Projects -------------------------------- 
+% -------------------------------- Projects --------------------------------
 
 \section{Projects}
 Map spatial and temporal data
@@ -141,7 +141,6 @@ follow cartographic conventions.
 Legends, scale bars, and north arrows are required.
 Upload your work to the course drive.
 Exhibit your collected work at the end of the semester.\\
-%on \emph{12/04/2021}.\\
 
 \noindent \textbf{City maps}
 Create a thematic map for a city of your choice. 
@@ -162,16 +161,15 @@ the logic of your analysis.\\
 As a class use a tiling scheme 
 to divide the lidar data into smaller tiles for printing.
 Each of you will 3D print a tile.\\
-%\emph{Draft due: 11/23/2021}\\
 
 \noindent \textbf{Portfolio}
 Collect your work in a course portfolio 
 for the school's accreditation archive.\\
-%\emph{Due: 12/11/2021}\\
 
 \clearpage
 
-% -------------------------------- Software -------------------------------- 
+% -------------------------------- Software --------------------------------
+
 \section{Software}
 \begin{multicols}{2}
 \raggedright
@@ -183,14 +181,15 @@ RhinoTerrain | \url{http://www.rhinoterrain.com/}\\
 Thea Render for Rhino | \url{https://www.thearender.com/}\\
 \end{multicols}
 
-% -------------------------------- Data -------------------------------- 
+% -------------------------------- Data --------------------------------
+
 \section{Datasets}
 Natural Earth Dataset for GRASS GIS | \url{https://zenodo.org/record/3762852}\\
 Governor's Island Dataset for GRASS GIS | \url{https://zenodo.org/record/3940780}\\
 Governor's Island Dataset for QGIS | \url{https://zenodo.org/record/4044664}\\
-% Add raw dataset
 
-% -------------------------------- Resources -------------------------------- 
+% -------------------------------- Resources --------------------------------
+
 \section{Resources}
 List of geospatial data sources | \url{http://baharmon.github.io/data}\\
 Intro to GRASS GIS | \url{https://ncsu-geoforall-lab.github.io/grass-intro-workshop/}\\
@@ -199,13 +198,12 @@ GRASS GIS tutorials | \url{https://grass.osgeo.org/documentation/tutorials/}\\
 QGIS training material | \url{https://www.qgis.org/en/site/forusers/trainingmaterial/}\\
 ArcGIS training | \url{https://www.esri.com/training/}\\
 Learn ArcGIS | \url{https://learn.arcgis.com/}\\
-% ArcGIS Online | \url{https://arcg.is/1eLuHC} + \url{https://arcg.is/1zTvrn}\\
 
-% -------------------------------- Grading -------------------------------- 
+% -------------------------------- Grading --------------------------------
+
 \section{Grading}
 %
 \begin{table}[H]
-%\small
 \begin{tabular}{l r @{\hskip 2cm} l @{\hskip 0.5cm} l}
 %
 City map & 20\% & Homework & 35\% \\
@@ -218,75 +216,16 @@ Suitability map & 20\% & Portfolio & 5\% \\
 
 \clearpage
 
-%% -------------------------------- Terminology -------------------------------- 
-%\section{Terminology}
-%\begin{multicols}{2}
-%\raggedright
-%\small
-%%
-%\textbf{Geodesy}
-%\begin{itemize}
-%\item Datum
-%\item Geographic coordinate system
-%\item Map projection
-%\item Cartographic grid
-%\item Graticule
-%\end{itemize}
-%
-%\textbf{Spatial data}
-%\begin{itemize}
-%\item Raster \& vector
-%\item Array
-%\item Point \& point cloud
-%\item Mesh
-%\item Triangulated irregular network (TIN)
-%\item Discrete \& continuous data
-%\item Plain text
-%\item Comma separated values (CSV)
-%\item Integer \& floating point numbers
-%\end{itemize}
-%
-%\textbf{Geospatial}
-%\begin{itemize}
-%\item Geographic information system (GIS)
-%\item Digital terrain model (DTM)
-%\item Digital surface model (DSM)
-%\item Digital elevation model (DEM)
-%\item Depressionless DEM
-%\item Lidar
-%\item Delaunay triangulation
-%\item Bilinear interpolation
-%\item Nearest neighbors
-%\item Map algebra
-%\item Null value
-%\item Resampling
-%\item True color imagery
-%\item Image classification
-%\item Normalized difference vegetation index (NDVI)
-%\item Hypsometric tints
-%\item Contour
-%\item Hillshade
-%\item Slope
-%\item Aspect
-%\item Watershed
-%\item Single flow direction (SFD/D8)
-%\item Multiple flow direction (MFD)
-%\item Flow accumulation
-%\item Stream order
-%\end{itemize}
-%
-%\end{multicols}
-%
-%\clearpage
+% -------------------------------- Readings --------------------------------
 
-% -------------------------------- Readings -------------------------------- 
 \section{Readings}
 \vspace*{0.5cm}
 \nocite{*}
 \setlength\bibitemsep{0.65\baselineskip}
 \printbibliography[heading=none]
 
-% -------------------------------- Graduate Certificate -------------------------------- 
+% -------------------------- Graduate Certificate ---------------------------
+
 \section{Graduate Certificate in GIS}
 This course counts as an applied topics course for the 
 Graduate Certificate in Geographic Information Science.
@@ -302,7 +241,7 @@ and Department of Computer Science.
 For more information about the Graduate Certificate in GIS visit: 
 \url{http://ga.lsu.edu/gis-certificate/}.
 
-% -------------------------------- CI Certificate -------------------------------- 
+% -------------------------------- CI Certificate -------------------------- 
 
 \section{Communication-Intensive Certification}
 This is a certified Communication-Intensive (C-I) course which meets all of the requirements set forth by LSU's Communication across the Curriculum program, including
@@ -314,6 +253,7 @@ and practice of ethical and professional work standards.
 Students interested in pursuing the LSU Communicator Certificate and/or the LSU Distinguished Communicator Medal may use this C-I course for credit. For more information about these student recognition programs, visit \url{www.cxc.lsu.edu}.\\
 
 % -------------------------------- Policies -------------------------------- 
+
 \section{Policies}
 
 \noindent \textbf{Accreditation Expectations}

@@ -1,0 +1,69 @@
+% Utilities
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+\renewcommand{\and}{\, }
+\renewcommand*{\andnext}{%
+  \\\medskip }
+\def\mybibind{\hangindent=1 true cm\hangafter=1 \noindent}
+
+% Chapter style
+\makechapterstyle{syllabus}{
+\setsecheadstyle{\Large\sffamily\bfseries} 
+\setsubsecheadstyle{\normalsize\sffamily\scshape} 
+\setaftersubsubsecskip{-1em}
+\setsubsubsecheadstyle{\small}
+\renewcommand{\printchaptername}{} 
+\renewcommand{\chapternamenum}{} 
+\renewcommand{\chapnumfont}{\chaptitlefont} 
+\renewcommand{\printchapternum}{\chapnumfont \thechapter\space} 
+\renewcommand{\afterchapternum}{} 
+\renewcommand{\printchaptername}{\secheadstyle}
+\renewcommand{\cftchapterfont}{\normalfont} 
+\renewcommand{\cftchapterpagefont}{\normalfont\sffamily} 
+\renewcommand{\cftchapterpresnum}{\sffamily} 
+\captiontitlefont{\small}
+\maxsecnumdepth{chapter} 
+\setsecnumdepth{chapter}
+\setaftersecskip{1.7ex}
+\pretitle{\par\vskip 3em 
+    \begin{flushleft}\LARGE\sffamily\bfseries}
+\posttitle{\end{flushleft}\par\vskip 0.5em}
+\preauthor{\begin{flushleft}\Large}
+\postauthor{\end{flushleft}}
+\predate{\begin{flushleft}\normalsize}
+\postdate{\end{flushleft}}
+\addto\captionsamerican{\renewcommand*{\abstractname}{}}
+\renewcommand{\abstractnamefont}{\normalfont\scriptsize}
+\renewcommand{\abstracttextfont}{\normalfont\scriptsize}
+\abstractrunin
+}
+   
+% Page style 
+\makepagestyle{basic}
+\newcommand{\@basicmarks}{%
+  \let\@mkboth\markboth
+  \def\chaptermark##1{%
+    \markboth{%
+      \ifnum \c@secnumdepth >\m@ne
+        \if@mainmatter
+          \thechapter. \ %
+        \fi
+      \fi
+      ##1}{}}
+  \def\sectionmark##1{%
+    \markright{##1}}
+}
+\makepsmarks{basic}{\@basicmarks}
+\makepsmarks{basic}{}
+\makeevenhead{basic}{}{}{\scshape\thepage}
+\makeoddhead{basic}{}{}{\scshape\thepage}
+
+% Publication status
+\newcommand{\published}[1]{% 
+   \gdef\puB{#1}} 
+   \newcommand{\puB}{} 
+   \renewcommand{\maketitlehooka}{% 
+       \par\noindent\footnotesize \puB} 
+
+\endinput
+

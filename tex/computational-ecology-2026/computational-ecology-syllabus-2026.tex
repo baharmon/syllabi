@@ -29,7 +29,7 @@
 \def\mykeywords{Landscape Architecture, Syllabus, Graduate}
 \def\mysubtitle{Syllabus}
 \def\mytitle{ \includegraphics[width=6cm]{../logos/lsu_art_design_logo.pdf} \\
-[0.1cm] {\normalfont \normalsize LA 7504 |} \Large Computational Design} 
+[0.1cm] {\normalfont \normalsize LA 7504 |} \Large Computational Ecology} 
 
 % Color
 \makeatletter
@@ -41,12 +41,6 @@
 % Begin
 \begin{document}
 
-% Fonts
-\defaultfontfeatures{}
-\defaultfontfeatures{Scale=MatchLowercase}
-\setmainfont{IBM Plex Sans}
-\setmonofont[Scale=0.8]{IBM Plex Mono}
-
 % Style
 \setlength\bibitemsep{0.5em}
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
@@ -56,17 +50,17 @@
 % Frontmatter
 \title{\LARGE \mytitle}
 \author{\Large\myauthor \newline \footnotesize\texttt{\noindent\myemail}}
-\date{Spring 2026 \newline Tuesday \& Thursday \newline 14:30--15:50 \newline Design 308}
+\date{Fall 2026 \newline Monday, Wednesday, \& Friday \newline 09:30--11:30 \newline Hilltop Arboretum}
 \published{\,}
 
 % -------------------------------- Cover Page -------------------------------- 
 
-\pagenumbering{gobble}
-\globalcolor{black}
-\vspace*{-10em}
-\maketitle
-\ThisCenterWallPaper{1.1}{../images/hilltop-lidar.png}
-\clearpage
+%\pagenumbering{gobble}
+%\globalcolor{black}
+%\vspace*{-10em}
+%\maketitle
+%\ThisCenterWallPaper{1.1}{../images/hilltop-lidar.png}
+%\clearpage
 
 % -------------------------------- Description -------------------------------- 
 
@@ -76,32 +70,17 @@
 \vspace*{-10em}
 \maketitle
 
-\ThisCenterWallPaper{1}{../images/robotic-wall-2.png}
-
-\vfill
-
 \section{Course Description}
 
-This course is an introduction to 
-computational design for architects and landscape architects.
-In this course you will learn visual programming with Grasshopper
-and use algorithms to generate, analyze, and build designs.
-Experiment with emerging technologies 
-for the design and construction of the built environment.
-Learn how to procedurally model landscape and urban form,
-record and analyze your environment, 
-numerically simulate physical processes 
-such as the flow of wind and water,
-digitally fabricate models,
-and autonomously construct structures.
+This course is an introduction to computational methods for landscape ecology using free and open source software. After learning the fundamentals of scientific programming with Python, use the GRASS geocomputation engine to map ecological patterns and processes in time and space. Explore how landscape change impacts biodiversity and how conservation efforts can be prioritized. Topics include ecological surveying, landcover derivation, landscape structure and diversity indices, species distribution modeling, ecological disturbances, landscape connectivity, and multi-criteria decision analysis. Through tutorials and weekly projects, learn how to map the diversity and distribution of species, map habitat loss over time, model movement through fragmented landscapes, identify suitable habitat, and design reserve networks for conservation. Learn how to program intuitively through carefully crafted tutorials distributed as webpages and computational notebooks with narrative text, live coding, and inline data visualization. Get your hands dirty in the field with an ecological census, passive acoustic monitoring, and a drone lidar survey of Hilltop Arboretum. %After studying the scientific foundations of the discipline and experimenting with computational methods, wrap up the semester with a discussion of the aesthetics and philosophy of ecology. 
 
 % -------------------------------- Schedule ----------------------------
 
 \section{Schedule}
 
 \begin{table}[H]
-\begin{tabular}{@{} l @{\hskip 7.3em} l @{\hskip 10.2em} l}
-\textbf{Fundamentals} & \textbf{Modeling} & \textbf{Fabrication}\\
+\begin{tabular}{@{} l @{\hskip 11.8em} l @{\hskip 10.8em} l}
+\textbf{Foundations} & \textbf{Pattern} & \textbf{Process}\\
 \end{tabular}
 \end{table}
 
@@ -111,156 +90,113 @@ and autonomously construct structures.
 \small
 \begin{tabular}{@{} l l l l l l}
 \small
-\textbf{1} & Introduction \hspace{6em}  & \textbf{6} & Physics  \hspace{8em} & \textbf{11} & Soundscapes\\
-\textbf{2} & Stochasticity & \textbf{7} & Terrain & \textbf{12} & Machining\\
-\textbf{3} & Randomness & \textbf{8} & Earthworks & \textbf{13} & Printing\\
-\textbf{4} & Attractors & \textbf{9} & -- & \textbf{14} & Robotics\\
-\textbf{5} & Point Clouds & \textbf{10} & Noise & \textbf{15} & Construction\\
+\textbf{1} & Programming \hspace{7em} & \textbf{6} & Landcover \hspace{7em} & \textbf{11} & Dynamics \\
+\textbf{2} & Geocomputation & \textbf{7} & Imagery & \textbf{12} & Fragmentation \\
+\textbf{3} & Distribution & \textbf{8} & Lidar & \textbf{13} & Disturbance \\
+\textbf{4} & Surveying & \textbf{9} & Structure & \textbf{14} & Movement \\
+\textbf{5} & Ecoacoustics & \textbf{10} & Diversity & \textbf{15} & Suitability \\
 \end{tabular}
 \end{table}
+
+%\begin{table}[H]
+%\small
+%\begin{tabular}{@{} l l l l l l}
+%\small
+%\textbf{1} & Programming \hspace{7em}  & \textbf{6} & Surveying  \hspace{7em} & \textbf{11} & Suitability \\
+%\textbf{2} & Landcover & \textbf{7} & Dynamics & \textbf{12} & Ecoacoustics \\
+%\textbf{3} & Structure & \textbf{8} & Disturbance & \textbf{13} & Phytoremediation \\
+%\textbf{4} & Distribution & \textbf{9} & Fragmentation & \textbf{14} & Aesthetics \\
+%\textbf{5} & Diversity & \textbf{10} & Movement & \textbf{15} & Philosophy \\
+%\end{tabular}
+%\end{table}
 
 \clearpage
 
 % ---------------------------- Assignments -----------------------------
 
-\section{Assignments}
+\section{Topics}
 
-\paragraph{1 Computational Design} Learn the fundamentals of Grasshopper \dotfill
+\paragraph{1 Programming} Learn the fundamentals of scientific programming with Python. Create an environment, install packages, and start a computational notebook.\dotfill
 
-\paragraph{2 Stochasticity} Find the cumulative sum of random numbers to model a random walk \dotfill
+\paragraph{2 Geocomputation} Learn the basics of geospatial programming with GRASS.\dotfill
 
-\paragraph{3 Randomness} Use randomness to generate procedural paving and planting \dotfill
+\paragraph{3 Distribution} Download, import, map, and plot species occurrence data.\dotfill
 
-\paragraph{4 Attractors} Use attractors to generate gradients of topography, paving, and planting \dotfill
+\paragraph{4 Surveying} Conduct a field survey of plants and interpolate species distribution maps.\dotfill 
 
-\paragraph{5 Point Clouds} Model a landscape using a library of scanned point clouds \dotfill
+\paragraph{5 Ecoacoustics} Use passive acoustic monitoring to record soundscapes.\dotfill
 
-\paragraph{6 Physics} Use a physics engine to simulate gravity and solve geometric packing problems \dotfill 
+\paragraph{6 Landcover} Download and import landcover from public sources.\dotfill
 
-\paragraph{7 Terrain} Acquire topographic data, model the terrain, and then model its hydrology \dotfill
+\paragraph{7 Imagery} Download, import, process, and classify remote sensing imagery.\dotfill
 
-\paragraph{8 Earthworks} Use cut and fill operations to procedurally model landforms \dotfill
+\paragraph{8 Lidar} Import, process, classify, and visualize airborne lidar.\dotfill
 
-\paragraph{9 ---} \dotfill
+\paragraph{9 Structure} Calculate landscape structure and diversity indices from landcover.\dotfill
 
-\paragraph{10 Noise} Generate terrain from cellular noise and its biome from gradient noise \dotfill
+\paragraph{10 Diversity} Estimate species diversity from landcover and distribution maps.\dotfill
 
-\paragraph{11 Soundscapes} Plot the spectrogram of a bioacoustic recording \dotfill
+\paragraph{11 Dynamics} Analyze land change from a time series of landcover maps.\dotfill
 
-\paragraph{12 Machining} CNC mill a terrain model generated from cellular noise \dotfill
+\paragraph{12 Fragmentation} Calculate forest fragmentation indices from landcover.\dotfill
 
-\paragraph{13 Printing}  3D print a spectrogram in clay \dotfill
+\paragraph{13 Disturbance} Simulate the spread of fire from a controlled burn.\dotfill
 
-\paragraph{14 Robotics} Program pick-and-place operations with a 6-axis collaborative robotic arm \dotfill
+\paragraph{14 Movement} Simulate the movement of animals across a fragmented landscape.\dotfill
 
-\paragraph{15 Autonomous Construction} Program a robotic arm to assemble a procedural brick wall \dotfill
+\paragraph{15 Suitability} Map and prioritize suitable habitat for a network of wildlife reserves.\dotfill
 
-% -------------------------------- Projects --------------------------------
-
-\section{Project}
-
-\paragraph{Point Cloud Landscape}
-Experiment with point clouds as a new design medium
-by procedurally designing, modeling, and rendering a landscape.
-First use algorithms to procedurally design a landscape.
-Then model your design as a point cloud using assets 
-from a library of laser scanned or neural rendered landscape elements. 
-Upload your design to \href{https://sketchfab.com/}{Sketchfab}.
-\textbf{Due:} Week 15
-
-% -------------------------------- Grading --------------------------------
+% -------------------------------- Grading -------------------------------- 
 
 \section{Grading}
-%
+
 \begin{table}[H]
-\begin{tabular}{ @{} l @{\hskip 1em} l @{\hskip 9em} l @{\hskip 1em} l @{\hskip 9em} l @{\hskip 1em} l}
-\textbf{Assignments} & 60\% & \textbf{Project} & 35\% & \textbf{Portfolio} & 5\% \\
+\begin{tabular}{ @{} l @{\hskip 1em} l @{\hskip 9em} l @{\hskip 1em} l }
+\textbf{Projects} & 95\% & \textbf{Portfolio} & 5\% \\
 \end{tabular}
 \end{table}
 
-% -------------------------------- Logistics --------------------------------
+% -------------------------------- Logistics -------------------------------- 
 
 \section{Logistics}
 
-We will meet on Tuesdays and Thursdays 
-from 14:30--15:50
-in Design 308. 
+We will meet on Monday, Wednesday, and Friday mornings 
+from 09:30--11:30 at Hilltop Arboretum. 
 All course content including tutorials, lectures, and datasets
-will be published on the course
-\href{https://baharmon.github.io/tutorials/design}{website}.
-Our Discord \href{https://discord.gg/DcKmz6wZBe}{server}
-will be used for posting announcements, 
-student work in progress, reading responses, 
-projects, and troubleshooting. 
-During class please post each step of your work
-to your channel on the 
-\href{https://discord.gg/DcKmz6wZBe}{server}.
+will be published on the course website.
 \\
 
 \noindent
-Website | \url{https://baharmon.github.io/tutorials/design}\\
-Server | \url{https://discord.gg/DcKmz6wZBe}\\ 
-Videos | \url{https://www.youtube.com/@baharmon}
+Website | \url{https://baharmon.github.io/tutorials/grass/}
 
-% -------------------------------- Software --------------------------------
+% -------------------------------- Software -------------------------------- 
 
 \section{Software}
 
-Rhinoceros | \url{https://www.rhino3d.com/}\\
-Python | \url{https://www.python.org/}
+Python | \url{https://www.python.org/}\\
+GRASS | \url{https://grass.osgeo.org/}\\
+Miniforge | \url{https://conda-forge.org/}\\
+Pixi | \url{https://pixi.prefix.dev/}\\
+Jupyter Lab | \url{https://jupyterlab.readthedocs.io/}
 
-% ---------------------------------- Plugins ----------------------------------
+% -------------------------------- Data -----------------------------------------
 
-\section{Plugins}
-Snapping Gecko | \url{https://www.food4rhino.com/app/snappinggecko}\\
-Bitmap+ | \url{https://www.food4rhino.com/en/app/bitmap}\\
-Docofossor | \url{https://www.food4rhino.com/app/docofossor}\\
-Dendro | \url{https://www.food4rhino.com/en/app/dendro}\\
-RhinoCAM | \url{https://mecsoft.com/rhinocam-software/}%\\
-
-% -------------------------------- Precedents -------------------------------
-
-%\section{Precedents} 
-%Philipp Urech, 2020, \href{https://skfb.ly/pztrn}{Parque Copan} \\
-%ETHZ, Endless Wall
-%ETHZ, Kitvus Vinery
-%ETHZ, Circularity Park
-% Snohetta, MAX Lab Landscape
-
-% -------------------------------- Datasets ----------------------------------
-
-\section{Datasets}
-Computational Design Dataset | \url{https://doi.org/10.5281/zenodo.8191264} \\
-Cloud Forest Library | \url{https://xyz.cct.lsu.edu/cloud-forest} \\
-Cloud Forest Dataset | \url{https://doi.org/10.5281/zenodo.8194066}
-
-\clearpage
+%\section{Dataset}
+%Dataset | \url{...}
 
 % -------------------------------- Resources -------------------------------- 
 
 \section{Resources}
 
-Jump Start Grasshopper | \url{https://vimeo.com/showcase/9410915}\\
-Grasshopper Guides | \url{https://developer.rhino3d.com/guides/grasshopper}\\
-Grasshopper Primer | \url{http://grasshopperprimer.com}\\
-TU Delft DigiPedia | \url{https://digipedia.tudelft.nl/software/grasshopper}\\
-Parametric Camp | \url{https://www.youtube.com/parametriccamp}
+Learn GRASS | \url{https://grass-tutorials.osgeo.org/}
 
-% -------------------------------- Readings --------------------------------
+% -------------------------------- Readings -------------------------------- 
 
-\section{Required Readings}
+\section{Readings}
 \vspace*{0.5cm}
 \nocite{*}
 \setlength\bibitemsep{0.65\baselineskip}
-\printbibliography[keyword=required, heading=none]
-
-% -------------------------------- Recommended -----------------------
-
-\section{Recommended Readings}
-\vspace*{0.5cm}
-\nocite{*}
-\setlength\bibitemsep{0.65\baselineskip}
-\printbibliography[keyword=recommended, heading=none]
+\printbibliography[heading=none]
 
 % -------------------------------- Policies -------------------------------- 
 
@@ -369,6 +305,6 @@ a single, high resolution PDF file with multiple pages.
 (3) Files must follow the naming convention
 established by the school: 
 department-coursenumber-semesteryear-username.pdf.
-Example: LA7504-S2026-baharmon.pdf.
+Example: LA7504-F2026-baharmon.pdf.
 
 \end{document}

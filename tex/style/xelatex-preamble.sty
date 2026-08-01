@@ -37,6 +37,30 @@ pdfpagelabels, bookmarksnumbered]{hyperref}
 \RequirePackage{tikz}
 \RequirePackage{tikzpagenodes}
 
+% Fonts
+\defaultfontfeatures{}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmonofont[Scale=0.8]{IBM Plex Mono}
+\setmainfont{IBMPlexSans}[
+Extension=.otf,
+UprightFont=*-Regular,
+ItalicFont=*-Italic,
+BoldFont=*-Bold,
+BoldItalicFont=*-BoldItalic,
+FontFace={l}{n}{*-Light},
+FontFace={l}{it}{*-Italic},
+FontFace={el}{n}{*-ExtraLight},
+FontFace={el}{it}{*-ExtraLightItalic},
+FontFace={md}{n}{*-Medium},
+FontFace={md}{it}{*-MediumItalic},
+FontFace={sb}{n}{*-SemiBold},
+FontFace={sb}{it}{*-SemiBoldItalic},
+FontFace={tx}{n}{*-Text},
+FontFace={tx}{it}{*-TextItalic},
+FontFace={th}{n}{*-Thin},
+FontFace={th}{it}{*-ThinItalic},
+]
+
 % Biber
 \RequirePackage[
 style=chicago-authordate,

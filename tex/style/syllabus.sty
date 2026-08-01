@@ -9,7 +9,7 @@
 % Chapter style
 \makechapterstyle{syllabus}{
 \setsecheadstyle{\Large\sffamily\bfseries} 
-\setsubsecheadstyle{\normalsize\sffamily\scshape} 
+\setsubsecheadstyle{\normalsize\sffamily\bfseries} 
 \setaftersubsubsecskip{-1em}
 \setsubsubsecheadstyle{\small}
 \renewcommand{\printchaptername}{} 
@@ -55,8 +55,8 @@
 }
 \makepsmarks{basic}{\@basicmarks}
 \makepsmarks{basic}{}
-\makeevenhead{basic}{}{}{\scshape\thepage}
-\makeoddhead{basic}{}{}{\scshape\thepage}
+\makeevenhead{basic}{}{}{\bfseries\thepage}
+\makeoddhead{basic}{}{}{\bfseries\thepage}
 
 % Publication status
 \newcommand{\published}[1]{% 
@@ -66,4 +66,3 @@
        \par\noindent\footnotesize \puB} 
 
 \endinput
-
